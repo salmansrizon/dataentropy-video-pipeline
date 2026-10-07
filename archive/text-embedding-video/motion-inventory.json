@@ -1,0 +1,239 @@
+{
+  "video": "30-second vertical explainer that shows beginners how text embeddings let search find what you mean",
+  "animations": {
+    "search_bar_enter": {
+      "what": "The search bar fades in and rises into place at the top",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 18
+    },
+    "query_typing": {
+      "what": "'cheap laptop' types into the search bar at a steady pace",
+      "scene": "hook",
+      "ease": "linear",
+      "frames": 24
+    },
+    "cursor_blink": {
+      "what": "A violet text cursor blinks steadily in the search bar",
+      "scene": "hook",
+      "ease": "linear",
+      "frames": 12
+    },
+    "product_card_enter": {
+      "what": "A product card fades in and slides into place below the search bar",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 18
+    },
+    "word_match_lines": {
+      "what": "Lines draw from each search word toward each product word and stop halfway",
+      "scene": "no-shared-words",
+      "ease": "out",
+      "frames": 12
+    },
+    "word_match_x": {
+      "what": "A violet X draws where each word-match line stops",
+      "scene": "no-shared-words",
+      "ease": "out",
+      "frames": 12
+    },
+    "decoy_match_line": {
+      "what": "A line draws from 'laptop' in the search to 'Laptop' on the Laptop bag card",
+      "scene": "no-shared-words",
+      "ease": "out",
+      "frames": 15
+    },
+    "decoy_question_mark": {
+      "what": "A violet question mark fades in next to the decoy match",
+      "scene": "no-shared-words",
+      "ease": "out",
+      "frames": 13
+    },
+    "word_match_exit": {
+      "what": "The word-match lines and marks fade away",
+      "scene": "vectors",
+      "ease": "in",
+      "frames": 12
+    },
+    "model_enter": {
+      "what": "The embedding model box fades in and grows slightly into place",
+      "scene": "vectors",
+      "ease": "out",
+      "frames": 20
+    },
+    "paths_draw": {
+      "what": "Curved purple lines draw from the query and the cards into the model",
+      "scene": "vectors",
+      "ease": "out",
+      "frames": 24
+    },
+    "query_pill_travel": {
+      "what": "A violet copy of the query leaves the search bar and travels into the model, shrinking",
+      "scene": "vectors",
+      "ease": "inOut",
+      "frames": 48
+    },
+    "cards_into_model": {
+      "what": "The product cards travel into the model and shrink as they enter",
+      "scene": "vectors",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "model_pulse": {
+      "what": "The model briefly swells and settles as the texts enter it",
+      "scene": "vectors",
+      "ease": "inOut",
+      "frames": 25
+    },
+    "vector_rows_emerge": {
+      "what": "Rows of numbers rise out of the model, one per text",
+      "scene": "vectors",
+      "ease": "out",
+      "frames": 16
+    },
+    "model_exit": {
+      "what": "The embedding model fades away",
+      "scene": "map",
+      "ease": "in",
+      "frames": 15
+    },
+    "map_axes_draw": {
+      "what": "The two axes of the meaning map draw themselves",
+      "scene": "map",
+      "ease": "out",
+      "frames": 25
+    },
+    "rows_fold_to_points": {
+      "what": "Each row of numbers shrinks and moves to become a point on the map",
+      "scene": "map",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "arrows_draw": {
+      "what": "Arrows draw from the map's origin to each point",
+      "scene": "map",
+      "ease": "out",
+      "frames": 18
+    },
+    "points_appear": {
+      "what": "Each point appears at the end of its arrow",
+      "scene": "map",
+      "ease": "out",
+      "frames": 12
+    },
+    "neighborhood_glow": {
+      "what": "A soft glow grows around the query point and its closest match",
+      "scene": "map",
+      "ease": "out",
+      "frames": 18
+    },
+    "angle_arc_draw": {
+      "what": "A purple arc draws the small angle between the query arrow and its closest match",
+      "scene": "map",
+      "ease": "out",
+      "frames": 20
+    },
+    "map_exit": {
+      "what": "The meaning map fades away",
+      "scene": "results",
+      "ease": "in",
+      "frames": 15
+    },
+    "points_to_results": {
+      "what": "The map points fly up and grow into ranked result cards with scores",
+      "scene": "results",
+      "ease": "inOut",
+      "frames": 26
+    },
+    "scores_note_enter": {
+      "what": "A note saying the scores are illustrative fades in",
+      "scene": "results",
+      "ease": "out",
+      "frames": 15
+    },
+    "use_icons_enter": {
+      "what": "Three icons for search, recommendations and AI assistants fade in and rise, one after another",
+      "scene": "results",
+      "ease": "out",
+      "frames": 16
+    },
+    "caption_enter": {
+      "what": "A short explanation line fades in and rises",
+      "scene": "all",
+      "ease": "out",
+      "frames": 15
+    },
+    "caption_exit": {
+      "what": "The explanation line fades out before the next one appears",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "camera_zoom": {
+      "what": "The camera zooms out slightly as the scene fades into the logo",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "world_fade_out": {
+      "what": "The whole scene fades away before the logo appears",
+      "scene": "outro",
+      "ease": "in",
+      "frames": 18
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind an invisible edge",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out at the end of its scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_words": {
+      "what": "Subtitle words brighten in groups of three as the narrator says them",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "logo_bars_grow": {
+      "what": "Four logo bars grow upward from a baseline one after another, left to right",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "logo_wordmark_reveal": {
+      "what": "The brand name is revealed left to right by a moving edge",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "The logo bars glow brighter, then settle to a soft glow",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises into place under the logo",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises into place",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow on the button slides a little to the right once",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "video": "60-second vertical explainer that shows beginners how ORDER BY sorts the answer of a SQL query, using a table of sales deals",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "row_chip_enter": {
+      "what": "A white chip with a violet outline fades in around a row of the stored table",
+      "scene": "no order",
+      "ease": "out",
+      "frames": 12
+    },
+    "row_copy_travel": {
+      "what": "A copy of a row travels from the stored table across to the result table",
+      "scene": "no order",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "row_chip_exit": {
+      "what": "The chip around the travelling row fades away as it lands",
+      "scene": "no order",
+      "ease": "in",
+      "frames": 8
+    },
+    "rows_reorder": {
+      "what": "The rows of the result table slide up and down past each other into a new order",
+      "scene": "no order, default, A to Z, DESC, ties, second column",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "sort_header_light": {
+      "what": "The header of the column being sorted turns from pale to violet",
+      "scene": "default, A to Z, DESC",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "sort_arrow_draw": {
+      "what": "A violet arrow draws itself along the right side of the result table, pointing the way the values grow",
+      "scene": "default, DESC",
+      "ease": "out",
+      "frames": 24
+    },
+    "sort_arrow_exit": {
+      "what": "The arrow beside the result table fades away",
+      "scene": "A to Z, unchanged",
+      "ease": "in",
+      "frames": 10
+    },
+    "order_line_out": {
+      "what": "The ORDER BY line in the query slides up and fades out",
+      "scene": "A to Z, DESC, second column",
+      "ease": "in",
+      "frames": 10
+    },
+    "order_line_in": {
+      "what": "A new ORDER BY line slides up into its place",
+      "scene": "A to Z, DESC, second column",
+      "ease": "out",
+      "frames": 16
+    },
+    "tie_bands_enter": {
+      "what": "Lavender bands fade in behind the two rows that have the same amount",
+      "scene": "ties",
+      "ease": "out",
+      "frames": 14
+    },
+    "tie_bands_exit": {
+      "what": "The lavender bands behind the tied rows fade away",
+      "scene": "unchanged",
+      "ease": "in",
+      "frames": 10
+    },
+    "tie_check_draw": {
+      "what": "A violet check mark fades in beside the two tied rows once they settle",
+      "scene": "second column",
+      "ease": "out",
+      "frames": 14
+    },
+    "source_ring_draw": {
+      "what": "A violet outline draws itself around the whole stored table",
+      "scene": "unchanged",
+      "ease": "out",
+      "frames": 30
+    },
+    "source_ring_exit": {
+      "what": "The outline around the stored table fades away",
+      "scene": "on top",
+      "ease": "in",
+      "frames": 10
+    },
+    "top_ring_draw": {
+      "what": "A violet outline draws itself around the top two rows of the result table",
+      "scene": "on top",
+      "ease": "out",
+      "frames": 24
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "brief": "rag.json",
+  "story": {
+    "score": 2.0,
+    "confidence": 1.0,
+    "verdict": "PASS"
+  },
+  "energy": {
+    "score": 2.0,
+    "confidence": 1.0,
+    "verdict": "PASS"
+  },
+  "scenes": [
+    {
+      "seconds": "0-4",
+      "faint": 0.19,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.19,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 8,
+      "text_words": 7,
+      "text_ok": true
+    },
+    {
+      "seconds": "4-9",
+      "faint": 0.19,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.56,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 6,
+      "text_words": 3,
+      "text_ok": true
+    },
+    {
+      "seconds": "9-15",
+      "faint": 0.38,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.14,
+      "jargon_verdict": "PASS",
+      "vo_words": 9,
+      "text_words": 3,
+      "text_ok": true
+    },
+    {
+      "seconds": "15-21",
+      "faint": 0.16,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.61,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 10,
+      "text_words": 4,
+      "text_ok": true
+    },
+    {
+      "seconds": "21-27",
+      "faint": 0.66,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.36,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 9,
+      "text_words": 5,
+      "text_ok": true
+    },
+    {
+      "seconds": "27-30",
+      "faint": 0.21,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.34,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 7,
+      "text_words": 5,
+      "text_ok": true
+    }
+  ],
+  "vo_total_words": 49
+}

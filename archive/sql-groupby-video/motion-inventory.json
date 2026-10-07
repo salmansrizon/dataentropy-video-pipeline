@@ -1,0 +1,275 @@
+{
+  "video": "60-second vertical explainer that shows beginners how GROUP BY and SUM turn a table of store sales into one total per store, and how HAVING tests those totals",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "question_mark_enter": {
+      "what": "A large violet question mark fades in beside the sales table",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 14
+    },
+    "question_mark_exit": {
+      "what": "The question mark fades away",
+      "scene": "by hand",
+      "ease": "in",
+      "frames": 10
+    },
+    "hand_band_enter": {
+      "what": "A highlight band fades in over one row of the table",
+      "scene": "by hand",
+      "ease": "out",
+      "frames": 14
+    },
+    "hand_band_hop": {
+      "what": "The highlight band slides down to the next row of the same store",
+      "scene": "by hand",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "hand_sum_count": {
+      "what": "The running total in a chip beside the table counts up as each row is added",
+      "scene": "by hand",
+      "ease": "linear",
+      "frames": 12
+    },
+    "row_counter_count": {
+      "what": "The number of rows in a chip above the table counts upward steadily from eight to one million",
+      "scene": "by hand",
+      "ease": "linear",
+      "frames": 36
+    },
+    "by_hand_exit": {
+      "what": "The highlight band, the running total and the row counter fade away",
+      "scene": "by hand",
+      "ease": "in",
+      "frames": 10
+    },
+    "tray_label_enter": {
+      "what": "The store name fades in inside its tray",
+      "scene": "GROUP BY",
+      "ease": "out",
+      "frames": 14
+    },
+    "row_chip_enter": {
+      "what": "A small white chip fades in over a row's amount in the table",
+      "scene": "one group",
+      "ease": "out",
+      "frames": 12
+    },
+    "row_chip_travel": {
+      "what": "The chip with a row's amount travels in a shallow arc from the table into the tray of its store",
+      "scene": "one group",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "amount_join_total": {
+      "what": "An amount chip in a tray turns pale as its value is added",
+      "scene": "SUM",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "total_bar_grow": {
+      "what": "The violet bar in a tray grows longer and the number at its end counts up as each amount is added",
+      "scene": "SUM, aggregate",
+      "ease": "linear",
+      "frames": 18
+    },
+    "total_enter": {
+      "what": "The total number fades in at the end of a tray's bar",
+      "scene": "SUM",
+      "ease": "out",
+      "frames": 14
+    },
+    "tray_parts_exit": {
+      "what": "The amount chips and the bar fade out of each tray",
+      "scene": "one row",
+      "ease": "in",
+      "frames": 14
+    },
+    "tray_fold": {
+      "what": "Each tray shrinks into one row and the three rows stack into a table, with the store name and its total sliding into place",
+      "scene": "one row",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "tray_outline_exit": {
+      "what": "The navy outlines of the three trays fade as the result table's violet outline takes over",
+      "scene": "one row",
+      "ease": "in",
+      "frames": 10
+    },
+    "best_outline_draw": {
+      "what": "A violet outline draws itself around the row with the largest total",
+      "scene": "Dhaka",
+      "ease": "out",
+      "frames": 24
+    },
+    "best_total_light": {
+      "what": "The largest total turns from navy to violet",
+      "scene": "Dhaka",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "best_outline_exit": {
+      "what": "The outline around the largest total fades away",
+      "scene": "HAVING",
+      "ease": "in",
+      "frames": 10
+    },
+    "test_band_enter": {
+      "what": "A violet outlined band fades in over the first row of the result table",
+      "scene": "HAVING",
+      "ease": "out",
+      "frames": 12
+    },
+    "test_band_step": {
+      "what": "The violet band slides down from one result row to the next",
+      "scene": "HAVING",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "test_band_exit": {
+      "what": "The violet band fades away after the last row",
+      "scene": "HAVING",
+      "ease": "in",
+      "frames": 8
+    },
+    "check_draw": {
+      "what": "A violet check mark draws itself beside a total that passes the test",
+      "scene": "HAVING",
+      "ease": "out",
+      "frames": 14
+    },
+    "group_dim": {
+      "what": "The row of the store that fails the test fades from navy to pale gray",
+      "scene": "HAVING",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "where_link_draw": {
+      "what": "A violet arrow draws itself from the label 'WHERE tests rows' to the sales table",
+      "scene": "WHERE and HAVING",
+      "ease": "out",
+      "frames": 20
+    },
+    "where_link_exit": {
+      "what": "The arrow to the sales table fades away",
+      "scene": "summary",
+      "ease": "in",
+      "frames": 10
+    },
+    "summary_arrow_draw": {
+      "what": "A violet arrow draws itself from the sales table to the result table",
+      "scene": "summary",
+      "ease": "out",
+      "frames": 24
+    }
+  }
+}

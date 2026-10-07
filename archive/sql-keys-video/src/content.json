@@ -1,0 +1,200 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "customers": {
+    "name": "customers",
+    "columns": [
+      "name",
+      "id"
+    ],
+    "rows": [
+      [
+        "Rafi Khan",
+        1
+      ],
+      [
+        "Mina Roy",
+        2
+      ],
+      [
+        "Rafi Khan",
+        3
+      ]
+    ]
+  },
+  "orders": {
+    "name": "orders",
+    "columns": [
+      "customer",
+      "item"
+    ],
+    "idColumn": "customer_id",
+    "rows": [
+      [
+        3,
+        "Laptop"
+      ],
+      [
+        2,
+        "Phone"
+      ]
+    ]
+  },
+  "attempts": {
+    "duplicate": [
+      "Sara Ali",
+      3
+    ],
+    "orphan": [
+      7,
+      "Tablet"
+    ]
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "refused": "refused",
+    "deleteRefused": "delete refused"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Which *Rafi* ordered\nthe laptop?",
+      "voiceover": "Two customers are both called Rafi Khan. So *which one* ordered the laptop?",
+      "voStart": 0.3,
+      "visual": "Two white table cards with bold 5px deep navy outlines draw themselves: 'customers' with three names, two of them Rafi Khan, and 'orders' with a customer name and an item. A bold brand-violet question mark appears beside the laptop order. Headline with 'Rafi' in brand violet.",
+      "rate": "-14%"
+    },
+    {
+      "start": 5.7,
+      "headline": "Names are\n*not unique*",
+      "voiceover": "Names repeat. So a name *cannot identify* a row.",
+      "voStart": 6.0,
+      "visual": "Soft lavender bands spread behind the navy text of the two Rafi Khan rows in the customers table, and bold brand-violet question marks appear beside both. Headline: 'not unique' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 10.5,
+      "headline": "A *primary key*:\none ID per row",
+      "voiceover": "So every customer gets an ID of their own. That column is the *primary key.*",
+      "voStart": 10.8,
+      "visual": "In the customers table an id column is revealed row by row with the bold navy numbers 1, 2 and 3, and its header turns brand violet with white text. Below the tables a white query card with a bold 5px navy outline draws itself and types 'id INTEGER PRIMARY KEY' with PRIMARY KEY in bold brand violet. Headline: 'primary key' in brand violet, followed by its plain meaning.",
+      "rate": "-13%"
+    },
+    {
+      "start": 16.8,
+      "headline": "Always *unique*,\nnever empty",
+      "voiceover": "A primary key is always *unique* and never empty. A second three is refused.",
+      "voStart": 17.1,
+      "visual": "A white chip with a bold violet outline carrying a new customer with id 3 travels toward the bottom of the customers table. A bold navy cross draws itself over it, a white chip with a bold navy outline reads 'refused', and the new row fades away. Headline: 'unique' in brand violet.",
+      "rate": "-5%"
+    },
+    {
+      "start": 23.5,
+      "headline": "Orders store the\n*customer's ID*",
+      "voiceover": "An order does not store the name. It stores the *customer's ID.*",
+      "voStart": 23.8,
+      "visual": "In the orders table each customer name slides out and a bold navy ID number slides in, and the column header changes to customer_id in brand violet. Headline: 'customer's ID' in brand violet.",
+      "rate": "-12%"
+    },
+    {
+      "start": 28.9,
+      "headline": "A *foreign key* points\nto another table",
+      "voiceover": "That column is a *foreign key.* It points to a row in another table.",
+      "voStart": 29.2,
+      "visual": "The query card types 'customer_id INTEGER REFERENCES customers (id)' on two lines with REFERENCES in bold brand violet. Glowing bold 5px brand-violet lines draw themselves from each order's customer_id across the gap to the customer row with the same id. Headline: 'foreign key' in brand violet, followed by its plain meaning.",
+      "rate": "-19%"
+    },
+    {
+      "start": 34.5,
+      "headline": "Now the answer\nis *exact*",
+      "voiceover": "Now it is exact. The laptop belongs to customer *three.*",
+      "voStart": 34.8,
+      "visual": "A bold 5px brand-violet outline draws itself around the laptop order and another around the customer row with id 3; the other Rafi Khan row keeps its plain navy text. Headline: 'exact' in brand violet.",
+      "rate": "-4%"
+    },
+    {
+      "start": 39.5,
+      "headline": "An unknown ID\nis *refused*",
+      "voiceover": "Try to save an order for customer seven. The database *refuses.*",
+      "voStart": 39.8,
+      "visual": "A white chip with a bold violet outline carrying a new order for customer 7 travels to the bottom of the orders table. A bold navy line reaches from its 7 toward the customers table and stops short at a bold navy cross; a chip reads 'refused' and the new order fades away. Headline: 'refused' in brand violet.",
+      "rate": "-4%"
+    },
+    {
+      "start": 45.0,
+      "headline": "Customers with orders\n*cannot vanish*",
+      "voiceover": "And a customer who has orders *cannot be deleted* by accident.",
+      "voStart": 45.3,
+      "visual": "The customer row with id 3 starts to fade to pale gray, the brand-violet line from the laptop order holds it, the row returns to bold navy and a white chip with a bold navy outline reads 'delete refused'. Headline: 'cannot vanish' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 50.0,
+      "headline": "Keys keep tables\n*connected*",
+      "voiceover": "Keys keep your tables *connected* and your answers right.",
+      "voStart": 50.3,
+      "visual": "Both tables sit side by side joined by their glowing bold brand-violet lines, with the brand-violet id and customer_id headers facing each other. Headline: 'connected' in brand violet.",
+      "rate": "-15%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a primary key and a foreign key are: a primary key gives every row a unique, never-empty ID, and a foreign key stores that ID in another table so rows stay correctly connected. Carry one example through the whole video: an online shop with two customers both called Rafi Khan, and an order for a laptop.",
+    "central_visual": {
+      "description": "LEFT: the table 'customers' (name, id), a white card with a bold 5px deep navy outline. RIGHT: the table 'orders' (customer_id, item) with the same styling; the two ID columns face each other across a gap. BELOW: a query card with a bold 5px navy outline showing the column definitions.",
+      "interaction_effect": "IDs are revealed in the customers table, the orders table swaps names for IDs, and glowing brand-violet lines link each order to its customer. Rows that would break a key rule travel in, meet a bold navy cross and fade away.",
+      "camera": "One continuous space: both tables, then down to include the query card."
+    },
+    "rules": [
+      "A primary key is unique and not null; a table has at most one.",
+      "A foreign key value must match a row in the other table. Show the default behaviour: an order for a missing customer is refused, and a customer that orders point to cannot be deleted.",
+      "Do not mention cascading deletes or database-specific settings.",
+      "Refusals are shown in navy with the word 'refused'; do not use red."
+    ],
+    "components": [
+      "CustomersTable",
+      "OrdersTable",
+      "KeyLinks",
+      "RejectedRow",
+      "QueryCard"
+    ],
+    "controls": [
+      "Customer rows",
+      "Order rows",
+      "The rejected rows"
+    ],
+    "quality": "Confirm that every violet line connects equal IDs and that both rejected rows end up outside the tables.",
+    "sources": [
+      "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "https://www.sqlite.org/foreignkeys.html",
+      "https://dev.mysql.com/doc/refman/8.4/en/create-table-foreign-keys.html"
+    ]
+  }
+}

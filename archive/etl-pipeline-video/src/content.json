@@ -1,0 +1,206 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "bakery": {
+    "name": "Sunny Loaf",
+    "note": "fictional"
+  },
+  "columns": [
+    "date",
+    "item",
+    "amount"
+  ],
+  "files": [
+    {
+      "name": "Till",
+      "order": [
+        "date",
+        "item",
+        "amount"
+      ],
+      "rowWidth": 345,
+      "rows": [
+        {
+          "date": "2026-03-04",
+          "shown": "03/04/2026",
+          "item": "Bread",
+          "amount": 12
+        },
+        {
+          "date": "2026-03-04",
+          "shown": "03/04/2026",
+          "item": "Bread",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "name": "Online",
+      "order": [
+        "item",
+        "amount",
+        "date"
+      ],
+      "rowWidth": 300,
+      "rows": [
+        {
+          "date": "2026-03-04",
+          "shown": "4 March",
+          "item": "Cakes",
+          "amount": 24
+        },
+        {
+          "date": "2026-03-04",
+          "shown": "4 March",
+          "item": "Coffee",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "name": "Stall",
+      "order": [
+        "item",
+        "date",
+        "amount"
+      ],
+      "rowWidth": 290,
+      "rows": [
+        {
+          "date": "2026-03-04",
+          "shown": "Mar 4",
+          "item": "Coffee",
+          "amount": null
+        }
+      ]
+    }
+  ],
+  "nightRows": [
+    {
+      "date": "2026-03-05",
+      "item": "Bread",
+      "amount": 10
+    },
+    {
+      "date": "2026-03-05",
+      "item": "Coffee",
+      "amount": 6
+    }
+  ],
+  "labels": {
+    "sameSale": "same sale twice",
+    "check": "check with owner",
+    "rule": "People write the rules.",
+    "total": "Total",
+    "etl": "ETL"
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How do messy files\nbecome a *dashboard*?",
+      "voiceover": "How do messy sales files become one screen of clear *charts?*",
+      "voStart": 0.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 5,
+      "headline": "Sales live in *three*\ndifferent files",
+      "voiceover": "A small bakery keeps its sales in *three* very different files.",
+      "voStart": 5.3,
+      "rate": "-15%"
+    },
+    {
+      "start": 10,
+      "headline": "The files do\n*not agree*",
+      "voiceover": "Dates *clash.* Rows *repeat.* Some prices are *missing.*",
+      "voStart": 10.1,
+      "tts": "Dates clash, Rows repeat, Some prices are missing.",
+      "rate": "+0%"
+    },
+    {
+      "start": 14,
+      "headline": "One belt.\n*Three stations.*",
+      "voiceover": "The fix is a *belt* that carries data through three stations.",
+      "voStart": 14.2,
+      "rate": "-20%"
+    },
+    {
+      "start": 18.7,
+      "headline": "*Extract* =\ncollect a copy",
+      "voiceover": "Station one is *extract.* It pulls a copy from every file.",
+      "voStart": 18.8,
+      "rate": "+0%"
+    },
+    {
+      "start": 24,
+      "headline": "*Transform* = change.\nFirst, clean.",
+      "voiceover": "Station two is *transform,* which means change. First, it cleans rows.",
+      "voStart": 24.1,
+      "tts": "Station two is transform, which means change. First, it cleans rows.",
+      "rate": "+10%"
+    },
+    {
+      "start": 29.7,
+      "headline": "Then the *same columns*\nfor every row",
+      "voiceover": "Then it reshapes them into the same *columns.*",
+      "voStart": 29.8,
+      "rate": "-19%"
+    },
+    {
+      "start": 33,
+      "headline": "*Load* = store\nin one table",
+      "voiceover": "Station three is *load.* Clean rows fill one table.",
+      "voStart": 33.2,
+      "tts": "Station three is load, Clean rows fill one table.",
+      "rate": "-3%"
+    },
+    {
+      "start": 37.3,
+      "headline": "Extract + Transform\n+ Load = *ETL*",
+      "voiceover": "Extract collects. Transform cleans. Load stores. Together they are *ETL.*",
+      "tts": "Extract collects, Transform cleans, Load stores, Together they are ETL.",
+      "voStart": 37.4,
+      "rate": "+0%"
+    },
+    {
+      "start": 43.2,
+      "headline": "*One table* feeds\nthe dashboard",
+      "voiceover": "A *dashboard* is a screen of charts that reads from that one table.",
+      "voStart": 43.4,
+      "rate": "-20%"
+    },
+    {
+      "start": 48,
+      "headline": "New sales? The belt\n*runs again*.",
+      "voiceover": "Each *night,* the belt runs again, and the charts stay up to date.",
+      "voStart": 48.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 54,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more data skills explained simply.",
+      "tts": "Follow Data Entropy for more data skills explained simply.",
+      "voStart": 54.3,
+      "rate": "+0%"
+    }
+  ]
+}

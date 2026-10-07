@@ -1,0 +1,275 @@
+{
+  "video": "60-second vertical explainer that shows beginners what a database index is and why it makes a lookup by email fast",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "scan_band_enter": {
+      "what": "A violet outlined band fades in over the first row of the customers table",
+      "scene": "every row",
+      "ease": "out",
+      "frames": 12
+    },
+    "scan_band_step": {
+      "what": "The violet band slides down from one row of the table to the next",
+      "scene": "every row",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "scan_band_exit": {
+      "what": "The violet band fades away after the last row",
+      "scene": "every row",
+      "ease": "in",
+      "frames": 8
+    },
+    "scan_row_dim": {
+      "what": "A row that is not the one being looked for fades from navy to pale gray",
+      "scene": "every row",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "scan_check_draw": {
+      "what": "A violet check mark fades in beside the row that matches",
+      "scene": "every row",
+      "ease": "out",
+      "frames": 14
+    },
+    "counter_count": {
+      "what": "The number of rows checked counts upward steadily to two million",
+      "scene": "millions",
+      "ease": "linear",
+      "frames": 60
+    },
+    "rows_restore": {
+      "what": "The pale rows of the table return to navy",
+      "scene": "millions",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "email_chip_enter": {
+      "what": "A white chip with a violet outline fades in around an email in the table",
+      "scene": "index",
+      "ease": "out",
+      "frames": 12
+    },
+    "email_travel": {
+      "what": "A copy of an email travels from the table into its alphabetical place in the index",
+      "scene": "index",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "email_chip_exit": {
+      "what": "The chip around the travelling email fades away as it lands",
+      "scene": "index",
+      "ease": "in",
+      "frames": 8
+    },
+    "query_line_out": {
+      "what": "A line of the query slides up and fades out",
+      "scene": "index, jump",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_line_in": {
+      "what": "A new line of the query slides up into its place",
+      "scene": "index, jump",
+      "ease": "out",
+      "frames": 16
+    },
+    "row_numbers_enter": {
+      "what": "A row number fades in beside each email in the index, one after another",
+      "scene": "points",
+      "ease": "out",
+      "frames": 14
+    },
+    "pointer_link_draw": {
+      "what": "A glowing violet line draws itself from an index entry across to its row in the table",
+      "scene": "points, 3 checks",
+      "ease": "out",
+      "frames": 20
+    },
+    "pointer_link_exit": {
+      "what": "The line between the index and the table fades away",
+      "scene": "points, slows writes",
+      "ease": "in",
+      "frames": 10
+    },
+    "search_band_enter": {
+      "what": "A lavender band fades in on the middle entry of the index",
+      "scene": "jump",
+      "ease": "out",
+      "frames": 14
+    },
+    "search_band_jump": {
+      "what": "The lavender band jumps to the middle of the entries that are left",
+      "scene": "jump",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "search_half_dim": {
+      "what": "The half of the index that cannot hold the email fades from navy to pale gray",
+      "scene": "jump",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "found_check_draw": {
+      "what": "A violet check mark fades in beside the entry that was found",
+      "scene": "jump",
+      "ease": "out",
+      "frames": 14
+    },
+    "found_ring_draw": {
+      "what": "A violet outline draws itself around the matching row of the table",
+      "scene": "3 checks",
+      "ease": "out",
+      "frames": 24
+    },
+    "index_restore": {
+      "what": "The pale entries of the index return to navy and the lavender band fades away",
+      "scene": "same answer",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "new_row_slide_in": {
+      "what": "A new row inside a white chip slides up into the first free line of the table",
+      "scene": "slows writes",
+      "ease": "out",
+      "frames": 30
+    },
+    "cards_grow": {
+      "what": "The table and the index each get one row taller",
+      "scene": "slows writes",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "index_make_room": {
+      "what": "The entries below the new email's place move down one line",
+      "scene": "slows writes",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "new_email_travel": {
+      "what": "A copy of the new email travels from the table into its place in the index",
+      "scene": "slows writes",
+      "ease": "inOut",
+      "frames": 34
+    },
+    "where_mark_wipe": {
+      "what": "A lavender band spreads from left to right behind the WHERE line of the query",
+      "scene": "search by",
+      "ease": "out",
+      "frames": 18
+    },
+    "email_column_ring": {
+      "what": "A violet outline draws itself around the email column of the table",
+      "scene": "search by",
+      "ease": "out",
+      "frames": 30
+    }
+  }
+}

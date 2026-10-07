@@ -1,0 +1,178 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners (students and early-career learners) how an AI agent gets a task done: it splits the task into a plan, uses tools such as search, a calendar and a booking app, checks each result, and tries again when a step fails. Carry one relatable example through the whole video: a person asks an AI to 'Book my weekend trip to Lisbon.' (the trip, flight, hotels and prices are fictional examples). Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring AI learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook 0-5s, problem 5-14s, explanation 14-42s, outcome 42-54s, call to action 54-60s. 13 scenes, each 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels and main outlines; brand violet (#6D4AFF) for key words, the active checklist row, tick marks and active connectors; electric purple (#8B5CF6) for motion accents, travelling request dots and the retry arrow; soft lavender (#C4B5FD) only as large filled shapes or glows placed behind a darker outline. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. A failed step is shown without red: the card's fill becomes flat gray-lavender (#D6D2E0) while its outline and label stay bold deep navy, and a bold 6px deep navy cross is drawn on it. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet (each scene's visual names the violet words). Labels weight 500, at least 32px, deep navy, one to three words each.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover_pace": "135-155 words per minute while speaking. Each line fits its scene at about 2.4 words per second or less. Few commas, because each comma adds a pause in the text-to-speech voice.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "A task board, unlike any earlier DataEntropy video. LEFT (x 76-600, y 470-1330): a tall off-white checklist card with a bold 5px deep navy outline, headed by the request 'Book my weekend trip to Lisbon' and holding four rows, each with an empty rounded checkbox: 1 Find flights, 2 Check calendar, 3 Book hotel, 4 Send summary. RIGHT (x 680-1004): three tool cards stacked top to bottom with bold line icons: Search (magnifier, y 520-740), Calendar (calendar page, y 790-1010), Booking (bed, y 1060-1280). BETWEEN them: the agent, a deep navy pill labelled 'Agent' with a soft lavender glow behind it, which sits at the left edge of the row it is working on and travels down the checklist row by row.",
+    "interaction_effect": "For each step the agent's row gains a brand-violet outline, a bold 5px brand-violet connector draws from that row to one tool card, the tool card's outline turns brand violet and its icon line-draws, an electric-purple request dot travels along the connector to the tool, and a result chip (off-white, 4px deep navy outline, navy text) travels back along the same connector and docks on the row. The agent compares the chip with the row, then a bold 6px brand-violet tick draws in the checkbox. On the failed step the Booking card's fill becomes flat gray-lavender (#D6D2E0) with a bold 6px deep navy cross, a bold 5px electric-purple circular arrow draws around the agent, the connector redraws and the second attempt succeeds. Only one row and one tool card are active at a time.",
+    "camera": "One continuous visual space with smooth pans and soft zooms, never slide changes. The camera starts close on the request bubble, pulls back as the bubble becomes the checklist header, pushes in on the active row and its tool card for each step, pulls back to show the whole board with every tick, and finally the ticked rows collapse into the logo bars. The checklist, tool cards and agent pill keep their identity and position from scene to scene."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "A phone-style chat bubble with a bold 5px deep navy (#172554) outline and off-white fill sits in the middle of the white background. The request 'Book my weekend trip to Lisbon' types in as bold navy text and a brand-violet (#6D4AFF) send arrow line-draws beside it. Three bold 4px deep navy outlined empty checkboxes rise one by one under the bubble, hinting at work to do. Headline animates in top-left with 'whole task' in brand violet.",
+      "on_screen_text": "How does AI get a whole task done?",
+      "voiceover": "You ask AI to book a weekend trip. What happens next?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "The camera eases back. Under the request bubble a reply bubble with a bold 5px deep navy outline grows and fills with bold navy text lines: a list of travel tips. The three empty checkboxes stay empty and a bold 5px deep navy bracket labelled 'still not booked' wraps them. No ticket and no booking appear. Headline changes with a masked slide: 'only writes text' in brand violet.",
+      "on_screen_text": "A plain chatbot only writes text",
+      "voiceover": "A plain chatbot only writes text. It cannot book anything."
+    },
+    {
+      "seconds": "10-14",
+      "visual": "The reply bubble folds down into a deep navy pill labelled 'Agent' with a large soft lavender (#C4B5FD) glow behind its bold navy outline. Three bold 5px brand-violet arms draw outward from the pill to three round bold-outlined action buttons (a magnifier, a calendar page, a bed), showing that it can act and not only write. Headline: 'takes actions' in brand violet.",
+      "on_screen_text": "An AI agent takes actions to finish a task",
+      "voiceover": "An AI agent goes further. It takes actions itself."
+    },
+    {
+      "seconds": "14-18",
+      "visual": "The request bubble slides to the top-left and stretches into the header of a tall off-white checklist card with a bold 5px deep navy outline. The three checkboxes plus one more slide into it as four rows that write themselves in bold navy text: 1 Find flights, 2 Check calendar, 3 Book hotel, 4 Send summary. The Agent pill settles at the left edge of row 1. Headline: 'Plan' in brand violet.",
+      "on_screen_text": "Plan: the task split into small steps",
+      "voiceover": "First it splits the task into small steps."
+    },
+    {
+      "seconds": "18-22",
+      "visual": "The three action buttons slide to the right side and grow into three stacked tool cards with bold 5px deep navy outlines and off-white fills. Their icons line-draw in bold 5px brand violet then gain a soft lavender fill behind the lines: Search (magnifier), Calendar (calendar page), Booking (bed). Each card's bold navy label appears as it lands. Headline: 'Tools' in brand violet.",
+      "on_screen_text": "Tools: apps the agent can use",
+      "voiceover": "Its tools are apps like search and a calendar."
+    },
+    {
+      "seconds": "22-26",
+      "visual": "The camera pushes in on row 1 and the Search card. Row 1 gains a bold 5px brand-violet outline. A bold 5px brand-violet connector draws from row 1 to the Search card, whose outline turns brand violet. An electric-purple (#8B5CF6) request dot carrying a small navy-outlined chip 'flights to Lisbon, Friday' travels along the connector into the card and the magnifier icon sweeps once. Headline: 'request' in brand violet.",
+      "on_screen_text": "It sends the search tool a request",
+      "voiceover": "Step one. It asks the search tool for flights."
+    },
+    {
+      "seconds": "26-30",
+      "visual": "A result chip with a bold 4px deep navy outline and navy text 'Flight DE204, Fri 18:10' (fictional) travels back along the brand-violet connector and docks on row 1. The Agent pill slides up to the chip and a bold 5px electric-purple bracket links the chip to the row text 'Find flights' to show the comparison. A bold 6px brand-violet tick draws in the row 1 checkbox. Headline: 'checks' in brand violet.",
+      "on_screen_text": "It checks every result",
+      "voiceover": "The result comes back and the agent checks it."
+    },
+    {
+      "seconds": "30-34",
+      "visual": "The camera pans down one row. The Agent pill travels to row 2, the first connector retracts and a new bold 5px brand-violet connector draws to the Calendar card. On the Calendar card a small week grid with bold 4px deep navy lines appears and the Saturday cell fills brand violet with a white label 'free'. A chip 'Sat: free' returns to row 2 and a bold 6px brand-violet tick draws. Headline: 'next tool' in brand violet.",
+      "on_screen_text": "Next step, next tool",
+      "voiceover": "Next it checks your calendar. Saturday is free."
+    },
+    {
+      "seconds": "34-38",
+      "visual": "The camera pans down to row 3. The Agent pill moves to it and a bold 5px brand-violet connector draws to the Booking card with a chip 'Hotel Aurora' (fictional). The Booking card's fill turns flat gray-lavender (#D6D2E0) while its 5px deep navy outline and navy label stay bold, and a bold 6px deep navy cross draws over the bed icon. A navy-outlined chip 'sold out' returns to row 3 and the checkbox stays empty. No red is used. Headline: 'fail' in brand violet.",
+      "on_screen_text": "A step can fail",
+      "voiceover": "Then the hotel booking fails. That room is gone."
+    },
+    {
+      "seconds": "38-42",
+      "visual": "A bold 5px electric-purple circular arrow draws once around the Agent pill with the bold navy label 'try again'. The 'sold out' chip slides off and the Booking card returns to its off-white fill and brand-violet outline. The connector redraws carrying a new chip 'Hotel Mira' (fictional), and a result chip 'Booked' returns to row 3. A bold 6px brand-violet tick draws in the row 3 checkbox. Headline: 'tries again' in brand violet.",
+      "on_screen_text": "So it tries again",
+      "voiceover": "So it tries again with another hotel. Booked."
+    },
+    {
+      "seconds": "42-48",
+      "visual": "The camera pulls back to show the whole board. Row 4 'Send summary' gets its bold brand-violet tick as a trip card slides out under the checklist. A bold 6px brand-violet loop arrow draws clockwise around the board through three bold navy-outlined stations labelled 'plan', 'act' and 'check'; an electric-purple dot runs the loop once, lighting each station in brand violet. Headline: 'repeat' in brand violet.",
+      "on_screen_text": "Plan → act → check → repeat",
+      "voiceover": "It plans and acts and checks in a loop until the task is done."
+    },
+    {
+      "seconds": "48-54",
+      "visual": "The trip card rises to the center with a bold 5px deep navy outline, an off-white fill and three bold navy lines: 'Flight DE204', 'Hotel Mira', 'Sat-Sun' (all fictional). Below it a rounded button with a bold 5px brand-violet outline and brand-violet text 'Approve payment' appears and a deep navy outlined hand cursor presses it; the button fills brand violet with white text. The checklist with four bold violet ticks stays visible behind. Headline: 'You approve' in brand violet.",
+      "on_screen_text": "Trip ready. You approve the payment.",
+      "voiceover": "Your trip is ready. Agents can still make mistakes so you approve the payment."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The four ticked checklist rows slide together and stand up as the DataEntropy logo: its four brand-violet bars grow upward left to right, the wordmark reveals, and a soft violet glow sweeps once. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand-violet Inter 700 with a bold 5px brand-violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more AI explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text.",
+    "FAILURE WITHOUT RED: show the failed booking with a flat gray-lavender (#D6D2E0) card fill, a bold deep navy outline and a bold 6px deep navy cross. Never use red, orange or neon.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Keep the checklist, the three tool cards and the Agent pill visually identifiable and in the same places throughout the video.",
+    "Only one checklist row and one tool card are active at a time; at most three focal points per scene.",
+    "Show the order strictly: request goes out to a tool, a result comes back, the agent checks it, and only then the tick is drawn.",
+    "The retry must be visible: the first booking attempt fails, the agent tries a different hotel, the second attempt succeeds.",
+    "Mark the trip, flight number, hotel names and times as fictional examples; do not use real companies or real prices.",
+    "Do not imply that an agent is always right, never needs supervision, or thinks like a person. Show a person approving the payment.",
+    "Explain every necessary term (AI agent, plan, tool, request, loop) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "RequestBubble",
+      "ReplyBubble",
+      "AgentPill",
+      "Checklist",
+      "ChecklistRow",
+      "ToolCard",
+      "Connector",
+      "RequestDot",
+      "ResultChip",
+      "RetryArrow",
+      "LoopArrow",
+      "TripCard",
+      "ApproveButton",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Request text",
+      "Checklist steps",
+      "Tool names and icons",
+      "Request and result chip texts (fictional flight and hotels)",
+      "Which step fails and its retry",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 5, 10, 14, 18, 22, 26, 30, 34, 38, 42, 48, 54, and 59 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, dot or text that is hard to see on white. Confirm the failed step uses no red, that no scene has more than three focal points, and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://www.anthropic.com/engineering/building-effective-agents",
+    "https://lilianweng.github.io/posts/2023-06-23-agent/"
+  ]
+}

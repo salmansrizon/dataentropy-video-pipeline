@@ -1,0 +1,76 @@
+{
+  "brief": "neural-network.json",
+  "story": {
+    "score": 1.98,
+    "confidence": 0.98,
+    "verdict": "PASS"
+  },
+  "energy": {
+    "score": 2.0,
+    "confidence": 1.0,
+    "verdict": "PASS"
+  },
+  "scenes": [
+    {
+      "seconds": "0-3",
+      "faint": 0.05,
+      "faint_verdict": "PASS",
+      "jargon": 0.26,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 9,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "3-8",
+      "faint": 0.06,
+      "faint_verdict": "PASS",
+      "jargon": 0.51,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 11,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "8-14",
+      "faint": 0.09,
+      "faint_verdict": "PASS",
+      "jargon": 0.24,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 11,
+      "text_words": 9,
+      "text_ok": true
+    },
+    {
+      "seconds": "14-20",
+      "faint": 0.17,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.29,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 11,
+      "text_words": 8,
+      "text_ok": true
+    },
+    {
+      "seconds": "20-26",
+      "faint": 0.07,
+      "faint_verdict": "PASS",
+      "jargon": 0.14,
+      "jargon_verdict": "PASS",
+      "vo_words": 11,
+      "text_words": 9,
+      "text_ok": true
+    },
+    {
+      "seconds": "26-30",
+      "faint": 0.09,
+      "faint_verdict": "PASS",
+      "jargon": 0.15,
+      "jargon_verdict": "PASS",
+      "vo_words": 8,
+      "text_words": 2,
+      "text_ok": true
+    }
+  ],
+  "vo_total_words": 61
+}

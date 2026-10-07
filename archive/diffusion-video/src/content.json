@@ -1,0 +1,174 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "prompt": "a cat",
+  "labels": {
+    "jump": "one jump",
+    "noise": "noise",
+    "addNoise": "add noise",
+    "ai": "AI",
+    "counterEnd": "millions",
+    "badge": "Check the details"
+  },
+  "noiseSeed": "entropy",
+  "noiseLevels": [
+    0,
+    0.14,
+    0.34,
+    0.65,
+    1
+  ],
+  "tileKey": ". = lavender backdrop, N = navy outline, W = white fur, V = violet, P = purple",
+  "practiceCat": [
+    "................",
+    "...N...N........",
+    "..NVN.NVN.......",
+    "..NVWNWVN.......",
+    ".NWWWWWWWN......",
+    ".NWWWWWWWN...NN.",
+    ".NWNWWWNWN..NWWN",
+    ".NWWWVWWWN..NWWN",
+    "..NWWWWWN....NWN",
+    "..NVVVVVN....NWN",
+    "..NWWWWWNNN..NWN",
+    ".NWWWWWWWWWNNWWN",
+    ".NWWWWWWWWWWWWN.",
+    ".NWWNWWNWWWWWN..",
+    ".NWWNWWNWWWNN...",
+    ".NNNNNNNNNN....."
+  ],
+  "generatedCat": [
+    "................",
+    "........N...N...",
+    ".......NVN.NVN..",
+    ".NN....NPWNWPN..",
+    "NWWN..NWWWWWWWN.",
+    "NWN...NWNWWWNWN.",
+    "NWN...NWWWPWWWN.",
+    "NWN....NWWWWWN..",
+    "NWWN..VVVVVVVVV.",
+    ".NWWNNNVVVWWWN..",
+    ".NWWPWPWVVWWWWN.",
+    "..NWWWWWVVWWWWN.",
+    "..NWWWWWWWWWWWN.",
+    "..NWWWNWWWWWWWN.",
+    "..NWNWNNWNWNWNN.",
+    "..NNNNNNNNNNNNN."
+  ],
+  "extraToe": {
+    "col": 10,
+    "row": 14
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How does AI draw a\npicture from *static*?",
+      "voiceover": "This picture started as random *static.* How did AI draw it?",
+      "voStart": 0.3,
+      "rate": "-10%"
+    },
+    {
+      "start": 5,
+      "headline": "One big jump\nis *too hard*",
+      "voiceover": "Drawing a whole picture in *one go* is hard.",
+      "voStart": 5.3,
+      "rate": "-18%"
+    },
+    {
+      "start": 8.5,
+      "headline": "*Noise*: random speckles,\nlike TV static",
+      "voiceover": "So AI learns a smaller job: cleaning up random speckles called *noise.*",
+      "voStart": 8.5,
+      "rate": "-6%"
+    },
+    {
+      "start": 14.1,
+      "headline": "It practices on\n*real pictures*",
+      "voiceover": "It practices on *real pictures* like this cat.",
+      "voStart": 14.4,
+      "rate": "-20%"
+    },
+    {
+      "start": 18,
+      "headline": "Add a little noise,\n*step by step*",
+      "voiceover": "We add a *little noise.* Then a little more.",
+      "voStart": 18.3,
+      "rate": "-19%"
+    },
+    {
+      "start": 22,
+      "headline": "Many steps later:\n*pure static*",
+      "voiceover": "After many steps, the cat is *pure static.*",
+      "voStart": 22.3,
+      "rate": "+0%"
+    },
+    {
+      "start": 26,
+      "headline": "The AI *guesses*\nthe added noise",
+      "voiceover": "At each step, the AI *guesses* the noise added.",
+      "voStart": 26.3,
+      "rate": "-10%"
+    },
+    {
+      "start": 30,
+      "headline": "Remove it and the\npicture gets *clearer*",
+      "voiceover": "Take that noise away, and the picture gets *clearer.*",
+      "voStart": 30.3,
+      "rate": "-19%"
+    },
+    {
+      "start": 34,
+      "headline": "Practice on *millions*\nof pictures",
+      "voiceover": "It repeats this practice on *millions* of different pictures.",
+      "voStart": 34.3,
+      "rate": "-12%"
+    },
+    {
+      "start": 38,
+      "headline": "Now start from\n*pure static*",
+      "voiceover": "Now start from *pure static.* You type a cat.",
+      "voStart": 38.3,
+      "rate": "-12%"
+    },
+    {
+      "start": 42,
+      "headline": "*Diffusion*: clearing\nnoise step by step",
+      "voiceover": "Step by step, it clears noise until a new cat appears. That is *diffusion.*",
+      "voStart": 42.3,
+      "rate": "-7%"
+    },
+    {
+      "start": 48,
+      "headline": "A *new picture*,\nnot a stored copy",
+      "voiceover": "It is a *new picture,* not a copy. It can still get details wrong.",
+      "voStart": 48.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 54,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more AI explained simply.",
+      "tts": "Follow Data Entropy for more AI explained simply.",
+      "voStart": 54.3,
+      "rate": "+0%"
+    }
+  ]
+}

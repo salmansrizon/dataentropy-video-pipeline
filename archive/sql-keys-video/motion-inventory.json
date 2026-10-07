@@ -1,0 +1,227 @@
+{
+  "video": "60-second vertical explainer that shows beginners what primary keys and foreign keys are, using a shop with two customers who share a name",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "twin_bands_wipe": {
+      "what": "A lavender band spreads from left to right behind each of the two rows with the same name",
+      "scene": "not unique",
+      "ease": "out",
+      "frames": 18
+    },
+    "twin_marks_enter": {
+      "what": "A violet question mark fades in beside each of the two rows with the same name",
+      "scene": "not unique",
+      "ease": "out",
+      "frames": 14
+    },
+    "twin_exit": {
+      "what": "The lavender bands and question marks fade away",
+      "scene": "primary key",
+      "ease": "in",
+      "frames": 10
+    },
+    "id_numbers_enter": {
+      "what": "An ID number fades in at the end of each customer row, one after another",
+      "scene": "primary key",
+      "ease": "out",
+      "frames": 14
+    },
+    "id_header_light": {
+      "what": "The header of the ID column turns from pale to violet",
+      "scene": "primary key, foreign key",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "attempt_slide_in": {
+      "what": "A new row inside a white chip slides up to the first free line under a table",
+      "scene": "unique, refused",
+      "ease": "out",
+      "frames": 30
+    },
+    "attempt_cross_draw": {
+      "what": "A navy cross draws itself over the value that breaks the rule",
+      "scene": "unique, refused",
+      "ease": "out",
+      "frames": 14
+    },
+    "attempt_exit": {
+      "what": "The refused row and its cross fade away",
+      "scene": "unique, refused",
+      "ease": "in",
+      "frames": 12
+    },
+    "clash_mark_wipe": {
+      "what": "A lavender highlight spreads behind the ID that already exists",
+      "scene": "unique",
+      "ease": "out",
+      "frames": 18
+    },
+    "name_out": {
+      "what": "The customer name in an order slides up and fades out",
+      "scene": "customer's ID",
+      "ease": "in",
+      "frames": 10
+    },
+    "id_in": {
+      "what": "The customer's ID number slides up into its place in the order",
+      "scene": "customer's ID",
+      "ease": "out",
+      "frames": 16
+    },
+    "header_swap": {
+      "what": "The orders header 'customer' fades out and 'customer_id' fades in",
+      "scene": "customer's ID",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "key_link_draw": {
+      "what": "A glowing violet line draws itself from an order's customer ID across the gap to the customer with that ID",
+      "scene": "foreign key",
+      "ease": "out",
+      "frames": 20
+    },
+    "exact_ring_draw": {
+      "what": "A violet outline draws itself around the laptop order and around its customer's row",
+      "scene": "exact",
+      "ease": "out",
+      "frames": 24
+    },
+    "exact_ring_exit": {
+      "what": "The outlines around the order and the customer fade away",
+      "scene": "refused",
+      "ease": "in",
+      "frames": 10
+    },
+    "orphan_reach_draw": {
+      "what": "A navy line draws itself from the new order's customer ID toward the customers table and stops short",
+      "scene": "refused",
+      "ease": "out",
+      "frames": 18
+    },
+    "delete_fade": {
+      "what": "The customer's row fades toward pale gray as if being deleted",
+      "scene": "cannot vanish",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "delete_restore": {
+      "what": "The customer's row returns to navy",
+      "scene": "cannot vanish",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "id_columns_ring": {
+      "what": "A violet outline draws itself around the ID column of each table",
+      "scene": "connected",
+      "ease": "out",
+      "frames": 30
+    }
+  }
+}

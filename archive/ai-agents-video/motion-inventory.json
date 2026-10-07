@@ -1,0 +1,413 @@
+{
+  "video": "60-second vertical explainer that shows how an AI agent gets a task done: it plans steps, uses tools, checks results and retries when a step fails",
+  "animations": {
+    "bubble_enter": {
+      "what": "The request chat bubble fades in, rises slightly and settles",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "request_typing": {
+      "what": "The request text types into the bubble letter by letter at a steady pace",
+      "scene": "hook",
+      "ease": "linear",
+      "frames": 40
+    },
+    "send_arrow_draw": {
+      "what": "A send arrow draws itself beside the request text",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 18
+    },
+    "checkboxes_rise": {
+      "what": "Three empty checkboxes fade in and rise into place one after another under the bubble",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 18
+    },
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the next part of the task board",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 36
+    },
+    "reply_enter": {
+      "what": "The chatbot's reply bubble fades in and grows slightly under the request",
+      "scene": "problem",
+      "ease": "out",
+      "frames": 24
+    },
+    "reply_lines_write": {
+      "what": "Lines of text fill the reply bubble one after another at a steady pace",
+      "scene": "problem",
+      "ease": "linear",
+      "frames": 12
+    },
+    "checkboxes_pushed_down": {
+      "what": "The three empty checkboxes slide down to make room for the reply bubble",
+      "scene": "problem",
+      "ease": "inOut",
+      "frames": 24
+    },
+    "not_booked_bracket": {
+      "what": "A bracket draws itself under the empty checkboxes and its label fades in and rises",
+      "scene": "problem",
+      "ease": "out",
+      "frames": 20
+    },
+    "not_booked_exit": {
+      "what": "The bracket and its label fade away",
+      "scene": "agent",
+      "ease": "in",
+      "frames": 10
+    },
+    "reply_folds_into_agent": {
+      "what": "The reply bubble shrinks and reshapes into a small dark pill",
+      "scene": "agent",
+      "ease": "inOut",
+      "frames": 28
+    },
+    "agent_label_enter": {
+      "what": "The word Agent fades in on the pill and a soft glow appears behind it",
+      "scene": "agent",
+      "ease": "out",
+      "frames": 16
+    },
+    "arms_draw": {
+      "what": "Three lines draw outward from the agent pill toward three action buttons",
+      "scene": "agent",
+      "ease": "out",
+      "frames": 20
+    },
+    "arms_retract": {
+      "what": "The three lines pull back into the agent pill and disappear",
+      "scene": "plan",
+      "ease": "in",
+      "frames": 10
+    },
+    "action_buttons_enter": {
+      "what": "Three round action buttons fade in and grow slightly at the ends of the lines",
+      "scene": "agent",
+      "ease": "out",
+      "frames": 18
+    },
+    "tool_icons_draw": {
+      "what": "The magnifier, calendar and bed icons draw themselves line by line inside the buttons",
+      "scene": "agent",
+      "ease": "out",
+      "frames": 24
+    },
+    "bubble_to_header": {
+      "what": "The request bubble slides up and reshapes into the header of the checklist card",
+      "scene": "plan",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "send_arrow_exit": {
+      "what": "The send arrow fades away",
+      "scene": "plan",
+      "ease": "in",
+      "frames": 10
+    },
+    "card_outline_draw": {
+      "what": "The outline of the tall checklist card draws itself below the header",
+      "scene": "plan",
+      "ease": "out",
+      "frames": 30
+    },
+    "checkboxes_to_rows": {
+      "what": "The three checkboxes slide from under the bubble into the checklist as the first three rows",
+      "scene": "plan",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "fourth_checkbox_enter": {
+      "what": "A fourth checkbox fades in and rises into the last row",
+      "scene": "plan",
+      "ease": "out",
+      "frames": 18
+    },
+    "row_labels_write": {
+      "what": "Each step name writes itself from left to right at a steady pace",
+      "scene": "plan",
+      "ease": "linear",
+      "frames": 20
+    },
+    "agent_settles_in_lane": {
+      "what": "The agent pill slides to the left edge of the first row and shrinks to fit",
+      "scene": "plan",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "buttons_to_tool_cards": {
+      "what": "The three round buttons slide to the right side and grow into three stacked tool cards",
+      "scene": "tools",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "tool_label_enter": {
+      "what": "Each tool card's name fades in and rises while a soft color fills in behind its icon",
+      "scene": "tools",
+      "ease": "out",
+      "frames": 16
+    },
+    "row_outline_draw": {
+      "what": "An outline draws itself around the checklist row the agent is working on",
+      "scene": "steps",
+      "ease": "out",
+      "frames": 14
+    },
+    "row_outline_off": {
+      "what": "The outline around a finished row fades away",
+      "scene": "steps",
+      "ease": "in",
+      "frames": 10
+    },
+    "connector_draw": {
+      "what": "A line draws itself from the active row to its tool card",
+      "scene": "steps",
+      "ease": "out",
+      "frames": 18
+    },
+    "connector_retract": {
+      "what": "The line between a row and its tool card pulls back and disappears",
+      "scene": "steps",
+      "ease": "in",
+      "frames": 10
+    },
+    "tool_outline_active": {
+      "what": "A tool card's outline changes color from navy to violet while the tool is in use",
+      "scene": "steps",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "request_travel": {
+      "what": "A dot and a small request chip glide from the row along the line into the tool card",
+      "scene": "steps",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "magnifier_sweep": {
+      "what": "The magnifier icon on the search card tilts left and right once as it searches",
+      "scene": "steps",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "result_chip_return": {
+      "what": "A result chip glides from the tool card back to the row and docks under the step name",
+      "scene": "steps",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "check_bracket_draw": {
+      "what": "A bracket draws itself linking the result chip to the step name as the agent checks it",
+      "scene": "steps",
+      "ease": "out",
+      "frames": 14
+    },
+    "tick_draw": {
+      "what": "A tick draws itself in the row's checkbox",
+      "scene": "steps",
+      "ease": "out",
+      "frames": 16
+    },
+    "agent_travel": {
+      "what": "The agent pill slides down the checklist to the next row",
+      "scene": "steps",
+      "ease": "inOut",
+      "frames": 22
+    },
+    "calendar_day_fill": {
+      "what": "The Saturday cell on the calendar icon fills with color",
+      "scene": "steps",
+      "ease": "out",
+      "frames": 12
+    },
+    "booking_card_dims": {
+      "what": "The booking card's fill changes to flat gray when the booking fails",
+      "scene": "fail",
+      "ease": "inOut",
+      "frames": 14
+    },
+    "cross_draw": {
+      "what": "A cross draws itself over the bed icon on the booking card",
+      "scene": "fail",
+      "ease": "out",
+      "frames": 12
+    },
+    "sold_out_exit": {
+      "what": "The sold out chip drops slightly and fades away",
+      "scene": "retry",
+      "ease": "in",
+      "frames": 12
+    },
+    "retry_arrow_draw": {
+      "what": "A circular arrow draws itself once around the agent pill and the words try again fade in beside it",
+      "scene": "retry",
+      "ease": "out",
+      "frames": 24
+    },
+    "retry_arrow_exit": {
+      "what": "The circular arrow and its label fade away",
+      "scene": "retry",
+      "ease": "in",
+      "frames": 10
+    },
+    "booking_card_recovers": {
+      "what": "The booking card's fill changes back from gray to white and the cross fades",
+      "scene": "retry",
+      "ease": "inOut",
+      "frames": 14
+    },
+    "summary_chip_enter": {
+      "what": "A trip summary chip fades in and rises under the last step",
+      "scene": "loop",
+      "ease": "out",
+      "frames": 16
+    },
+    "loop_arrow_draw": {
+      "what": "A large loop arrow draws itself around the whole board",
+      "scene": "loop",
+      "ease": "out",
+      "frames": 30
+    },
+    "loop_stations_enter": {
+      "what": "Three labeled stations, plan, act and check, fade in and rise onto the loop one after another",
+      "scene": "loop",
+      "ease": "out",
+      "frames": 16
+    },
+    "loop_dot_run": {
+      "what": "A dot runs once around the loop at a constant speed",
+      "scene": "loop",
+      "ease": "linear",
+      "frames": 70
+    },
+    "loop_station_light": {
+      "what": "Each station changes color to violet as the dot passes it",
+      "scene": "loop",
+      "ease": "inOut",
+      "frames": 10
+    },
+    "loop_exit": {
+      "what": "The loop arrow and its stations fade away",
+      "scene": "outcome",
+      "ease": "in",
+      "frames": 12
+    },
+    "board_dims": {
+      "what": "The task board fades back to a pale version so the trip card stands out",
+      "scene": "outcome",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "summary_to_trip_card": {
+      "what": "The trip summary chip glides to the center and grows into a large trip card",
+      "scene": "outcome",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "trip_lines_enter": {
+      "what": "The flight, hotel and dates lines fade in and rise on the trip card one after another",
+      "scene": "outcome",
+      "ease": "out",
+      "frames": 16
+    },
+    "approve_button_enter": {
+      "what": "The approve payment button fades in and rises below the trip card",
+      "scene": "outcome",
+      "ease": "out",
+      "frames": 18
+    },
+    "cursor_enter": {
+      "what": "A hand cursor fades in and glides onto the approve button",
+      "scene": "outcome",
+      "ease": "out",
+      "frames": 22
+    },
+    "button_press": {
+      "what": "The approve button dips slightly and springs back as the cursor presses it",
+      "scene": "outcome",
+      "ease": "inOut",
+      "frames": 14
+    },
+    "button_fill": {
+      "what": "The approve button's fill changes from white to violet after the press",
+      "scene": "outcome",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind an invisible edge",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out at the end of its scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_words": {
+      "what": "Subtitle words brighten in groups of three as the narrator says them",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "world_fade_out": {
+      "what": "The whole task board fades away before the logo appears",
+      "scene": "outro",
+      "ease": "in",
+      "frames": 18
+    },
+    "checkboxes_to_logo_bars": {
+      "what": "The four ticked checkboxes slide together into a row and become the feet of the logo bars",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "logo_bars_grow": {
+      "what": "Four logo bars grow upward from a baseline one after another, left to right",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "logo_wordmark_reveal": {
+      "what": "The brand name is revealed left to right by a moving edge",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "The logo bars glow brighter, then settle to a soft glow",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises into place under the logo",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises into place",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow on the button slides a little to the right once",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "video": "30-second vertical explainer that shows how retrieval-augmented generation (RAG) works",
+  "animations": {
+    "question_enter": {
+      "what": "The question pill fades in, rises slightly and grows from 96% to full size",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "question_travel": {
+      "what": "The question pill glides to a new area of the scene, following the camera",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 45
+    },
+    "question_into_model": {
+      "what": "The question pill shrinks and disappears into the AI model circle",
+      "scene": "prompt",
+      "ease": "in",
+      "frames": 30
+    },
+    "question_reemerge": {
+      "what": "The question pill comes back out of the AI model and settles above the answer",
+      "scene": "answer",
+      "ease": "out",
+      "frames": 25
+    },
+    "empty_answer_enter": {
+      "what": "An empty AI answer card fades in and rises into place",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "empty_answer_exit": {
+      "what": "The empty AI answer card fades away as the camera leaves",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 25
+    },
+    "typing_dots": {
+      "what": "Three dots pulse in a loop inside the empty answer card, like someone typing",
+      "scene": "hook",
+      "ease": "sine loop",
+      "frames": 45
+    },
+    "answer_stuck_mark": {
+      "what": "The typing dots stop and a large question mark fades in inside the empty card",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 16
+    },
+    "camera_pan": {
+      "what": "The camera pans smoothly across the scene to the next area of the process",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 45
+    },
+    "camera_recap_zoom": {
+      "what": "The camera zooms out to show the whole process at once",
+      "scene": "recap",
+      "ease": "inOut",
+      "frames": 45
+    },
+    "document_enter": {
+      "what": "Two document cards fade in at the edge of the frame",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 30
+    },
+    "document_unfold": {
+      "what": "Each document card unfolds downward, revealing its lines of text",
+      "scene": "chunking",
+      "ease": "out",
+      "frames": 20
+    },
+    "chunk_split": {
+      "what": "Text cards slide out of the documents into a grid, one after another",
+      "scene": "chunking",
+      "ease": "out",
+      "frames": 25
+    },
+    "chunk_to_dot": {
+      "what": "Each text card shrinks into a small dot and flies into a circular map",
+      "scene": "chunking",
+      "ease": "inOut",
+      "frames": 45
+    },
+    "map_ring_draw": {
+      "what": "The circular map's outline draws itself around the dots",
+      "scene": "chunking",
+      "ease": "out",
+      "frames": 30
+    },
+    "map_rings_rotate": {
+      "what": "Dotted rings inside the map turn slowly and continuously",
+      "scene": "retrieval",
+      "ease": "linear",
+      "frames": 900
+    },
+    "other_dots_enter": {
+      "what": "More dots from other documents fade into the map",
+      "scene": "chunking",
+      "ease": "out",
+      "frames": 25
+    },
+    "retrieval_pulse": {
+      "what": "A ring expands outward from the question across the map at a steady speed",
+      "scene": "retrieval",
+      "ease": "linear",
+      "frames": 55
+    },
+    "relevant_dot_highlight": {
+      "what": "A dot that matches the question changes from lavender to strong violet when the ring reaches it",
+      "scene": "retrieval",
+      "ease": "inOut",
+      "frames": 10
+    },
+    "irrelevant_dot_dim": {
+      "what": "A dot that does not match fades to gray when the ring reaches it",
+      "scene": "retrieval",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "retrieval_link_draw": {
+      "what": "A dotted violet line grows from the question to each matching dot",
+      "scene": "retrieval",
+      "ease": "out",
+      "frames": 14
+    },
+    "retrieved_rise": {
+      "what": "The matching dots grow back into labeled cards and rise to stack above the question",
+      "scene": "retrieval",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "cards_into_prompt": {
+      "what": "The question and the three cards slide together into a box labeled Prompt",
+      "scene": "prompt",
+      "ease": "inOut",
+      "frames": 50
+    },
+    "prompt_box_draw": {
+      "what": "The Prompt box outline draws itself",
+      "scene": "prompt",
+      "ease": "out",
+      "frames": 30
+    },
+    "model_draw_fill": {
+      "what": "The AI model circle outline draws itself, then fills with a soft color",
+      "scene": "prompt",
+      "ease": "out",
+      "frames": 30
+    },
+    "cards_absorbed": {
+      "what": "The cards in the prompt shrink and disappear into the AI model circle",
+      "scene": "prompt",
+      "ease": "in",
+      "frames": 30
+    },
+    "model_pulse": {
+      "what": "The AI model circle briefly swells and settles as the prompt enters it",
+      "scene": "prompt",
+      "ease": "inOut",
+      "frames": 23
+    },
+    "model_ring_spin": {
+      "what": "A dashed ring inside the AI model turns continuously, faster while it is working",
+      "scene": "prompt",
+      "ease": "linear",
+      "frames": 900
+    },
+    "answer_card_enter": {
+      "what": "The answer card fades in and rises into place below the model",
+      "scene": "answer",
+      "ease": "out",
+      "frames": 20
+    },
+    "answer_typing": {
+      "what": "The answer text appears word by word at a steady pace",
+      "scene": "answer",
+      "ease": "linear",
+      "frames": 60
+    },
+    "source_tags_emerge": {
+      "what": "Small source tags come out of the AI model and settle in a row below the answer",
+      "scene": "answer",
+      "ease": "out",
+      "frames": 30
+    },
+    "source_connectors": {
+      "what": "Dotted violet lines draw down from the answer to each source tag",
+      "scene": "answer",
+      "ease": "out",
+      "frames": 20
+    },
+    "journey_path_reveal": {
+      "what": "A dotted line traces the route the question has traveled through the scene",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 200
+    },
+    "recap_stage_glow": {
+      "what": "The map, the prompt box and the answer card glow one after another as their stage is named",
+      "scene": "recap",
+      "ease": "out",
+      "frames": 10
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind an invisible edge",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out at the end of its scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_words": {
+      "what": "Subtitle words brighten in groups of three as the narrator says them",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "logo_bars_grow": {
+      "what": "Four logo bars grow upward from a baseline one after another, left to right",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "logo_wordmark_reveal": {
+      "what": "The brand name is revealed left to right by a moving edge",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "The logo bars glow brighter, then settle to a soft glow",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises into place under the logo",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises into place",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow on the button slides a little to the right once",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "world_fade_out": {
+      "what": "The whole process scene fades away before the logo appears",
+      "scene": "outro",
+      "ease": "in",
+      "frames": 18
+    }
+  }
+}

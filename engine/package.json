@@ -1,0 +1,17 @@
+{
+  "name": "@dataentropy/engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared Remotion engine for narrated explainer videos: timing, brand, layout, captions, outro and building blocks.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "MIT",
+  "scripts": {"typecheck": "tsc --noEmit"},
+  "dependencies": {
+    "@remotion/google-fonts": "4.0.529",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {"@types/react": "^18.3.31", "typescript": "^7.0.2"}
+}

@@ -1,0 +1,27 @@
+{
+  "audience": "Beginners: students and early-career learners who want practical data and AI skills. They watch a short vertical video with a voiceover.",
+  "existing": [
+    "How retrieval-augmented generation (RAG) finds documents and uses them to answer a question",
+    "How a large language model writes a reply one token at a time",
+    "How a neural network learns to spot spam emails",
+    "How text embeddings let search find what you mean"
+  ],
+  "candidates": {
+    "ai_agents": {"title": "How an AI agent gets a task done", "idea": "An assistant books a trip: it makes a plan, calls tools like search and calendar, checks each result, and tries again when a step fails"},
+    "hallucination": {"title": "Why chatbots make things up", "idea": "A chatbot invents a book that does not exist because it predicts likely words and has no step that checks facts"},
+    "fine_tuning": {"title": "What fine-tuning does to a model", "idea": "A general model reads many examples of a support team's replies and its answers shift toward that team's style"},
+    "context_window": {"title": "Why a chatbot forgets the start of a long chat", "idea": "A fixed-size window slides along the conversation; the earliest messages fall out of it and the model can no longer see them"},
+    "vector_database": {"title": "How a vector database finds similar items fast", "idea": "Songs are points on a map grouped into neighborhoods; a search only visits the nearest neighborhood and skips the rest"},
+    "attention": {"title": "How attention lets a model know what a pronoun refers to", "idea": "In the sentence 'The cat sat on the mat because it was tired', lines of different strength link the word 'it' back to 'cat'"},
+    "gradient_descent": {"title": "How a model learns by walking downhill", "idea": "A hiker in fog feels the slope and takes steps downhill until reaching the valley, which stands for the smallest error"},
+    "overfitting": {"title": "Memorizing versus learning", "idea": "A student memorizes last year's exam answers and fails new questions; a wiggly line passes through every dot but misses new dots"},
+    "decision_tree": {"title": "How a decision tree decides", "idea": "A loan application falls through yes-or-no questions like a game of twenty questions until it lands in approve or decline"},
+    "kmeans": {"title": "How a computer groups customers by itself", "idea": "Dots for shoppers scatter on a chart; three centers move toward nearby dots again and again until three groups settle"},
+    "recommender": {"title": "How an app guesses what you will watch next", "idea": "Two viewers liked the same films, so a film one of them loved is suggested to the other"},
+    "diffusion": {"title": "How AI draws a picture from noise", "idea": "A picture of a cat is buried in static step by step; the model learns to reverse each step and starts from pure static"},
+    "ab_testing": {"title": "How an A/B test picks the better version", "idea": "Visitors are split at random between a green and a purple button; clicks are counted and the gap is checked against chance"},
+    "sql_join": {"title": "How a SQL join combines two tables", "idea": "A table of students and a table of grades slide together and rows with the same student ID snap into one row"},
+    "etl_pipeline": {"title": "How raw data becomes a dashboard", "idea": "Messy sales files are collected, cleaned and reshaped on a conveyor belt, then loaded into one table that feeds a chart"},
+    "prompt_engineering": {"title": "Why a clear prompt gets a better answer", "idea": "The same request is sent twice, once vague and once with a role, context and format; the two answers are compared side by side"}
+  }
+}

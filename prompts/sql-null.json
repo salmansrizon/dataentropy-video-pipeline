@@ -1,0 +1,172 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what NULL means in SQL, why a row with a missing value drops out of both a test and its opposite, and how to ask for missing values with IS NULL. Carry one example through the whole video: Farah, an HR analyst, splits a staff table by salary and finds that two people are in neither list. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 12 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "TOP: the table 'staff', a white card with a bold 5px deep navy outline and a navy name tab, columns name and salary, five rows; two salary cells are empty and drawn as a bold 4px brand-violet outlined box. MIDDLE: the query card with a bold 5px navy outline and a navy 'SQL' badge. BOTTOM: three answer bins with bold 5px navy outlines labelled 'yes', 'no' and 'unknown'; the third bin has a brand-violet outline.",
+    "interaction_effect": "A test from the query steps down the rows. A row with a salary drops into the 'yes' or the 'no' bin with a bold violet check or a bold navy dash. A row with an empty salary cannot be decided: a bold brand-violet question mark appears on it and it drops into the 'unknown' bin. WHERE then lifts only the 'yes' bin into the result. IS NULL makes the empty cells themselves light up and pass.",
+    "camera": "One continuous space. The camera starts on two finished lists, slides up to the staff table, pushes in on one empty cell, and pulls back to frame table, query and the three bins."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "Two white list cards with bold 5px deep navy outlines sit side by side: 'under 45,000' holds Rafi and '45,000 or more' holds Arif and Nabil, in bold navy. Between them a bold navy counter reads '3 of 5' and a bold brand-violet question mark appears. Headline animates in with 'Mina' in brand violet.",
+      "on_screen_text": "Where did Mina go?",
+      "voiceover": "Two lists should cover everyone. So where did Mina go?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "The camera slides up to a white table card named 'staff' with a bold 5px navy outline: columns name and salary, five rows of bold navy text. The salary cells of Mina and Sara are empty, each drawn as a bold 4px brand-violet outlined box. The camera pushes in on Mina's empty cell. Headline: 'missing' in brand violet.",
+      "on_screen_text": "Her salary is missing",
+      "voiceover": "Her salary was never entered. The cell is empty."
+    },
+    {
+      "seconds": "10-15",
+      "visual": "Inside each empty cell the bold navy word 'NULL' appears on a soft lavender pill, and a bold navy label 'value unknown' with a brand-violet arrow points at it. Headline: 'NULL' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "NULL means the value is unknown",
+      "voiceover": "SQL marks a missing value as NULL. It means unknown."
+    },
+    {
+      "seconds": "15-20",
+      "visual": "Beside the NULL pill two white chips with bold navy outlines rise: one holds a bold navy zero and one holds two empty quote marks. A bold 5px brand-violet 'not equal' sign draws between NULL and each chip. Headline: 'not zero' in brand violet.",
+      "on_screen_text": "NULL is not zero",
+      "voiceover": "NULL is not zero and it is not blank text."
+    },
+    {
+      "seconds": "20-26",
+      "visual": "The camera pulls back. A white query card with a bold 5px navy outline types 'WHERE salary < 45000' with WHERE in bold brand violet. Under it three bins with bold 5px outlines appear: 'yes', 'no' and, with a brand-violet outline, 'unknown'. A violet band steps down the staff rows: Rafi drops into 'yes', Arif and Nabil into 'no', and Mina and Sara get a bold violet question mark and drop into 'unknown'. Headline: 'still unknown' in brand violet.",
+      "on_screen_text": "Compare with unknown, get unknown",
+      "voiceover": "Is an unknown salary under forty five thousand? Nobody can say."
+    },
+    {
+      "seconds": "26-31",
+      "visual": "A bold 5px brand-violet arrow lifts only the 'yes' bin into a result table with a bold violet outline: one row, Rafi. The 'no' and 'unknown' bins fade to pale gray and stay behind. Headline: 'true' in brand violet.",
+      "on_screen_text": "WHERE keeps only true rows",
+      "voiceover": "WHERE keeps a row only when the answer is yes. Unknown is left out."
+    },
+    {
+      "seconds": "31-36",
+      "visual": "The query's condition slides out and 'WHERE salary = NULL' slides in. The band steps down the rows again and every row, even Mina and Sara, drops into the 'unknown' bin; the result table is left empty with a bold navy label '0 rows'. Headline: '= NULL' in brand violet.",
+      "on_screen_text": "= NULL finds nothing",
+      "voiceover": "Even asking if salary equals NULL finds nothing."
+    },
+    {
+      "seconds": "36-41",
+      "visual": "The condition changes once more to 'WHERE salary IS NULL' with IS NULL in bold brand violet. The two NULL pills in the staff table glow with a soft violet glow, Mina and Sara drop into 'yes', and the result table fills with two rows in bold navy. Headline: 'IS NULL' in brand violet.",
+      "on_screen_text": "Ask with IS NULL",
+      "voiceover": "To find missing values ask IS NULL."
+    },
+    {
+      "seconds": "41-46",
+      "visual": "Two white counter chips with bold navy outlines rise beside the staff table: 'COUNT(*)' counts every row up to 5, and 'COUNT(salary)' steps over the two NULL pills and stops at 3. Headline: 'skips NULLs' in brand violet.",
+      "on_screen_text": "COUNT of a column skips NULLs",
+      "voiceover": "Counting a column skips NULLs. Five staff but three salaries."
+    },
+    {
+      "seconds": "46-50",
+      "visual": "The three filled salary cells send bold brand-violet lines into one white chip that reads 'AVG(salary)' and counts up to 51,000; the two NULL pills send nothing. Headline: 'ignores' in brand violet.",
+      "on_screen_text": "The average ignores them too",
+      "voiceover": "And the average uses only those three."
+    },
+    {
+      "seconds": "50-54",
+      "visual": "The camera pulls back to the staff table with its two NULL pills ringed by bold 5px brand-violet outlines and a white badge with a bold violet outline and navy text 'Check for NULL'. Headline: 'NULL' in brand violet.",
+      "on_screen_text": "Check for NULL before trusting a number",
+      "voiceover": "So check for NULL before you trust a number."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark reveals, and a soft violet glow settles. The tagline 'Practical Data Skills. Real Career Impact.' appears, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Show three outcomes for a test: yes, no and unknown. WHERE keeps only 'yes'.",
+    "NULL is drawn as a labelled pill, never as a zero, a dash or blank space once it has been introduced.",
+    "The numbers must be right: five rows, three salaries (50,000, 42,000 and 61,000), average 51,000.",
+    "Describe the default behaviour. Do not mention database settings that change how '= NULL' works.",
+    "Do not use red or a warning color for NULL or for the empty result; use navy and brand violet."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "StaffTable",
+      "NullPill",
+      "NotEqualChips",
+      "QueryCard",
+      "TestBand",
+      "AnswerBins",
+      "ResultTable",
+      "CounterChips",
+      "AverageChip",
+      "CheckBadge",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Staff rows and which salaries are missing",
+      "Test threshold",
+      "The three conditions shown",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels, broken transformations, timing gaps, and any line or text that is hard to see on white. Confirm that every row lands in the right bin for all three conditions, that the counters read 5 and 3, and that the average matches the three salaries shown. Confirm that no scene has more than three focal points and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/functions-comparison.html",
+    "https://www.postgresql.org/docs/current/functions-logical.html",
+    "https://www.postgresql.org/docs/current/functions-aggregate.html",
+    "https://dev.mysql.com/doc/refman/8.4/en/working-with-null.html"
+  ]
+}

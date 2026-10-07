@@ -1,0 +1,169 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation titled 'How a computer groups customers by itself'. It shows beginners (students and early-career learners) how k-means clustering works: you choose how many groups you want, that many center markers land on a chart, every dot joins its nearest center, every center jumps to the middle of its dots, and the two steps repeat until no dot switches. Carry one relatable example through the whole video: a small fictional cafe, 'Corner Bean', plots its customers by visits per month and spend per visit and wants three customer groups. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics. The visual world must also differ from the other DataEntropy videos (RAG: documents flying into a map; LLM: token tiles and probability bars; neural network: nodes and weights; embeddings: points in a meaning space). This video is a labeled scatter chart with two axes, tick numbers and axis titles, never an abstract point cloud."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring data learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, chart axes and main outlines; brand violet (#6D4AFF) for key words and active paths; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as large filled shapes or glows placed behind a darker outline. The three customer groups use only brand colors and are told apart by shape as well as color: solid deep navy circles, solid brand violet rounded squares, and white triangles with a bold 5px electric purple outline. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft violet-tinted shadows under cards. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned, maximum two lines, with one or two key words in brand violet. Labels weight 500, at least 32px, deep navy. Maximum 12 words of headline text per scene.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins.",
+    "structure": "Hook 0-5s, problem 5-14s, explanation 14-42s, outcome 42-54s, call to action 54-60s. Twelve scenes of 4-6 seconds each."
+  },
+  "central_visual": {
+    "description": "One scatter chart stays on screen for the whole video. It sits in the middle of the frame (about x 130-960, y 480-1300), between the left-aligned headline at the top and the navy subtitle bar below. Bold 5px deep navy axes with rounded ends, tick numbers and titles: horizontal 'Visits per month' (0-12), vertical 'Spend per visit' ($0-$40). About 30 customer dots sit on it in three loose areas: many visits and small spend (bottom right), few visits and big spend (top left), few visits and small spend (bottom left). A small cafe shopfront for the fictional 'Corner Bean' sits above the chart's top-right corner and stays in the world as the source of the dots. All customer positions, names and amounts are fictional examples.",
+    "interaction_effect": "Three large center markers (a navy circle, a brand violet rounded square and an electric purple triangle, each about twice the size of a customer dot, with a bold 6px deep navy outline, a navy plus sign inside and a soft lavender glow behind) land on the chart. Each customer dot draws a bold violet line to its nearest center and morphs into that center's shape and color. Each center then slides along a bold dashed navy trail to the middle of its own dots. Dots near a border flip shape and color when another center becomes nearer. The cycle repeats with shorter and shorter jumps until nothing changes.",
+    "camera": "One continuous world with a camera: it starts on the shopfront, tilts down as the dots fall onto the chart, pushes in on single dots and border regions during the explanation, and pulls back to the full chart for the result. No slide changes; dots and centers keep their identity from the first frame to the logo hand-off."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "The camera opens on a small cafe shopfront for the fictional 'Corner Bean', drawn with a bold 5px deep navy (#172554) outline and a soft lavender (#C4B5FD) fill on its awning. Customer dots (white circles with a bold 4px deep navy outline) leave the door one after another and drop down along bold 5px electric purple (#8B5CF6) curved paths. The camera tilts down with them to an empty chart frame whose two bold 5px navy axes draw from the corner outward. Headline animates in top-left with 'group' in brand violet (#6D4AFF).",
+      "on_screen_text": "How does a computer group customers by itself?",
+      "voiceover": "Can a computer sort a shop's customers into groups by itself?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "Axis titles and tick numbers write on in deep navy: 'Visits per month' along the bottom, 'Spend per visit' up the side. The camera pushes in on one falling dot. A navy tag reads 'Maya: 8 visits, $5 (fictional)'. Two bold 4px brand violet guide lines draw from the dot to the 8 on the bottom axis and to the $5 on the side axis, then the dot settles where they cross. The camera eases back as the other dots settle the same way, each with a short drop. Headline: 'one customer' in brand violet.",
+      "on_screen_text": "Each dot is one customer",
+      "voiceover": "Each dot is one customer placed by visits and spending."
+    },
+    {
+      "seconds": "10-14",
+      "visual": "The full chart holds about 30 dots, all identical white circles with bold 4px navy outlines. A bold 5px brand violet lasso line starts to circle one area of dots, hesitates, unwinds, tries a different area and unwinds again, ending as a bold violet question mark above the chart. The shopfront is still visible above the chart's corner. Headline: 'groups' in brand violet.",
+      "on_screen_text": "All dots look alike. Where are the groups?",
+      "voiceover": "All the dots look alike. Where are the groups?"
+    },
+    {
+      "seconds": "14-19",
+      "visual": "The question mark splits into three large center markers that fall onto the chart at scattered spots: a deep navy circle, a brand violet rounded square and an electric purple triangle, each with a bold 6px navy outline, a navy plus sign inside and a soft lavender glow behind it. A navy label draws beside one marker: 'center = a guess for the middle of a group'. A small navy counter card reads 'groups wanted: 3'. Headline: 'three centers' in brand violet.",
+      "on_screen_text": "Ask for three groups. Drop three centers.",
+      "voiceover": "We ask for three groups. Three center markers land anywhere."
+    },
+    {
+      "seconds": "19-24",
+      "visual": "The camera pushes in on one customer dot. Three bold 4px navy measuring lines stretch from it to the three centers; the shortest one turns brand violet and thickens to 6px, the other two retract. The dot morphs into that center's shape and color. The camera pulls back while the same thing sweeps across the chart like a wave: every dot snaps a bold violet line to its nearest center and becomes a solid navy circle, a solid violet rounded square or a white triangle with a bold 5px electric purple outline. Navy label: 'nearest = shortest distance'. Headline: 'nearest' in brand violet.",
+      "on_screen_text": "Each dot joins its nearest center",
+      "voiceover": "Every dot joins its nearest center and takes that center's color."
+    },
+    {
+      "seconds": "24-29",
+      "visual": "The connecting lines of the navy group pull tight like strings. The navy center marker slides along a bold 5px dashed navy trail to the balance point of its dots, and the strings shorten as it arrives. The violet and electric purple centers then jump the same way, one after the other. Navy label beside the moved center: 'middle = average position of its dots'. Each center's old spot keeps a small navy outlined ring so the jump stays readable. Headline: 'jumps' in brand violet.",
+      "on_screen_text": "Each center jumps to the middle",
+      "voiceover": "Then each center jumps to the middle of its own dots."
+    },
+    {
+      "seconds": "29-33",
+      "visual": "The camera pushes in on the border between the navy group and the violet group. Because the centers moved, four dots are now nearer to the other center: their bold violet connecting lines swing across to the new center, and each dot flips shape and color, navy circle to violet rounded square or the reverse, with a quick bold 5px violet ring pulse. Headline: 'switch' in brand violet.",
+      "on_screen_text": "Some dots switch groups",
+      "voiceover": "Now some dots are closer to a different center."
+    },
+    {
+      "seconds": "33-38",
+      "visual": "The camera pulls back to the full chart. The two steps run three more times at a steady rhythm: dots near the borders flip, then the three centers slide along bold dashed navy trails. Every jump is shorter than the one before, and fewer dots flip each time. A navy round counter card in the chart's top-right corner counts 'round 2', 'round 3', 'round 4', and two bold violet arrows chase each other in a loop beside it. Headline: 'repeat' in brand violet.",
+      "on_screen_text": "Join. Jump. Repeat.",
+      "voiceover": "Dots join the nearest center and centers jump again and again."
+    },
+    {
+      "seconds": "38-42",
+      "visual": "One more round runs: no dot flips and the three centers stay exactly where they are, each giving one calm lavender glow pulse behind its bold navy outline. The looping arrows slow down and close into a bold 5px brand violet check mark, and the counter card reads 'no changes'. A bold 5px outline in each group's own color draws around its dots: three separate groups on the chart. Headline: 'settled' in brand violet.",
+      "on_screen_text": "No dot switches. The groups are settled.",
+      "voiceover": "When no dot switches the groups are settled."
+    },
+    {
+      "seconds": "42-48",
+      "visual": "The camera holds on the finished chart. A navy name plate slides up beside it and builds in two parts as the voice says them: 'k' with a bold violet bracket pointing at the three group outlines and the note 'k = 3 groups, you choose it', then 'means' with a violet bracket pointing at the three center markers and the note 'mean = average spot'. The parts join into 'k-means'. A small off-white badge with a bold 4px brand violet outline and navy text appears: 'Different start spots can give different groups'. Headline: 'k-means' in brand violet.",
+      "on_screen_text": "This is k-means",
+      "voiceover": "This is k-means. K is how many groups. Mean is the average spot."
+    },
+    {
+      "seconds": "48-54",
+      "visual": "A navy tag rises out of each group outline, written by the shop owner: 'Daily regulars' on the many-visits small-spend group, 'Big-basket visitors' on the few-visits big-spend group, 'Rare drop-ins' on the few-visits small-spend group (fictional names). From the shopfront above the chart, three offer cards with bold 4px navy outlines travel along bold 5px brand violet curved paths, one to each group, and each card takes its group's shape as an icon. Small navy note: 'the computer finds groups, people name them'. Headline: 'right offer' in brand violet.",
+      "on_screen_text": "Three groups. The right offer for each.",
+      "voiceover": "The shop names each group and sends the right offer to each one."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The camera pulls back as the chart shrinks. The three center markers and one dot slide together into a row and stretch upward into the four brand violet bars of the DataEntropy logo, growing left to right; the wordmark reveals and a soft violet glow sweeps once behind it. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand violet Inter 700 with a bold 5px brand violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least one second.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more data skills explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "The chart must read as a real scatter chart at every moment: two bold navy axes, tick numbers, and the titles 'Visits per month' and 'Spend per visit' stay visible whenever the chart is in frame.",
+    "Keep the cafe example and the same customer dots identifiable throughout; dots never appear or vanish after scene 2.",
+    "Tell the three groups apart by shape as well as color (navy circle, violet rounded square, white triangle with electric purple outline). Never add a color outside the brand palette.",
+    "Show the two steps as separate actions in the right order: dots are assigned to the nearest center first, then centers move to the average of their dots. Centers never move while dots are still switching.",
+    "Compute dot assignments and center positions with real k-means on the fictional dataset so every frame is consistent; use a fixed seed for the start positions.",
+    "Mark all customer names, values and group names as fictional examples.",
+    "Do not imply the computer knows what the groups mean, that three is automatically the right number of groups, or that the result is the only possible one. People choose k and name the groups; a different start can give different groups.",
+    "Explain every necessary term (center, nearest, middle, k-means) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "Shopfront",
+      "ScatterChart",
+      "ChartAxes",
+      "CustomerDot",
+      "CenterMarker",
+      "NearestLine",
+      "CenterTrail",
+      "GroupOutline",
+      "RoundCounter",
+      "NamePlate",
+      "OfferCard",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Customer points (visits, spend)",
+      "Number of groups and start positions of the centers",
+      "Axis titles and ranges",
+      "Group names and offer text",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 5, 10, 14, 19, 24, 29, 33, 38, 42, 48, 54, and 59 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, dot or text that is hard to see on white. Confirm the axes, tick numbers and axis titles are readable, the three groups can be told apart without relying on color alone, and all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+    "https://developers.google.com/machine-learning/clustering/kmeans/overview",
+    "https://en.wikipedia.org/wiki/K-means_clustering"
+  ]
+}

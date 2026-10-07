@@ -1,0 +1,215 @@
+{
+  "video": "60-second vertical explainer that shows beginners what a database transaction is, using a bank transfer that must happen completely or not at all",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "balance_out": {
+      "what": "The old balance in a row slides up and fades out",
+      "scene": "hook, transaction, COMMIT",
+      "ease": "in",
+      "frames": 10
+    },
+    "balance_in": {
+      "what": "The new balance slides up into its place",
+      "scene": "hook, transaction, COMMIT",
+      "ease": "out",
+      "frames": 16
+    },
+    "total_count": {
+      "what": "The total in the chip above the table counts steadily to its new value",
+      "scene": "hook, transaction",
+      "ease": "linear",
+      "frames": 16
+    },
+    "step_check_draw": {
+      "what": "A violet check mark fades in beside the first step",
+      "scene": "crash between",
+      "ease": "out",
+      "frames": 14
+    },
+    "crash_cross_draw": {
+      "what": "A navy cross draws itself where the crash happens",
+      "scene": "crash between, undone",
+      "ease": "out",
+      "frames": 14
+    },
+    "steps_exit": {
+      "what": "The two step chips, the cross and the crash label fade away",
+      "scene": "transaction",
+      "ease": "in",
+      "frames": 10
+    },
+    "line_band_enter": {
+      "what": "A lavender band fades in behind the BEGIN line of the query",
+      "scene": "BEGIN",
+      "ease": "out",
+      "frames": 14
+    },
+    "line_band_move": {
+      "what": "The lavender band slides to the line of the query being explained",
+      "scene": "not final, pair, COMMIT, undone",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "line_band_exit": {
+      "what": "The lavender band fades away",
+      "scene": "half a transfer",
+      "ease": "in",
+      "frames": 10
+    },
+    "pending_header_light": {
+      "what": "The header of a third column named 'pending' turns from invisible to violet",
+      "scene": "BEGIN",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "pending_pill_wipe": {
+      "what": "A lavender pill with a new balance spreads from left to right into the pending column",
+      "scene": "not final, pair, undone",
+      "ease": "out",
+      "frames": 18
+    },
+    "pending_pill_exit": {
+      "what": "The lavender pending pill fades away",
+      "scene": "COMMIT, undone",
+      "ease": "in",
+      "frames": 12
+    },
+    "commit_check_draw": {
+      "what": "A violet check mark fades in beside the total",
+      "scene": "COMMIT",
+      "ease": "out",
+      "frames": 14
+    },
+    "end_line_out": {
+      "what": "The word COMMIT in the query slides up and fades out",
+      "scene": "undone",
+      "ease": "in",
+      "frames": 10
+    },
+    "end_line_in": {
+      "what": "The word ROLLBACK slides up into its place",
+      "scene": "undone",
+      "ease": "out",
+      "frames": 16
+    },
+    "crash_exit": {
+      "what": "The cross and the crash label fade away",
+      "scene": "half a transfer",
+      "ease": "in",
+      "frames": 10
+    },
+    "total_ring_draw": {
+      "what": "A violet outline draws itself around the total chip",
+      "scene": "right",
+      "ease": "out",
+      "frames": 24
+    }
+  }
+}

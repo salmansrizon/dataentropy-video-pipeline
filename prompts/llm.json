@@ -1,0 +1,126 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 30-second, 9:16 DataEntropy explainer animation that shows beginners (students and early-career learners) how a large language model (LLM) writes a reply: it splits text into tokens, gives every possible next token a probability, uses attention to look back at context, and adds one token at a time. Carry one relatable example through the whole video: a student asks an AI chatbot to 'Write a thank-you note to my teacher.' Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 30,
+    "total_frames": 900,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring AI learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels and main outlines; brand violet (#6D4AFF) for key words, the chosen token and active paths; electric purple (#8B5CF6) for motion accents, probability bars and attention links; soft lavender (#C4B5FD) only as large filled shapes or glows placed behind a darker outline. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned, maximum two lines, with one or two key words in brand violet. Labels weight 500, at least 32px, deep navy. Maximum 12 words of on-screen text per scene.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "One chat window stays on screen for the whole video. The student's prompt 'Write a thank-you note to my teacher.' splits into token tiles, the tiles flow into a rounded LLM node, and the reply 'Thank you for your ___' grows one token at a time as the model fills each blank.",
+    "interaction_effect": "At each blank, a short column of candidate next tokens rises from the LLM node with probability bars (illustrative values: 'help' 62%, 'support' 21%, 'time' 9%). Bold electric-purple attention links arc from the blank back to 'teacher' and 'thank', showing which earlier words it is using. The chosen token turns brand violet and slides into the reply; the others drop back into the node.",
+    "camera": "Use one continuous visual space with smooth pans and soft zooms. Token tiles keep their identity from prompt to model to reply."
+  },
+  "timeline": [
+    {
+      "seconds": "0-3",
+      "visual": "A chat window with a bold 5px deep navy (#172554) outline sits on the white background. The student's message 'Write a thank-you note to my teacher.' types in on an off-white card. A brand-violet (#6D4AFF) cursor blinks in the reply box, then 'Thank you for your' appears word by word. Headline animates in top-left: 'write' in brand violet.",
+      "on_screen_text": "How does AI write a reply?",
+      "voiceover": "How does an AI chatbot actually write its reply?"
+    },
+    {
+      "seconds": "3-8",
+      "visual": "The camera eases back. A deep navy outlined database cylinder labelled 'answer lookup?' (5px stroke) slides in beside the chat, then a bold 6px brand-violet X draws across it and it slides away. In its place a rounded LLM node appears with a 5px deep navy outline and a large soft lavender (#C4B5FD) glow behind it. Label 'predicts' in brand violet.",
+      "on_screen_text": "No answer lookup. It predicts the next piece.",
+      "voiceover": "It doesn't look up answers. It predicts text, piece by piece."
+    },
+    {
+      "seconds": "8-14",
+      "visual": "The prompt card splits into token tiles (off-white fill, 4px deep navy outlines, navy text), with one word shown split into two pieces as an illustrative example; label 'token = a word or word piece'. The tiles travel along bold 5px electric-purple (#8B5CF6) curved paths into the LLM node. Out of the node rises a column of candidate next tokens with electric-purple filled bars outlined in 4px deep navy and navy percentages: 'help' 62%, 'support' 21%, 'time' 9% (illustrative). Small navy caption: 'every token it knows gets a probability'.",
+      "on_screen_text": "Text → tokens → a probability for each next token",
+      "voiceover": "Text becomes tokens, word pieces. It rates every possible next token."
+    },
+    {
+      "seconds": "14-20",
+      "visual": "Focus moves to the blank after 'Thank you for your'. Bold 5px electric-purple attention arcs draw from the blank back to the tokens 'teacher' and 'thank', which gain 5px brand-violet outlines. The 'help' tile turns brand violet and slides into the reply; the other candidates sink back into the node. The loop repeats quickly for two more tokens: 'with', 'everything'. Label 'attention = looking back at related words' in deep navy.",
+      "on_screen_text": "Attention looks back at context, one token at a time",
+      "voiceover": "Attention looks back at related words, like teacher, then picks one."
+    },
+    {
+      "seconds": "20-26",
+      "visual": "Camera zooms out. Behind the LLM node, a stack of text pages with 4px deep navy outlines streams in along bold 5px brand-violet paths and settles as the node's 'training' memory, labelled 'learned from huge amounts of text'. The finished reply sits in the chat. A small off-white badge with a 4px brand-violet outline and navy text appears: 'Check important facts'.",
+      "on_screen_text": "Learned patterns from lots of text. Can still be wrong.",
+      "voiceover": "It learned patterns from huge amounts of text, so double-check facts."
+    },
+    {
+      "seconds": "26-30",
+      "visual": "The reply's token tiles slide together and hand off into the DataEntropy logo: its four brand-violet bars grow upward left to right, the wordmark reveals, and a soft violet glow sweeps once. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand-violet Inter 700 with a bold 5px brand-violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least one second.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy to learn more AI, explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text. Never render elements faint, pale, hairline, ghosted or in light gray.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Keep the chat window and the example prompt visually identifiable throughout the video.",
+    "Show generation strictly one token at a time; each new token is chosen from a probability list, not retrieved whole.",
+    "Label probability numbers as illustrative; do not present them as real model outputs.",
+    "Do not imply the model looks up answers in a database, understands like a person, or is always correct.",
+    "Explain every necessary term (token, probability, attention, training) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "ChatWindow",
+      "PromptCard",
+      "TokenTile",
+      "LLMNode",
+      "ProbabilityBars",
+      "AttentionArc",
+      "ReplyLine",
+      "TrainingStack",
+      "FactCheckBadge",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Prompt text",
+      "Reply tokens",
+      "Candidate tokens and illustrative probabilities",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "30-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 3, 8, 14, 20, 26, and 29 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, dot or text that is hard to see on white. Confirm all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://developers.google.com/machine-learning/crash-course/llm/transformers",
+    "https://www.3blue1brown.com/lessons/mini-llm",
+    "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+  ]
+}

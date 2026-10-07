@@ -1,0 +1,263 @@
+{
+  "video": "60-second vertical explainer that shows beginners what a common table expression is: a named first step inside one SQL query, using customer order totals",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "step_arrow_draw": {
+      "what": "A violet arrow draws itself from the first step chip down to the second",
+      "scene": "two steps",
+      "ease": "out",
+      "frames": 20
+    },
+    "steps_exit": {
+      "what": "The two step chips and the arrow fade away",
+      "scene": "builds totals",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing_fast": {
+      "what": "The lines of the nested query are typed letter by letter",
+      "scene": "hard to read",
+      "ease": "linear",
+      "frames": 30
+    },
+    "inner_mark_wipe": {
+      "what": "A lavender band spreads from left to right behind the inner query",
+      "scene": "hard to read",
+      "ease": "out",
+      "frames": 18
+    },
+    "query_line_out": {
+      "what": "A line of the query slides up and fades out",
+      "scene": "WITH",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_line_in": {
+      "what": "A new line of the query slides up into its place",
+      "scene": "WITH",
+      "ease": "out",
+      "frames": 16
+    },
+    "name_pill_wipe": {
+      "what": "A lavender pill spreads from left to right behind the name 'totals' in the query",
+      "scene": "WITH",
+      "ease": "out",
+      "frames": 18
+    },
+    "total_names_enter": {
+      "what": "The customer names fade in in the totals table, one after another",
+      "scene": "builds totals",
+      "ease": "out",
+      "frames": 14
+    },
+    "amount_chip_enter": {
+      "what": "A white chip with a violet outline fades in around an order's amount",
+      "scene": "builds totals",
+      "ease": "out",
+      "frames": 12
+    },
+    "amount_travel": {
+      "what": "The amount travels in a shallow arc from the orders table to its customer's row in the totals table",
+      "scene": "builds totals",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "amount_chip_exit": {
+      "what": "The travelling amount fades out as it reaches the totals table",
+      "scene": "builds totals",
+      "ease": "in",
+      "frames": 8
+    },
+    "total_count": {
+      "what": "A customer's total counts up as each amount arrives",
+      "scene": "builds totals",
+      "ease": "linear",
+      "frames": 12
+    },
+    "definition_ring_draw": {
+      "what": "A violet outline draws itself around the lines of the query that define totals",
+      "scene": "inside this query",
+      "ease": "out",
+      "frames": 30
+    },
+    "definition_ring_exit": {
+      "what": "The outline around those lines fades away",
+      "scene": "like any table",
+      "ease": "in",
+      "frames": 10
+    },
+    "final_mark_wipe": {
+      "what": "A lavender band spreads from left to right behind the last two lines of the query",
+      "scene": "like any table",
+      "ease": "out",
+      "frames": 18
+    },
+    "test_band_enter": {
+      "what": "A violet outlined band fades in over the first row of the totals table",
+      "scene": "like any table",
+      "ease": "out",
+      "frames": 12
+    },
+    "test_band_step": {
+      "what": "The violet band slides down from one totals row to the next",
+      "scene": "like any table",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "test_band_exit": {
+      "what": "The violet band fades away after the last row",
+      "scene": "like any table",
+      "ease": "in",
+      "frames": 8
+    },
+    "check_draw": {
+      "what": "A violet check mark fades in beside a total that passes",
+      "scene": "like any table",
+      "ease": "out",
+      "frames": 14
+    },
+    "total_dim": {
+      "what": "The totals row that fails fades from navy to pale gray",
+      "scene": "like any table",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "name_travel": {
+      "what": "The name of a customer who passes travels from the totals table down into the result table",
+      "scene": "like any table",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "step_badge_enter": {
+      "what": "A round violet badge with a step number fades in beside a line of the query",
+      "scene": "top to bottom",
+      "ease": "out",
+      "frames": 14
+    },
+    "read_arrow_draw": {
+      "what": "A violet arrow draws itself down the left side of the query from step one to step two",
+      "scene": "top to bottom",
+      "ease": "out",
+      "frames": 24
+    },
+    "totals_exit": {
+      "what": "The totals table, its check marks and its 'temporary' label fade away",
+      "scene": "is gone",
+      "ease": "in",
+      "frames": 14
+    },
+    "result_ring_draw": {
+      "what": "A violet outline draws itself around the result table",
+      "scene": "named steps",
+      "ease": "out",
+      "frames": 30
+    }
+  }
+}

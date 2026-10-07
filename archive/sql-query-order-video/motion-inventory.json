@@ -1,0 +1,287 @@
+{
+  "video": "60-second vertical explainer that shows beginners that SQL works through a query's clauses in a different order from the one they are written in, using a sales report query that fails",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "strip_wipe": {
+      "what": "Each line of the query is revealed from left to right, one line after another",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "error_underline_draw": {
+      "what": "A navy underline draws itself under the word 'total' in the filter line",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 18
+    },
+    "band_enter": {
+      "what": "A lavender band fades in behind the SELECT line of the query",
+      "scene": "SELECT first",
+      "ease": "out",
+      "frames": 14
+    },
+    "band_step": {
+      "what": "The lavender band slides to the line of the clause that SQL works on next",
+      "scene": "FROM, WHERE, GROUP BY, SELECT, ORDER BY",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "band_exit": {
+      "what": "The lavender band fades away",
+      "scene": "logical order",
+      "ease": "in",
+      "frames": 10
+    },
+    "badge_enter": {
+      "what": "A round violet badge with a step number fades in beside a clause",
+      "scene": "FROM, WHERE, GROUP BY, SELECT, ORDER BY",
+      "ease": "out",
+      "frames": 14
+    },
+    "table_tab_light": {
+      "what": "The name tab of the sales table turns from navy to violet",
+      "scene": "FROM",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "rows_filter_dim": {
+      "what": "The rows from the other year fade from navy to pale gray",
+      "scene": "WHERE",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "rows_regroup": {
+      "what": "The rows of the sales table slide past each other so that rows of the same region sit together",
+      "scene": "GROUP BY",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "group_outline_draw": {
+      "what": "A navy outline draws itself around each group of rows",
+      "scene": "GROUP BY",
+      "ease": "out",
+      "frames": 24
+    },
+    "group_outline_exit": {
+      "what": "The outlines around the groups fade away",
+      "scene": "SELECT",
+      "ease": "in",
+      "frames": 10
+    },
+    "group_rows_exit": {
+      "what": "The extra rows of each group and the filtered rows fade out of the table",
+      "scene": "SELECT",
+      "ease": "in",
+      "frames": 12
+    },
+    "total_count": {
+      "what": "The amount in each group's remaining row counts up steadily to the group's total",
+      "scene": "SELECT",
+      "ease": "linear",
+      "frames": 26
+    },
+    "table_shrink": {
+      "what": "The table gets shorter and each group's row slides up, leaving one row per group",
+      "scene": "SELECT",
+      "ease": "inOut",
+      "frames": 24
+    },
+    "total_header_wipe": {
+      "what": "A violet pill with the word 'total' spreads from left to right over the amount header",
+      "scene": "SELECT",
+      "ease": "out",
+      "frames": 18
+    },
+    "year_column_dim": {
+      "what": "The year column fades from navy to pale gray",
+      "scene": "SELECT",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "alias_pill_wipe": {
+      "what": "A lavender highlight spreads from left to right behind the word 'total' at the end of the SELECT line",
+      "scene": "SELECT",
+      "ease": "out",
+      "frames": 18
+    },
+    "rows_sort": {
+      "what": "The two rows of the table swap places so the smaller total is on top",
+      "scene": "ORDER BY",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "strips_reorder": {
+      "what": "The lines of the query slide up and down past each other into the order SQL works through them",
+      "scene": "logical order",
+      "ease": "inOut",
+      "frames": 36
+    },
+    "order_label_swap": {
+      "what": "The label 'written order' in the card fades out and 'logical order' fades in",
+      "scene": "logical order",
+      "ease": "inOut",
+      "frames": 14
+    },
+    "reach_line_draw": {
+      "what": "A navy line draws itself from the filter line across and down toward the word 'total' in the SELECT line",
+      "scene": "before",
+      "ease": "out",
+      "frames": 30
+    },
+    "reach_cross_draw": {
+      "what": "A navy cross draws itself where that line stops short",
+      "scene": "before",
+      "ease": "out",
+      "frames": 14
+    },
+    "reach_exit": {
+      "what": "The navy line and the cross fade away",
+      "scene": "HAVING",
+      "ease": "in",
+      "frames": 10
+    },
+    "filter_text_out": {
+      "what": "The filter line's text slides up and fades out",
+      "scene": "HAVING",
+      "ease": "in",
+      "frames": 10
+    },
+    "having_text_in": {
+      "what": "The text 'HAVING SUM(amount) > 100' slides up into its place",
+      "scene": "HAVING",
+      "ease": "out",
+      "frames": 16
+    },
+    "having_move": {
+      "what": "The HAVING line and the GROUP BY line swap places",
+      "scene": "HAVING",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "badge_renumber": {
+      "what": "The step numbers in the badges of the later clauses change to the next number",
+      "scene": "HAVING",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "check_draw": {
+      "what": "A violet check mark fades in beside the HAVING line",
+      "scene": "HAVING",
+      "ease": "out",
+      "frames": 14
+    },
+    "group_dim": {
+      "what": "The row of the group whose total fails the HAVING test fades from navy to pale gray",
+      "scene": "HAVING",
+      "ease": "inOut",
+      "frames": 12
+    }
+  }
+}

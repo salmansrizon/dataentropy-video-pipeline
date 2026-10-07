@@ -1,0 +1,126 @@
+{
+  "brief": "sql-window.json",
+  "story": {
+    "score": 1.99,
+    "confidence": 0.99,
+    "verdict": "PASS"
+  },
+  "energy": {
+    "score": 1.91,
+    "confidence": 0.86,
+    "verdict": "PASS"
+  },
+  "scenes": [
+    {
+      "seconds": "0-5.6",
+      "faint": 0.07,
+      "faint_verdict": "PASS",
+      "jargon": 0.24,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 13,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "5.6-11.2",
+      "faint": 0.07,
+      "faint_verdict": "PASS",
+      "jargon": 0.36,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 12,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "11.2-16.2",
+      "faint": 0.09,
+      "faint_verdict": "PASS",
+      "jargon": 0.48,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 11,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "16.2-22.3",
+      "faint": 0.07,
+      "faint_verdict": "PASS",
+      "jargon": 0.21,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 13,
+      "text_words": 4,
+      "text_ok": true
+    },
+    {
+      "seconds": "22.3-27.6",
+      "faint": 0.08,
+      "faint_verdict": "PASS",
+      "jargon": 0.28,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 9,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "27.6-32.1",
+      "faint": 0.21,
+      "faint_verdict": "REVIEW",
+      "jargon": 0.18,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 11,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "32.1-37.7",
+      "faint": 0.13,
+      "faint_verdict": "PASS",
+      "jargon": 0.39,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 13,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "37.7-43",
+      "faint": 0.08,
+      "faint_verdict": "PASS",
+      "jargon": 0.29,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 13,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "43-48.4",
+      "faint": 0.08,
+      "faint_verdict": "PASS",
+      "jargon": 0.71,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 13,
+      "text_words": 4,
+      "text_ok": true
+    },
+    {
+      "seconds": "48.4-54",
+      "faint": 0.07,
+      "faint_verdict": "PASS",
+      "jargon": 0.43,
+      "jargon_verdict": "REVIEW",
+      "vo_words": 11,
+      "text_words": 6,
+      "text_ok": true
+    },
+    {
+      "seconds": "54-60",
+      "faint": 0.11,
+      "faint_verdict": "PASS",
+      "jargon": 0.15,
+      "jargon_verdict": "PASS",
+      "vo_words": 7,
+      "text_words": 2,
+      "text_ok": true
+    }
+  ],
+  "vo_total_words": 126
+}

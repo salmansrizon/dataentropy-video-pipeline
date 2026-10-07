@@ -1,0 +1,263 @@
+{
+  "video": "60-second vertical explainer that shows beginners how a SQL JOIN combines a customers table and an orders table by matching IDs, and what a LEFT JOIN keeps",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "question_marks_enter": {
+      "what": "A violet question mark fades in beside each customer number in the orders table",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 14
+    },
+    "question_marks_exit": {
+      "what": "The question marks fade away",
+      "scene": "shared ID",
+      "ease": "in",
+      "frames": 10
+    },
+    "id_outline_draw": {
+      "what": "A violet outline draws itself around the ID column of each table",
+      "scene": "shared ID",
+      "ease": "out",
+      "frames": 30
+    },
+    "id_headers_light": {
+      "what": "The headers of the two ID columns turn from pale to violet",
+      "scene": "shared ID",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "id_outline_exit": {
+      "what": "The outlines around the ID columns fade away",
+      "scene": "snap together",
+      "ease": "in",
+      "frames": 10
+    },
+    "match_link_draw": {
+      "what": "A glowing violet line draws itself across the gap from an order's customer number to the customer with the same ID",
+      "scene": "ON",
+      "ease": "out",
+      "frames": 20
+    },
+    "id_numbers_light": {
+      "what": "The two matching ID numbers turn from navy to violet",
+      "scene": "ON",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "pair_chip_enter": {
+      "what": "A white chip with a violet outline fades in around a name in the customers table and around an amount in the orders table",
+      "scene": "snap together",
+      "ease": "out",
+      "frames": 12
+    },
+    "pair_travel": {
+      "what": "The name and the amount of a matching pair travel down behind the query card and land side by side as one row of the result table",
+      "scene": "snap together",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "pair_chip_exit": {
+      "what": "The chips around the travelling name and amount fade away as they land",
+      "scene": "snap together",
+      "ease": "in",
+      "frames": 8
+    },
+    "twice_bands_wipe": {
+      "what": "A lavender band spreads from left to right behind each of the two result rows that belong to the same customer",
+      "scene": "two rows",
+      "ease": "out",
+      "frames": 20
+    },
+    "twice_bracket_draw": {
+      "what": "A violet bracket draws itself beside the result table, joining those two rows",
+      "scene": "two rows",
+      "ease": "out",
+      "frames": 20
+    },
+    "twice_exit": {
+      "what": "The lavender bands and the bracket fade away",
+      "scene": "no match",
+      "ease": "in",
+      "frames": 10
+    },
+    "match_links_exit": {
+      "what": "The violet lines between the two tables fade away",
+      "scene": "no match",
+      "ease": "in",
+      "frames": 10
+    },
+    "lonely_row_dim": {
+      "what": "The row of the customer with no order fades from navy to pale gray",
+      "scene": "no match",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "no_match_stub_draw": {
+      "what": "A short navy line draws itself from that customer's ID into the gap and stops without reaching an order",
+      "scene": "no match",
+      "ease": "out",
+      "frames": 14
+    },
+    "no_match_stub_exit": {
+      "what": "The short navy line fades away",
+      "scene": "LEFT JOIN",
+      "ease": "in",
+      "frames": 10
+    },
+    "join_word_out": {
+      "what": "The line 'JOIN orders' in the query slides up and fades out",
+      "scene": "LEFT JOIN",
+      "ease": "in",
+      "frames": 10
+    },
+    "left_join_in": {
+      "what": "The line 'LEFT JOIN orders' slides up into its place",
+      "scene": "LEFT JOIN",
+      "ease": "out",
+      "frames": 16
+    },
+    "left_underline_draw": {
+      "what": "A violet underline draws itself under the word LEFT",
+      "scene": "LEFT JOIN",
+      "ease": "out",
+      "frames": 14
+    },
+    "lonely_row_restore": {
+      "what": "The pale row of the customer with no order returns to navy",
+      "scene": "LEFT JOIN",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "result_grow": {
+      "what": "The result table grows one row taller",
+      "scene": "LEFT JOIN",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "kept_name_travel": {
+      "what": "The name of the customer with no order travels down behind the query card into the new last row of the result table",
+      "scene": "LEFT JOIN",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "empty_box_draw": {
+      "what": "A violet outline draws itself around the empty amount cell of the new row",
+      "scene": "LEFT JOIN",
+      "ease": "out",
+      "frames": 20
+    },
+    "null_pill_wipe": {
+      "what": "A lavender pill with the word NULL spreads from left to right inside the empty cell",
+      "scene": "NULL",
+      "ease": "out",
+      "frames": 18
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "fps": 30,
+  "durationSeconds": 30,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "prompt": "Write a thank-you note to my teacher.",
+  "tokens": [["Write", "a", "thank", "-you", "note"], ["to", "my", "teacher", "."]],
+  "tokenNote": "token = a word or word piece",
+  "replyStart": "Thank you for your",
+  "attention": ["thank", "teacher"],
+  "rounds": [
+    { "candidates": [["help", 62], ["support", 21], ["time", 9]] },
+    { "candidates": [["with", 71], ["and", 14], ["in", 6]] },
+    { "candidates": [["everything.", 58], ["this.", 19], ["it.", 8]] }
+  ],
+  "probNote": "every token it knows gets a probability (illustrative)",
+  "attentionNote": "attention = looking back at related words",
+  "trainingNote": "learned from huge amounts of text",
+  "factCheck": "Check important facts",
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How does AI *write*\na reply?",
+      "voiceover": "How does an AI chatbot actually *write* its reply?",
+      "voStart": 0.2
+    },
+    {
+      "start": 3,
+      "headline": "No answer lookup.\nIt *predicts* the next piece.",
+      "voiceover": "It doesn't look up answers. It *predicts* text, piece by piece.",
+      "voStart": 3.2
+    },
+    {
+      "start": 8,
+      "headline": "Text → *tokens* →\na probability per token",
+      "voiceover": "Text becomes *tokens*, word pieces. It rates every possible next token.",
+      "voStart": 8.2
+    },
+    {
+      "start": 14,
+      "headline": "*Attention* looks back,\none token at a time",
+      "voiceover": "*Attention* looks back at related words, like teacher, then picks one.",
+      "voStart": 14.2
+    },
+    {
+      "start": 20,
+      "headline": "Learned from *lots of text*.\nCan still be wrong.",
+      "voiceover": "It learned patterns from huge amounts of text, so *double-check* facts.",
+      "voStart": 20.2
+    },
+    {
+      "start": 26,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* to learn more AI, explained simply.",
+      "tts": "Follow Data Entropy to learn more AI, explained simply.",
+      "voStart": 26.0
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "staff",
+    "columns": [
+      "name",
+      "salary"
+    ],
+    "rows": [
+      [
+        "Arif",
+        50000
+      ],
+      [
+        "Mina",
+        null
+      ],
+      [
+        "Rafi",
+        42000
+      ],
+      [
+        "Sara",
+        null
+      ],
+      [
+        "Nabil",
+        61000
+      ]
+    ]
+  },
+  "query": {
+    "threshold": 45000
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "null": "NULL",
+    "unknownValue": "value unknown",
+    "true": "true",
+    "false": "false",
+    "unknown": "unknown",
+    "under": "under 45,000",
+    "over": "45,000 or more",
+    "covered": "of 5 staff",
+    "noRows": "0 rows",
+    "check": "Check for NULL"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Where did\n*Mina* go?",
+      "voiceover": "Two lists should cover everyone. So where did *Mina* go?",
+      "voStart": 0.3,
+      "rate": "-15%"
+    },
+    {
+      "start": 5.1,
+      "headline": "Her salary\nis *missing*",
+      "voiceover": "Her salary was never entered. The cell is *empty.*",
+      "voStart": 5.4,
+      "rate": "+0%"
+    },
+    {
+      "start": 10.0,
+      "headline": "*NULL* means the\nvalue is unknown",
+      "voiceover": "A missing value is called *NULL.* It means unknown.",
+      "voStart": 10.3,
+      "tts": "A missing value is called null. It means unknown.",
+      "rate": "+0%"
+    },
+    {
+      "start": 15.0,
+      "headline": "NULL is\n*not zero*",
+      "voiceover": "NULL is *not zero* and it is not blank text.",
+      "voStart": 15.3,
+      "tts": "Null is not zero and it is not blank text.",
+      "rate": "-20%"
+    },
+    {
+      "start": 19.5,
+      "headline": "Compare with unknown,\nget *unknown*",
+      "voiceover": "Is an unknown salary under forty five thousand? *Nobody can say.*",
+      "voStart": 19.8,
+      "rate": "-10%"
+    },
+    {
+      "start": 26.2,
+      "headline": "WHERE keeps only\n*true* rows",
+      "voiceover": "WHERE keeps a row only when the answer is *true.* Unknown is out.",
+      "voStart": 26.5,
+      "rate": "-16%"
+    },
+    {
+      "start": 31.2,
+      "headline": "*= NULL*\nfinds nothing",
+      "voiceover": "Even asking if salary *equals NULL* finds nothing.",
+      "voStart": 31.5,
+      "tts": "Even asking if salary equals null finds nothing.",
+      "rate": "+0%"
+    },
+    {
+      "start": 35.8,
+      "headline": "Ask with\n*IS NULL*",
+      "voiceover": "To find missing values ask *IS NULL.*",
+      "voStart": 36.1,
+      "tts": "To find missing values ask is null.",
+      "rate": "-19%"
+    },
+    {
+      "start": 40.5,
+      "headline": "COUNT of a column\n*skips NULLs*",
+      "voiceover": "Counting a column *skips NULLs.* Five staff but three salaries.",
+      "voStart": 40.8,
+      "tts": "Counting a column skips nulls. Five staff, three salaries.",
+      "rate": "+0%"
+    },
+    {
+      "start": 46.2,
+      "headline": "The average\n*ignores* them too",
+      "voiceover": "And the average uses only *those three.*",
+      "voStart": 46.5,
+      "rate": "-18%"
+    },
+    {
+      "start": 50.3,
+      "headline": "Check for *NULL* before\ntrusting a number",
+      "voiceover": "So *check for NULL* before you trust a number.",
+      "voStart": 50.6,
+      "tts": "So check for null before you trust a number.",
+      "rate": "-20%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "video": "60-second vertical explainer that shows beginners how a SQL query with SELECT, FROM and WHERE picks columns and rows out of a table of sales leads",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained: closer for each clause, then out to show the table, the query and the answer",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "table_enter": {
+      "what": "The outline of the table of sales leads draws itself, then the card fills in",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 30
+    },
+    "rows_enter": {
+      "what": "Each row of the table is revealed from left to right, one row after another",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "question_marks_enter": {
+      "what": "A violet question mark fades in beside each row, one after another",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 14
+    },
+    "magnifier_enter": {
+      "what": "A magnifier and a highlight band fade in over the first row",
+      "scene": "row by row",
+      "ease": "out",
+      "frames": 14
+    },
+    "magnifier_step": {
+      "what": "The magnifier and its highlight band slide down from one row to the next",
+      "scene": "row by row",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "counter_chip_enter": {
+      "what": "A small chip showing the number of rows is revealed from left to right above the table",
+      "scene": "row by row",
+      "ease": "out",
+      "frames": 16
+    },
+    "counter_count": {
+      "what": "The number of rows in the chip counts upward steadily from six to six thousand",
+      "scene": "row by row",
+      "ease": "linear",
+      "frames": 40
+    },
+    "row_by_row_exit": {
+      "what": "The magnifier, its highlight band and the row counter fade away",
+      "scene": "row by row",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_card_enter": {
+      "what": "The outline of an empty query card draws itself under the table, then the card fills in",
+      "scene": "SQL",
+      "ease": "out",
+      "frames": 30
+    },
+    "cursor_enter": {
+      "what": "A violet text cursor appears on the first line of the query card",
+      "scene": "SQL",
+      "ease": "out",
+      "frames": 12
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "SELECT, FROM, WHERE",
+      "ease": "linear",
+      "frames": 30
+    },
+    "cursor_exit": {
+      "what": "The text cursor fades away once the query is complete",
+      "scene": "WHERE",
+      "ease": "in",
+      "frames": 10
+    },
+    "select_headers_light": {
+      "what": "The headers of the name and budget columns turn from pale to violet",
+      "scene": "SELECT, recap",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "city_column_dim": {
+      "what": "The text in the city column fades from navy to pale gray",
+      "scene": "SELECT",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "table_tab_light": {
+      "what": "The table's name tab turns from navy to violet",
+      "scene": "FROM",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "from_link_draw": {
+      "what": "A violet line draws itself from the word 'leads' in the query up to the table's name tab",
+      "scene": "FROM",
+      "ease": "out",
+      "frames": 26
+    },
+    "from_link_exit": {
+      "what": "The line between the query and the table's name tab fades away",
+      "scene": "WHERE",
+      "ease": "in",
+      "frames": 10
+    },
+    "condition_pill_wipe": {
+      "what": "A lavender highlight spreads from left to right behind the condition 'budget > 5000' in the query",
+      "scene": "WHERE",
+      "ease": "out",
+      "frames": 18
+    },
+    "test_column_ring_draw": {
+      "what": "A violet outline draws itself around the budget column of the table",
+      "scene": "WHERE",
+      "ease": "out",
+      "frames": 30
+    },
+    "test_band_enter": {
+      "what": "A violet outlined band fades in over the first row of the table",
+      "scene": "test",
+      "ease": "out",
+      "frames": 12
+    },
+    "test_band_step": {
+      "what": "The violet band slides down from one row to the next",
+      "scene": "test",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "question_mark_exit": {
+      "what": "The question mark beside a row fades away when the band reaches that row",
+      "scene": "test",
+      "ease": "in",
+      "frames": 8
+    },
+    "check_draw": {
+      "what": "A violet check mark draws itself beside a row that passes the test",
+      "scene": "test",
+      "ease": "out",
+      "frames": 14
+    },
+    "row_dim": {
+      "what": "The text of a row that fails the test fades from navy to pale gray",
+      "scene": "test",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "test_exit": {
+      "what": "The outline around the budget column and the violet band fade away",
+      "scene": "result",
+      "ease": "in",
+      "frames": 10
+    },
+    "result_enter": {
+      "what": "The violet outline of an empty result table draws itself under the query card, then the card fills in",
+      "scene": "result",
+      "ease": "out",
+      "frames": 28
+    },
+    "row_chip_enter": {
+      "what": "A white chip with a violet outline fades in around a passing row in the table",
+      "scene": "result",
+      "ease": "out",
+      "frames": 12
+    },
+    "row_copy_travel": {
+      "what": "A copy of a passing row's name and budget travels down from the table, behind the query card, into the result table",
+      "scene": "result",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "row_chip_exit": {
+      "what": "The chip around the travelling row fades away as the row lands in the result table",
+      "scene": "result",
+      "ease": "in",
+      "frames": 8
+    },
+    "table_restore": {
+      "what": "The pale text and the violet headers of the table return to how they looked at the start",
+      "scene": "unchanged",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "checks_exit": {
+      "what": "The check marks beside the table fade away",
+      "scene": "unchanged",
+      "ease": "in",
+      "frames": 10
+    },
+    "unchanged_chip_enter": {
+      "what": "A chip with the word 'unchanged' is revealed from left to right above the table",
+      "scene": "unchanged",
+      "ease": "out",
+      "frames": 18
+    },
+    "unchanged_chip_exit": {
+      "what": "The 'unchanged' chip fades away",
+      "scene": "recap",
+      "ease": "in",
+      "frames": 10
+    },
+    "number_out": {
+      "what": "The number 5000 in the query slides up and fades out",
+      "scene": "change",
+      "ease": "in",
+      "frames": 10
+    },
+    "number_in": {
+      "what": "The number 8000 slides up into the place of the old number in the query",
+      "scene": "change",
+      "ease": "out",
+      "frames": 16
+    },
+    "number_underline_draw": {
+      "what": "A violet underline draws itself under the new number",
+      "scene": "change",
+      "ease": "out",
+      "frames": 14
+    },
+    "result_row_exit": {
+      "what": "The row that no longer passes fades out of the result table",
+      "scene": "change",
+      "ease": "in",
+      "frames": 12
+    },
+    "result_row_move_up": {
+      "what": "The row below moves up to close the gap and the result table gets one row shorter",
+      "scene": "change",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "recap_column_bands": {
+      "what": "Lavender bands grow downward from the headers over the name and budget columns",
+      "scene": "recap",
+      "ease": "out",
+      "frames": 24
+    },
+    "recap_row_outlines": {
+      "what": "Violet outlines draw themselves around the two rows that pass the test",
+      "scene": "recap",
+      "ease": "out",
+      "frames": 24
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    }
+  }
+}

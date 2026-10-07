@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "jev": {
+      "source": "dbreunig/building-with-jev-skill",
+      "sourceType": "github",
+      "skillPath": "skills/jev/SKILL.md",
+      "computedHash": "4e28f20a4ca7368a07d74e10159a1a32f1fec9824916850d5e1b92f906fd965d"
+    },
+    "motion-design": {
+      "source": "richtabor/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/motion-design/SKILL.md",
+      "computedHash": "1783ac20569e54e5b2b0d7ef4605243a589d86f40a245ff29c0785597021b03c"
+    }
+  }
+}

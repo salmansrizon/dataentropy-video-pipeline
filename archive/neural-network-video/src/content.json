@@ -1,0 +1,75 @@
+{
+  "fps": 30,
+  "durationSeconds": 30,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "email": "You WON a free phone!!! Click here",
+  "variant": "Congrats, claim your prize",
+  "rules": ["if \"free\" → spam", "if \"won\" → spam", "if \"click\" → spam", "if \"!!!\" → spam", "if \"phone\" → spam"],
+  "clues": [["free / won", 1], ["unknown\nsender", 1], ["many links", 0.8]],
+  "examples": ["Lunch at 1pm?", "Claim your reward now", "Your invoice is attached", "FREE gift, act fast!!!", "Team meeting moved", "You won a cruise!!!"],
+  "weightsBefore": [[0.5, 0.3, 0.6, 0.2], [0.3, 0.5, 0.2, 0.4], [0.2, 0.3, 0.4, 0.3], [0.4, 0.5, 0.3, 0.4]],
+  "weightsAfter": [[0.95, 0.8, 0.9, 0.7], [0.35, 0.45, 0.25, 0.4], [0.25, 0.3, 0.35, 0.3], [0.7, 0.8, 0.5, 0.6]],
+  "activation": [0.8, 0.5, 0.9, 0.4],
+  "scoreBefore": 30,
+  "scoreAfter": 97,
+  "networkNote": "neural network",
+  "weightNote": "weight = how much a clue matters",
+  "activationNote": "activation: pass on a strong signal (numbers illustrative)",
+  "trainingNote": "training = nudge weights to shrink the error",
+  "examplesNote": "examples seen",
+  "verdict": "Likely spam",
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How does your inbox\nspot *spam*?",
+      "voiceover": "How does your inbox know this email is *spam*?",
+      "voStart": 0.1
+    },
+    {
+      "start": 3,
+      "headline": "Too many tricks for\n*hand-written rules*",
+      "voiceover": "Rules can't catch every trick, so a network *learns* from examples.",
+      "voStart": 3.2
+    },
+    {
+      "start": 8,
+      "headline": "Neurons add *weighted*\nclues, pass the signal on",
+      "voiceover": "Clues become numbers. Each neuron adds them up, *weighted* by importance.",
+      "voStart": 8.2
+    },
+    {
+      "start": 14,
+      "headline": "Compare, then\n*nudge* the weights",
+      "voiceover": "Training compares its guess with the right answer, then *nudges* weights.",
+      "voStart": 14.2
+    },
+    {
+      "start": 20,
+      "headline": "Many examples later, it\nflags spam it *never saw*",
+      "voiceover": "After many examples, it can flag spam it has *never seen*.",
+      "voStart": 20.2
+    },
+    {
+      "start": 26,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* to learn more AI, explained simply.",
+      "tts": "Follow Data Entropy to learn more AI, explained simply.",
+      "voStart": 26.0
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "model": "jev-1.13.0",
+  "weights": {
+    "visual": 0.4,
+    "beginner": 0.3,
+    "size": 0.3
+  },
+  "rows": [
+    {
+      "id": "kmeans",
+      "title": "How a computer groups customers by itself",
+      "rank": 0.922,
+      "visual": 0.97,
+      "beginner": 0.8,
+      "size": 0.98,
+      "size_choice": "few_steps",
+      "overlap": 0.19,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.93,
+        "beginner": 0.39,
+        "size": 0.97
+      }
+    },
+    {
+      "id": "etl_pipeline",
+      "title": "How raw data becomes a dashboard",
+      "rank": 0.913,
+      "visual": 0.98,
+      "beginner": 0.73,
+      "size": 1.0,
+      "size_choice": "few_steps",
+      "overlap": 0.07,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.95,
+        "beginner": 0.3,
+        "size": 0.99
+      }
+    },
+    {
+      "id": "diffusion",
+      "title": "How AI draws a picture from noise",
+      "rank": 0.897,
+      "visual": 0.94,
+      "beginner": 0.82,
+      "size": 0.91,
+      "size_choice": "few_steps",
+      "overlap": 0.08,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.83,
+        "beginner": 0.46,
+        "size": 0.86
+      }
+    },
+    {
+      "id": "ai_agents",
+      "title": "How an AI agent gets a task done",
+      "rank": 0.883,
+      "visual": 0.92,
+      "beginner": 0.79,
+      "size": 0.94,
+      "size_choice": "few_steps",
+      "overlap": 0.18,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.75,
+        "beginner": 0.35,
+        "size": 0.9
+      }
+    },
+    {
+      "id": "decision_tree",
+      "title": "How a decision tree decides",
+      "rank": 0.872,
+      "visual": 0.94,
+      "beginner": 0.96,
+      "size": 0.7,
+      "size_choice": "few_steps",
+      "overlap": 0.09,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.8,
+        "beginner": 0.88,
+        "size": 0.55
+      }
+    },
+    {
+      "id": "ab_testing",
+      "title": "How an A/B test picks the better version",
+      "rank": 0.872,
+      "visual": 0.82,
+      "beginner": 0.81,
+      "size": 1.0,
+      "size_choice": "few_steps",
+      "overlap": 0.06,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.46,
+        "beginner": 0.44,
+        "size": 1.0
+      }
+    },
+    {
+      "id": "gradient_descent",
+      "title": "How a model learns by walking downhill",
+      "rank": 0.869,
+      "visual": 0.89,
+      "beginner": 0.88,
+      "size": 0.83,
+      "size_choice": "few_steps",
+      "overlap": 0.19,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.67,
+        "beginner": 0.63,
+        "size": 0.75
+      }
+    },
+    {
+      "id": "vector_database",
+      "title": "How a vector database finds similar items fast",
+      "rank": 0.768,
+      "visual": 0.9,
+      "beginner": 0.73,
+      "size": 0.63,
+      "size_choice": "few_steps",
+      "overlap": 0.51,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.69,
+        "beginner": 0.28,
+        "size": 0.44
+      }
+    },
+    {
+      "id": "prompt_engineering",
+      "title": "Why a clear prompt gets a better answer",
+      "rank": 0.753,
+      "visual": 0.58,
+      "beginner": 0.86,
+      "size": 0.87,
+      "size_choice": "few_steps",
+      "overlap": 0.15,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.62,
+        "beginner": 0.59,
+        "size": 0.8
+      }
+    },
+    {
+      "id": "recommender",
+      "title": "How an app guesses what you will watch next",
+      "rank": 0.731,
+      "visual": 0.77,
+      "beginner": 0.97,
+      "size": 0.44,
+      "size_choice": "single_idea",
+      "overlap": 0.15,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.3,
+        "beginner": 0.92,
+        "size": 0.34
+      }
+    },
+    {
+      "id": "sql_join",
+      "title": "How a SQL join combines two tables",
+      "rank": 0.717,
+      "visual": 0.95,
+      "beginner": 0.67,
+      "size": 0.45,
+      "size_choice": "single_idea",
+      "overlap": 0.06,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.87,
+        "beginner": 0.43,
+        "size": 0.32
+      }
+    },
+    {
+      "id": "context_window",
+      "title": "Why a chatbot forgets the start of a long chat",
+      "rank": 0.691,
+      "visual": 0.94,
+      "beginner": 0.74,
+      "size": 0.31,
+      "size_choice": "single_idea",
+      "overlap": 0.13,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.82,
+        "beginner": 0.27,
+        "size": 0.54
+      }
+    },
+    {
+      "id": "overfitting",
+      "title": "Memorizing versus learning",
+      "rank": 0.663,
+      "visual": 0.78,
+      "beginner": 0.9,
+      "size": 0.27,
+      "size_choice": "single_idea",
+      "overlap": 0.15,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.34,
+        "beginner": 0.7,
+        "size": 0.59
+      }
+    },
+    {
+      "id": "hallucination",
+      "title": "Why chatbots make things up",
+      "rank": 0.538,
+      "visual": 0.56,
+      "beginner": 0.73,
+      "size": 0.31,
+      "size_choice": "single_idea",
+      "overlap": 0.41,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.68,
+        "beginner": 0.3,
+        "size": 0.53
+      }
+    },
+    {
+      "id": "attention",
+      "title": "How attention lets a model know what a pronoun refers to",
+      "rank": 0.524,
+      "visual": 0.8,
+      "beginner": 0.67,
+      "size": 0.02,
+      "size_choice": "single_idea",
+      "overlap": 0.22,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.39,
+        "beginner": 0.48,
+        "size": 0.97
+      }
+    },
+    {
+      "id": "fine_tuning",
+      "title": "What fine-tuning does to a model",
+      "rank": 0.522,
+      "visual": 0.6,
+      "beginner": 0.73,
+      "size": 0.21,
+      "size_choice": "single_idea",
+      "overlap": 0.19,
+      "dropped": false,
+      "confidence": {
+        "visual": 0.62,
+        "beginner": 0.3,
+        "size": 0.69
+      }
+    }
+  ]
+}

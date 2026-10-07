@@ -1,0 +1,159 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners why databases are normalized: a fact stored in many rows can end up disagreeing with itself, so each fact is stored once in its own table and other tables point to it with an ID. Carry one example through the whole video: a shop's orders table repeats a customer's city on every order, and the customer moves. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 11 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "TOP: the table 'orders', first wide (order, customer, city, item), later narrow (order, customer_id, item), a white card with a bold 5px deep navy outline. MIDDLE: the table 'customers' (id, name, city) with a bold 5px brand-violet outline. BELOW: the query card.",
+    "interaction_effect": "Repeated facts are marked with lavender bands. The names and cities travel down into the customers table, where copies of the same customer land on one row; the orders table closes up around a customer_id column.",
+    "camera": "One continuous space: close on the wide table, out to both tables, then down to include the query card."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5.7",
+      "visual": "A white table card named 'orders' with a bold 5px deep navy outline draws itself: columns order, customer, city and item, four rows; three of them are Arif in Dhaka. In the first row Dhaka slides out and Khulna slides in; the other two Arif rows still say Dhaka and bold brand-violet question marks appear beside them. Headline with 'two cities' in brand violet.",
+      "on_screen_text": "One customer, two cities?",
+      "voiceover": "Arif moved to Khulna. But the database shows him in two cities."
+    },
+    {
+      "seconds": "5.7-10.7",
+      "visual": "Soft lavender bands spread behind the navy text of the three city cells that belong to Arif, one after another. Headline: 'stored three times' in brand violet.",
+      "on_screen_text": "The same fact, stored three times",
+      "voiceover": "His city is stored three times, once on every order."
+    },
+    {
+      "seconds": "10.7-16.4",
+      "visual": "A bold 5px brand-violet outline draws itself around the one city cell that was changed, and bold navy outlines draw themselves around the two cells that were missed. Headline: 'miss the rest' in brand violet.",
+      "on_screen_text": "Change one copy, miss the rest",
+      "voiceover": "Change one copy and miss the others. Now the data disagrees."
+    },
+    {
+      "seconds": "16.4-21.2",
+      "visual": "The two missed cells are corrected: Dhaka slides out and Khulna slides in, the outlines fade, and the three lavender bands remain: three copies of one fact. Headline: 'Normalization' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "Normalization: store each fact once",
+      "voiceover": "Normalization means storing each fact in one place."
+    },
+    {
+      "seconds": "21.2-26.8",
+      "visual": "Under the orders table a second card with a bold 5px brand-violet outline and the tab 'customers' draws itself with columns id, name and city. Each name and city travels down in a white chip with a bold violet outline; the three Arif copies land on the same row, so the table has just two rows, numbered 1 and 2. Headline: 'their own table' in brand violet.",
+      "on_screen_text": "Customers get their own table",
+      "voiceover": "So customers get their own table. One row for each customer."
+    },
+    {
+      "seconds": "26.8-32",
+      "visual": "In the orders table the customer and city columns fade and close up into one narrow column whose brand-violet header reads customer_id, holding the bold navy numbers 1, 2, 1, 1. The card gets narrower. Headline: 'only the ID' in brand violet.",
+      "on_screen_text": "Orders keep only the ID",
+      "voiceover": "Orders keep only a customer ID that points to that row."
+    },
+    {
+      "seconds": "32-37.3",
+      "visual": "In the customers table Arif's city slides out and a new city slides in inside a bold 5px brand-violet outline. In the orders table soft lavender bands spread behind the three customer_id cells that read 1: all three now point at the new city. Headline: 'fixed everywhere' in brand violet.",
+      "on_screen_text": "Change it once, fixed everywhere",
+      "voiceover": "Now Arif moves again. One change fixes every order."
+    },
+    {
+      "seconds": "37.3-42.9",
+      "visual": "Below, a white query card with a bold 5px navy outline draws itself and types three lines with brand-violet keywords: SELECT item, city, then FROM orders JOIN customers, then ON customer_id = customers.id. Headline: 'JOIN' in brand violet.",
+      "on_screen_text": "A JOIN puts it back together",
+      "voiceover": "Need the full picture? A JOIN puts the tables back together."
+    },
+    {
+      "seconds": "42.9-49.1",
+      "visual": "A white chip with a bold navy outline and navy text 'more tables, more joins' is revealed beside the customers tab, and a soft lavender band spreads behind the JOIN line of the query. Headline: 'a cost' in brand violet.",
+      "on_screen_text": "Splitting has a cost",
+      "voiceover": "Splitting has a cost: more joins. So split as far as it helps."
+    },
+    {
+      "seconds": "49.1-54",
+      "visual": "A bold 5px brand-violet outline draws itself around the single city cell of Arif in the customers table and a white chip with a bold violet outline reads 'stored once'. Headline: 'one home' in brand violet.",
+      "on_screen_text": "Each fact, one home",
+      "voiceover": "Each fact in one place. That keeps your data telling the truth."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Nothing rises or scales as it appears: card outlines draw themselves and fill in, rows and chips are wiped in from the left.",
+    "Normalization is design practice, not a SQL command; no statement on screen normalizes anything.",
+    "Do not name the numbered normal forms. The single idea is: store each fact once and point to it.",
+    "Say that splitting has a cost and is done as far as it helps; do not say more normalization is always better.",
+    "The join shown is the same shape as in the JOIN video: FROM orders JOIN customers ON customer_id = customers.id."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "OrdersTable",
+      "FactMarks",
+      "CustomersTable",
+      "CityCell",
+      "QueryCard",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Order rows",
+      "Who moves and to which cities",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels and any line or text that is hard to see on white. Confirm that after the split every customer_id points to the right customer and that the customers table holds each customer exactly once.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/access/database-normalization-description",
+    "https://dev.mysql.com/doc/refman/8.4/en/glossary.html",
+    "https://www.postgresql.org/docs/current/ddl-constraints.html"
+  ]
+}

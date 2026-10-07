@@ -1,0 +1,442 @@
+{
+  "brand": {
+    "name": "DataEntropy",
+    "category": "Data, AI and career-focused education",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "personality": [
+      "professional",
+      "practical",
+      "intelligent",
+      "modern",
+      "approachable",
+      "career-focused"
+    ],
+    "core_message": "Transform complex data and AI concepts into practical skills that create measurable career impact."
+  },
+  "logo": {
+    "primary_logo": "Purple four-bar growth symbol with the DataEntropy wordmark",
+    "symbol_meaning": [
+      "data progression",
+      "continuous learning",
+      "career growth",
+      "analytics maturity"
+    ],
+    "preferred_background": [
+      "white",
+      "off-white",
+      "very light lavender"
+    ],
+    "minimum_clear_space": "Keep empty space around the logo equal to the height of one symbol bar.",
+    "animation_rules": {
+      "recommended": [
+        "Animate the four bars sequentially from left to right",
+        "Use a smooth upward growth motion",
+        "Reveal the wordmark after the symbol animation",
+        "Finish with a subtle violet glow or gradient sweep"
+      ],
+      "avoid": [
+        "Logo distortion",
+        "Rotating the full logo",
+        "Aggressive bounce effects",
+        "Changing the logo colors",
+        "Heavy shadows",
+        "Placing the logo over a visually busy background"
+      ],
+      "intro_duration_seconds": 1.5,
+      "outro_duration_seconds": 2
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "deep_navy": {
+        "hex": "#172554",
+        "usage": "Headlines, dark backgrounds and high-contrast text"
+      },
+      "brand_violet": {
+        "hex": "#6D4AFF",
+        "usage": "Primary brand color, logo, buttons and key highlights"
+      },
+      "electric_purple": {
+        "hex": "#8B5CF6",
+        "usage": "Motion accents, gradients and active elements"
+      },
+      "soft_lavender": {
+        "hex": "#C4B5FD",
+        "usage": "Secondary graphics, glow and supporting illustrations"
+      }
+    },
+    "neutral": {
+      "white": {
+        "hex": "#FFFFFF",
+        "usage": "Primary background"
+      },
+      "off_white": {
+        "hex": "#F8F7FC",
+        "usage": "Alternative background and content cards"
+      },
+      "light_gray": {
+        "hex": "#E7E5EB",
+        "usage": "Dividers, subtle grids and inactive elements"
+      },
+      "body_gray": {
+        "hex": "#64748B",
+        "usage": "Supporting text"
+      },
+      "near_black": {
+        "hex": "#111827",
+        "usage": "Primary body text"
+      }
+    },
+    "gradients": [
+      {
+        "name": "Data Gradient",
+        "direction": "135deg",
+        "colors": [
+          "#172554",
+          "#6D4AFF",
+          "#8B5CF6"
+        ]
+      },
+      {
+        "name": "AI Glow",
+        "direction": "90deg",
+        "colors": [
+          "#6D4AFF",
+          "#C4B5FD"
+        ]
+      }
+    ],
+    "color_ratio": {
+      "white_and_light_backgrounds": "65%",
+      "navy": "15%",
+      "brand_violet": "15%",
+      "lavender_and_accents": "5%"
+    }
+  },
+  "typography": {
+    "primary_font": {
+      "family": "Inter",
+      "fallback": "Arial, sans-serif",
+      "usage": "Headlines, titles, labels and body text"
+    },
+    "optional_display_font": {
+      "family": "Manrope",
+      "fallback": "Inter, Arial, sans-serif",
+      "usage": "Large campaign headlines"
+    },
+    "weights": {
+      "headline": 700,
+      "subheadline": 600,
+      "body": 400,
+      "label": 500
+    },
+    "animation_text_rules": {
+      "maximum_words_per_scene": 12,
+      "headline_lines": 2,
+      "preferred_alignment": "left",
+      "highlight_style": "Use brand violet for one or two key words",
+      "minimum_mobile_body_size_px": 32,
+      "minimum_mobile_headline_size_px": 54
+    }
+  },
+  "visual_language": {
+    "style": [
+      "minimal motion graphics",
+      "clean vector illustration",
+      "modern line art",
+      "data visualization",
+      "AI interface elements",
+      "soft gradient lighting",
+      "generous whitespace"
+    ],
+    "graphic_elements": [
+      "data bars",
+      "flowing data particles",
+      "database cylinders",
+      "analytics charts",
+      "AI nodes",
+      "neural network lines",
+      "dashboard cards",
+      "career growth arrows",
+      "code snippets",
+      "learning-path indicators"
+    ],
+    "corners": "Rounded, with an 8–20px radius",
+    "stroke_style": "Clean 2–3px strokes with rounded endpoints",
+    "shadow_style": "Soft violet-tinted shadow with low opacity",
+    "background_style": "White or off-white with a subtle dot grid, data lines or lavender glow",
+    "image_treatment": "Natural images with a restrained violet overlay or violet interface accents"
+  },
+  "motion_system": {
+    "overall_feel": "Smooth, purposeful, intelligent and energetic without feeling playful or chaotic",
+    "frame_rate": 30,
+    "preferred_transitions": [
+      "smooth slide",
+      "masked reveal",
+      "gradient wipe",
+      "shape morph",
+      "line draw",
+      "data-point connection",
+      "soft zoom"
+    ],
+    "easing": {
+      "default": "ease-in-out",
+      "recommended_cubic_bezier": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    "element_animation": {
+      "charts": "Build progressively from the baseline",
+      "numbers": "Count upward smoothly",
+      "icons": "Use line-draw followed by a soft fill",
+      "cards": "Fade and move upward by 20–30 pixels",
+      "data_flow": "Move particles along curved paths toward an insight or outcome",
+      "ai_nodes": "Connect sequentially using glowing violet lines"
+    },
+    "timing": {
+      "micro_animation_seconds": 0.4,
+      "standard_transition_seconds": 0.6,
+      "scene_duration_seconds": "2.5–4.0",
+      "logo_intro_seconds": 1.5,
+      "call_to_action_seconds": 3
+    },
+    "avoid": [
+      "rapid flashing",
+      "extreme camera movement",
+      "random glitch effects",
+      "excessive bouncing",
+      "cartoonish transitions",
+      "overcrowded scenes",
+      "more than three simultaneous focal points"
+    ]
+  },
+  "video_specifications": {
+    "primary_format": {
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "usage": [
+        "Facebook Reels",
+        "Instagram Reels",
+        "YouTube Shorts",
+        "TikTok"
+      ]
+    },
+    "secondary_formats": [
+      {
+        "aspect_ratio": "16:9",
+        "resolution": "1920x1080",
+        "usage": "YouTube videos and course explainers"
+      },
+      {
+        "aspect_ratio": "1:1",
+        "resolution": "1080x1080",
+        "usage": "Social media feed posts"
+      },
+      {
+        "aspect_ratio": "4:5",
+        "resolution": "1080x1350",
+        "usage": "Facebook and Instagram feed videos"
+      }
+    ],
+    "safe_area": {
+      "top_percent": 10,
+      "bottom_percent": 18,
+      "left_percent": 7,
+      "right_percent": 7,
+      "rule": "Keep titles, subtitles, logos and calls to action inside the safe area."
+    },
+    "duration": {
+      "short_explainer_seconds": 30,
+      "social_promo_seconds": "15–30",
+      "course_explainer_seconds": "45–90"
+    }
+  },
+  "recommended_30_second_structure": [
+    {
+      "time": "0–3s",
+      "purpose": "Hook",
+      "direction": "Open with a relatable problem or bold question using large animated text."
+    },
+    {
+      "time": "3–8s",
+      "purpose": "Problem",
+      "direction": "Visualize the problem using minimal icons, data points or interface cards."
+    },
+    {
+      "time": "8–20s",
+      "purpose": "Explanation",
+      "direction": "Explain the process through three or four connected animated steps."
+    },
+    {
+      "time": "20–26s",
+      "purpose": "Outcome",
+      "direction": "Show the practical result, insight or career benefit."
+    },
+    {
+      "time": "26–30s",
+      "purpose": "Call to action",
+      "direction": "Display the DataEntropy logo, tagline and one clear action."
+    }
+  ],
+  "audio_guideline": {
+    "music_style": [
+      "modern technology",
+      "minimal electronic",
+      "inspiring corporate",
+      "light future bass"
+    ],
+    "music_character": "Confident and progressive, with no aggressive bass or distracting vocals",
+    "sound_effects": [
+      "soft whoosh",
+      "subtle data pop",
+      "light digital click",
+      "gentle confirmation tone"
+    ],
+    "voiceover": {
+      "tone": "Clear, confident, friendly and educational",
+      "pace_words_per_minute": "135–155",
+      "language_options": [
+        "Bangla",
+        "English",
+        "Bangla-English mixed"
+      ],
+      "pronunciation_rule": "Keep technical terminology accurate and easy to understand."
+    }
+  },
+  "content_rules": {
+    "audience": [
+      "students",
+      "early-career professionals",
+      "data analysts",
+      "aspiring AI engineers",
+      "business professionals"
+    ],
+    "communication_principles": [
+      "Start with a real problem",
+      "Explain one main idea per video",
+      "Use simple language",
+      "Connect concepts to practical applications",
+      "End with a measurable learning or career outcome"
+    ],
+    "preferred_terms": [
+      "practical skills",
+      "real-world project",
+      "data-driven",
+      "AI-powered",
+      "career impact",
+      "build and learn"
+    ],
+    "avoid_terms": [
+      "guaranteed job",
+      "instant expert",
+      "get rich quickly",
+      "effortless success",
+      "unrealistic income claims"
+    ]
+  },
+  "subtitle_style": {
+    "enabled": true,
+    "position": "lower-middle safe area",
+    "font": "Inter SemiBold",
+    "text_color": "#FFFFFF",
+    "background_color": "#172554",
+    "background_opacity": 0.88,
+    "highlight_color": "#C4B5FD",
+    "maximum_lines": 2,
+    "maximum_words_per_line": 7,
+    "animation": "Word-group reveal synchronized with the voiceover"
+  },
+  "call_to_action": {
+    "visual_style": "Brand-violet rounded button or clean text with an animated arrow",
+    "examples": [
+      "Follow DataEntropy",
+      "Learn with DataEntropy",
+      "Start building practical data skills",
+      "Explore the full lesson",
+      "Build your next data project"
+    ],
+    "rule": "Use only one primary call to action per video."
+  },
+  "negative_prompt": [
+    "cluttered composition",
+    "neon cyberpunk aesthetic",
+    "random colors",
+    "red or orange dominant palette",
+    "cartoon style",
+    "excessive 3D objects",
+    "illegible text",
+    "logo distortion",
+    "low contrast subtitles",
+    "busy backgrounds",
+    "aggressive glitch effects",
+    "watermarks",
+    "unrelated stock footage"
+  ],
+  "master_generation_instruction": "Create a polished DataEntropy educational animation using a clean white or off-white background, deep navy typography, violet and lavender accents, modern line-art illustrations, smooth data-driven motion, generous whitespace and clear visual hierarchy. Make the concept understandable without audio, keep all text inside the platform-safe area, and conclude with the official DataEntropy logo, the tagline 'Practical Data Skills. Real Career Impact.' and one concise call to action.",
+  "pipeline": {
+    "note": "Read by engine/src/brand.ts and tools/check.py. Values here are decisions made for the video pipeline; where they differ from the guideline text above, these win.",
+    "derived_colors": {
+      "lavender_tint": "#EEE9FF",
+      "dimmed": "#D6D2E0"
+    },
+    "wordmark_highlight": "E",
+    "entrances": {
+      "allowed": [
+        "fade",
+        "masked wipe",
+        "line draw then fill",
+        "colour change"
+      ],
+      "forbidden": [
+        "rise",
+        "slide up into place",
+        "scale up",
+        "pop",
+        "bounce"
+      ],
+      "overrides": "motion_system.element_animation.cards ('Fade and move upward by 20-30 pixels'): elements must not rise or scale as they appear. Soft camera push-ins are allowed."
+    },
+    "formats": {
+      "9:16": {
+        "width": 1080,
+        "height": 1920,
+        "headline_lines": 2,
+        "caption_lines": 2
+      },
+      "16:9": {
+        "width": 1920,
+        "height": 1080,
+        "headline_lines": 1,
+        "caption_lines": 1
+      }
+    },
+    "text": {
+      "headline_px": 58,
+      "caption_px": 40,
+      "min_label_px": 24,
+      "caption_words_per_line": 7
+    },
+    "pace_wpm": [
+      135,
+      155
+    ],
+    "scene_seconds": {
+      "short": [
+        2.5,
+        7
+      ],
+      "long": [
+        3,
+        14
+      ]
+    },
+    "long_video_from_seconds": 180,
+    "cta_seconds": [
+      3,
+      6
+    ]
+  }
+}

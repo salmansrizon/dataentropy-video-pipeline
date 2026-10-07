@@ -1,0 +1,162 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "sales",
+    "columns": [
+      "region",
+      "year",
+      "amount"
+    ],
+    "rows": [
+      [
+        "East",
+        2025,
+        80
+      ],
+      [
+        "West",
+        2025,
+        50
+      ],
+      [
+        "East",
+        2024,
+        40
+      ],
+      [
+        "West",
+        2025,
+        30
+      ],
+      [
+        "East",
+        2025,
+        60
+      ],
+      [
+        "West",
+        2024,
+        90
+      ]
+    ]
+  },
+  "query": {
+    "year": 2025,
+    "minTotal": 100,
+    "alias": "total"
+  },
+  "labels": {
+    "sql": "SQL",
+    "written": "written order",
+    "logical": "logical order",
+    "error": "error: total not found"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Why does this\nquery *fail*?",
+      "voiceover": "This query looks fine. So why does it *fail?*",
+      "voStart": 0.3,
+      "rate": "-15%"
+    },
+    {
+      "start": 5.2,
+      "headline": "You write\n*SELECT first*",
+      "voiceover": "You write SELECT first. But SQL does *not start* there.",
+      "voStart": 5.5,
+      "tts": "You write SELECT first. But S Q L does not start there.",
+      "rate": "+0%"
+    },
+    {
+      "start": 10.6,
+      "headline": "SQL starts\nat *FROM*",
+      "voiceover": "It starts at *FROM.* First it finds the table.",
+      "voStart": 10.9,
+      "rate": "-18%"
+    },
+    {
+      "start": 15.2,
+      "headline": "Then *WHERE*\nfilters the rows",
+      "voiceover": "Second, *WHERE* keeps the rows it needs.",
+      "voStart": 15.5,
+      "rate": "-13%"
+    },
+    {
+      "start": 19.4,
+      "headline": "Then *GROUP BY*\nbuilds groups",
+      "voiceover": "Third, *GROUP BY* builds the groups.",
+      "voStart": 19.7,
+      "rate": "-4%"
+    },
+    {
+      "start": 24.0,
+      "headline": "*SELECT* runs\nnear the end",
+      "voiceover": "Only then does *SELECT* add them up and name the total.",
+      "voStart": 24.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 29.2,
+      "headline": "*ORDER BY*\nsorts last",
+      "voiceover": "Last of all, *ORDER BY* sorts the answer.",
+      "voStart": 29.5,
+      "rate": "-20%"
+    },
+    {
+      "start": 33.6,
+      "headline": "Written order is not\nthe *logical order*",
+      "voiceover": "So the order you write is not the order SQL *works through* it.",
+      "voStart": 33.9,
+      "tts": "So the order you write is not the order S Q L works through it.",
+      "rate": "-20%"
+    },
+    {
+      "start": 38.8,
+      "headline": "It came *before*\nthe name existed",
+      "voiceover": "The filter came before SELECT *named the total.* That is the error.",
+      "voStart": 39.1,
+      "rate": "-14%"
+    },
+    {
+      "start": 44.4,
+      "headline": "Test totals\nin *HAVING*",
+      "voiceover": "Move the test to *HAVING,* after the groups, and it works.",
+      "voStart": 44.7,
+      "rate": "-20%"
+    },
+    {
+      "start": 49.8,
+      "headline": "Read a query in\nits *logical order*",
+      "voiceover": "Read a query in *that order* and errors make sense.",
+      "voStart": 50.1,
+      "rate": "-19%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ]
+}

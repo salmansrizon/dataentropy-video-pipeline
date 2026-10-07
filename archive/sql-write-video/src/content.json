@@ -1,0 +1,192 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "products",
+    "columns": [
+      "name",
+      "price"
+    ],
+    "rows": [
+      [
+        "Pen",
+        20
+      ],
+      [
+        "Notebook",
+        80
+      ],
+      [
+        "Bag",
+        450
+      ],
+      [
+        "Lamp",
+        300
+      ]
+    ]
+  },
+  "change": {
+    "insert": [
+      "Mug",
+      150
+    ],
+    "update": [
+      "Pen",
+      25
+    ],
+    "delete": "Lamp",
+    "check": "Bag"
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "noRows": "0 rows",
+    "verbs": [
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "One price change hit\n*every product*",
+      "voiceover": "Nila changed one price. And *every* price in the shop changed. Why?",
+      "voStart": 0.3,
+      "visual": "A white table card named 'products' with a bold 5px deep navy outline draws itself: columns name and price, four rows, and every price reads 25 in bold navy. A large bold brand-violet question mark appears beside it. Headline with 'every product' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 6.3,
+      "headline": "Three commands\n*change data*",
+      "voiceover": "Three SQL commands change data: *INSERT, UPDATE and DELETE.*",
+      "voStart": 6.6,
+      "visual": "The prices slide back to their real values, 20, 80, 450 and 300. Beside the table three white chips with bold navy outlines are revealed one after another: INSERT, UPDATE, DELETE. Headline: 'change data' in brand violet.",
+      "tts": "Three S Q L commands change data: insert, update and delete.",
+      "rate": "+0%"
+    },
+    {
+      "start": 12.2,
+      "headline": "*INSERT* adds\na new row",
+      "voiceover": "*INSERT* adds a whole new row.",
+      "voStart": 12.5,
+      "visual": "The INSERT chip turns brand violet. Below, a white query card with a bold 5px navy outline draws itself and types 'INSERT INTO products' and 'VALUES ('Mug', 150)' with the keywords in bold brand violet. A new row, Mug 150, slides up inside a white chip with a bold violet outline into the first free line of the table, which grows one row taller. Headline: 'INSERT' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 17.7,
+      "headline": "*UPDATE* changes\nvalues in place",
+      "voiceover": "*UPDATE* changes values in rows that already exist.",
+      "voStart": 18.0,
+      "visual": "The UPDATE chip turns brand violet. The query changes to 'UPDATE products', 'SET price = 25', 'WHERE name = 'Pen''. In the Pen row the price 20 slides out and a bold navy 25 slides in, inside a bold 5px brand-violet outline. Headline: 'UPDATE' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 22.7,
+      "headline": "*WHERE* picks\nwhich rows",
+      "voiceover": "*WHERE* decides which rows change. Here, only the pen.",
+      "voStart": 23.0,
+      "visual": "A soft lavender band spreads behind the WHERE line of the query and behind the navy text of the Pen row; the other rows stay exactly as they were. Headline: 'WHERE' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 28.0,
+      "headline": "No WHERE:\n*every row* changes",
+      "voiceover": "Leave WHERE out and *every row* changes. That was Nila's mistake.",
+      "voStart": 28.3,
+      "visual": "The WHERE line slides out of the query. One row after another, every price in the table slides out and a bold navy 25 slides in. Headline: 'every row' in brand violet.",
+      "rate": "-8%"
+    },
+    {
+      "start": 33.3,
+      "headline": "*DELETE* removes\nwhole rows",
+      "voiceover": "*DELETE* removes whole rows. The same rule applies.",
+      "voStart": 33.6,
+      "visual": "The prices return to their real values and the DELETE chip turns brand violet. The query changes to 'DELETE FROM products', 'WHERE name = 'Lamp''. The Lamp row fades away, the row below moves up and the table gets one row shorter. Headline: 'DELETE' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 38.9,
+      "headline": "No WHERE:\n*an empty table*",
+      "voiceover": "Without WHERE, DELETE *empties* the whole table.",
+      "voStart": 39.2,
+      "visual": "The WHERE line slides out of the query. Every remaining row fades away one after another and a white chip with a bold navy outline reads '0 rows' inside the empty table. Headline: 'an empty table' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 43.6,
+      "headline": "Test it with\n*SELECT first*",
+      "voiceover": "So test your WHERE with a *SELECT* first. See the rows before you change them.",
+      "voStart": 43.9,
+      "visual": "The rows return. The query changes to 'SELECT * FROM products', 'WHERE name = 'Bag''. A bold 5px brand-violet outline draws itself around the Bag row and a bold violet check mark draws beside it: these are the rows the change would touch. Headline: 'SELECT first' in brand violet.",
+      "rate": "-14%"
+    },
+    {
+      "start": 49.5,
+      "headline": "Always check\n*your WHERE*",
+      "voiceover": "Three commands and one habit: always *check your WHERE.*",
+      "voStart": 49.8,
+      "visual": "The three command chips sit beside the table and a soft lavender band spreads behind the WHERE line of the query. Headline: 'your WHERE' in brand violet.",
+      "rate": "-7%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners the three SQL commands that change data, INSERT, UPDATE and DELETE, and why leaving out WHERE changes or removes every row. Carry one example through the whole video: Nila, a shop manager, changes one price and finds that every price in her product list has changed.",
+    "central_visual": {
+      "description": "LEFT: the table 'products' (name, price), a white card with a bold 5px deep navy outline. RIGHT: three command chips, INSERT, UPDATE and DELETE; the active one is brand violet. BELOW: the query card with a bold 5px navy outline.",
+      "interaction_effect": "Each command acts on the table as its query appears: a row slides in, a value is swapped in place, a row fades and the table closes the gap. When the WHERE line is removed the same change runs down every row.",
+      "camera": "One continuous space: close on the table, out to the table with the command chips, then down to include the query card."
+    },
+    "rules": [
+      "UPDATE and DELETE without WHERE act on every row; show that literally.",
+      "INSERT adds one complete row. DELETE removes whole rows, never single cells.",
+      "Do not use red for the mistakes; the changed values are bold navy and the outlines brand violet.",
+      "The advice to test a WHERE with SELECT first is a working habit, not a database rule; present it as advice."
+    ],
+    "components": [
+      "ProductsTable",
+      "PriceCell",
+      "CommandChips",
+      "QueryCard",
+      "InsertedRow"
+    ],
+    "controls": [
+      "Product rows",
+      "The inserted row, the updated price, the deleted and the checked product"
+    ],
+    "quality": "Confirm that after each query the table shows exactly what that query does, including the two no-WHERE cases.",
+    "sources": [
+      "https://www.postgresql.org/docs/current/dml-insert.html",
+      "https://www.postgresql.org/docs/current/dml-update.html",
+      "https://www.postgresql.org/docs/current/dml-delete.html"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 30-second, 9:16 DataEntropy explainer animation that shows beginners (students and early-career learners) how text embeddings work: a trained model turns each piece of text into a list of numbers (a vector), texts with similar meaning get nearby vectors, and search measures that closeness (for example with cosine similarity) to find related text even when the words differ. Carry one relatable example through the whole video: a shopper searches 'cheap laptop' and should find the product 'Budget-friendly computer', which shares no words with the search. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 30,
+    "total_frames": 900,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring AI learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, card outlines and map axes; brand violet (#6D4AFF) for key words, the search query point and matches; electric purple (#8B5CF6) for number rows, arrows and the similarity arc; soft lavender (#C4B5FD) only as a large filled 'neighborhood' glow placed behind darker outlined points. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple; map points are solid dots at least 24px wide with a 4px darker outline. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned, maximum two lines, with one or two key words in brand violet. Labels weight 500, at least 32px, deep navy. Maximum 12 words of on-screen text per scene.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "A search bar holding 'cheap laptop' stays visible the whole time. The query and three product cards ('Budget-friendly computer', 'Laptop bag', 'Banana bread recipe') pass through a rounded embedding-model node, each coming out as a row of numbers, and each row then folds into a single point on a 2D 'meaning map'.",
+    "interaction_effect": "On the meaning map, 'cheap laptop' and 'Budget-friendly computer' land close together inside one soft lavender neighborhood glow; 'Laptop bag' lands farther away even though it shares the word 'laptop'; 'Banana bread recipe' lands far off. Bold arrows from the map origin to each point show direction, and an electric-purple arc between the query arrow and each product arrow shows the angle: small angle = similar meaning (illustrative cosine similarity 0.89 vs 0.41 vs 0.05).",
+    "camera": "Use one continuous visual space with smooth pans and soft zooms. The query and each product card keep their identity from text to numbers to point."
+  },
+  "timeline": [
+    {
+      "seconds": "0-3",
+      "visual": "A shop search bar with a bold 5px deep navy (#172554) outline sits on the white background. 'cheap laptop' types in with a brand-violet (#6D4AFF) cursor. Below it, the product card 'Budget-friendly computer' (off-white fill, 4px deep navy outline) waits. Headline animates in top-left: 'mean' in brand violet.",
+      "on_screen_text": "How does search find what you mean?",
+      "voiceover": "How can search find what you mean, not just your words?"
+    },
+    {
+      "seconds": "3-8",
+      "visual": "Bold 5px deep navy connector lines try to link each query word to each product word and find no matching word; each attempt ends in a bold 6px brand-violet X. The decoy card 'Laptop bag' slides in and a word-match line snaps to it on the shared word 'laptop', marked with a brand-violet question mark. Label 'word match ≠ meaning match' in deep navy.",
+      "on_screen_text": "No shared words, same meaning",
+      "voiceover": "'Cheap laptop' and 'budget-friendly computer' share no words, same meaning."
+    },
+    {
+      "seconds": "8-14",
+      "visual": "The query and product cards travel along bold 5px electric-purple (#8B5CF6) curved paths into a rounded embedding-model node with a 5px deep navy outline and a large soft lavender (#C4B5FD) glow behind it; small navy label 'trained on lots of text'. Each card comes out as a row of numbers in navy text inside a 4px electric-purple outlined strip, for example [0.12, -0.48, 0.91, ...], with a navy caption 'real ones have hundreds of numbers'. Label 'embedding = list of numbers (a vector)'.",
+      "on_screen_text": "Embedding: text as a list of numbers (a vector)",
+      "voiceover": "A trained model turns each text into a list of numbers."
+    },
+    {
+      "seconds": "14-20",
+      "visual": "Each number row folds into a solid point on a 2D meaning map with bold 4px deep navy axes (caption 'simplified to 2D'). The brand-violet query point and the 'Budget-friendly computer' point land side by side inside a soft lavender neighborhood glow; 'Laptop bag' lands farther away, 'Banana bread recipe' far off, all as solid deep navy dots with labels in navy. Bold 5px arrows run from the origin to each point; an electric-purple arc marks the small angle between the query and its match, labelled 'closeness = similar meaning'.",
+      "on_screen_text": "Similar meaning → nearby points",
+      "voiceover": "Similar meanings land close together, and search measures that closeness."
+    },
+    {
+      "seconds": "20-26",
+      "visual": "Back in the search bar, results rank themselves by closeness: 'Budget-friendly computer' rises to the top with a 5px brand-violet outline and a navy score '0.89', then 'Laptop bag' '0.41' (illustrative). Three small outlined icons (4px deep navy strokes) line up beside it: a search magnifier, a recommendation star, and a chat bubble labelled 'AI assistants that read your docs'.",
+      "on_screen_text": "Powers smart search, recommendations and AI assistants",
+      "voiceover": "That's how search, recommendations, and AI chatbots find related content."
+    },
+    {
+      "seconds": "26-30",
+      "visual": "The map points slide together and hand off into the DataEntropy logo: its four brand-violet bars grow upward left to right, the wordmark reveals, and a soft violet glow sweeps once. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand-violet Inter 700 with a bold 5px brand-violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least one second.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy to learn more AI, explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text. Never render elements faint, pale, hairline, ghosted or in light gray; show far-away points by position, not by fading them.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Keep the 'cheap laptop' query visually identifiable throughout the video.",
+    "Make clear the 2D map is a simplification: real embeddings have hundreds or thousands of numbers.",
+    "Label all numbers and similarity scores as illustrative; do not present them as real model output.",
+    "Show that the positions come from a trained model that learned from data, not from hand-placed rules or keyword matching.",
+    "Do not imply embeddings store the text itself or guarantee a perfect match.",
+    "Explain every necessary term (embedding, vector, similarity) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "SearchBar",
+      "ProductCard",
+      "WordMatchLine",
+      "EmbeddingModel",
+      "NumberRow",
+      "MeaningMap",
+      "MapPoint",
+      "NeighborhoodGlow",
+      "SimilarityArc",
+      "RankedResults",
+      "UseCaseIcons",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Query text",
+      "Product texts",
+      "Illustrative number rows and similarity scores",
+      "Map point positions",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "30-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 3, 8, 14, 20, 26, and 29 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, dot or text that is hard to see on white. Confirm all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://developers.google.com/machine-learning/crash-course/embeddings/embedding-space",
+    "https://developers.openai.com/api/docs/guides/embeddings"
+  ]
+}

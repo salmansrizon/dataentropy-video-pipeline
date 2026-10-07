@@ -1,0 +1,165 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "request": "Book my Lisbon trip",
+  "labels": {
+    "agent": "Agent",
+    "notBooked": "not booked",
+    "retry": "try again"
+  },
+  "tools": [
+    "Search",
+    "Calendar",
+    "Booking"
+  ],
+  "steps": [
+    {
+      "label": "Find flights",
+      "request": "Lisbon, Friday",
+      "result": "Flight DE204"
+    },
+    {
+      "label": "Check calendar",
+      "request": "Saturday?",
+      "result": "Sat: free"
+    },
+    {
+      "label": "Book hotel",
+      "request": "Hotel Aurora",
+      "result": "Sold out",
+      "retryRequest": "Hotel Mira",
+      "retryResult": "Booked"
+    },
+    {
+      "label": "Send summary",
+      "request": "",
+      "result": "Trip summary"
+    }
+  ],
+  "loop": [
+    "plan",
+    "act",
+    "check"
+  ],
+  "trip": {
+    "lines": [
+      "Flight DE204",
+      "Hotel Mira",
+      "Sat–Sun"
+    ],
+    "note": "Fictional example",
+    "approve": "Approve payment"
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How does AI get a\n*whole task* done?",
+      "voiceover": "You ask AI to book a weekend trip. What happens *next?*",
+      "voStart": 0.3,
+      "rate": "-13%"
+    },
+    {
+      "start": 5,
+      "headline": "A plain chatbot\n*only writes text*",
+      "voiceover": "A plain chatbot only writes *text.* It cannot book anything.",
+      "voStart": 5.1,
+      "rate": "-2%"
+    },
+    {
+      "start": 9.7,
+      "headline": "An AI agent *takes actions*\nto finish a task",
+      "voiceover": "An AI *agent* goes further. It takes actions itself.",
+      "voStart": 9.8,
+      "rate": "+0%"
+    },
+    {
+      "start": 14,
+      "headline": "*Plan*: the task split\ninto small steps",
+      "voiceover": "First, it splits the task into small *steps.*",
+      "voStart": 14.3,
+      "rate": "-9%"
+    },
+    {
+      "start": 18,
+      "headline": "*Tools*: apps the\nagent can use",
+      "voiceover": "Its *tools* are apps like search and a calendar.",
+      "voStart": 18.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 22,
+      "headline": "It sends the search\ntool a *request*",
+      "voiceover": "Step one. It *asks* the search tool for flights.",
+      "voStart": 22.2,
+      "rate": "-11%"
+    },
+    {
+      "start": 26,
+      "headline": "It *checks*\nevery result",
+      "voiceover": "The result comes back and the agent *checks* it.",
+      "voStart": 26.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 30,
+      "headline": "Next step, *next tool*",
+      "voiceover": "Next, it checks your *calendar.* Saturday is free.",
+      "voStart": 30.2,
+      "rate": "+0%"
+    },
+    {
+      "start": 34,
+      "headline": "A step can *fail*",
+      "voiceover": "Then the hotel booking *fails.* That room is gone.",
+      "voStart": 34.2,
+      "rate": "-6%"
+    },
+    {
+      "start": 38,
+      "headline": "So it *tries again*",
+      "voiceover": "So it tries *again* with another hotel. Booked.",
+      "voStart": 38.2,
+      "rate": "-6%"
+    },
+    {
+      "start": 42,
+      "headline": "Plan → act → check\n→ *repeat*",
+      "voiceover": "It plans and acts and checks in a *loop* until the task is done.",
+      "voStart": 42.2,
+      "rate": "-20%"
+    },
+    {
+      "start": 48,
+      "headline": "Trip ready. *You approve*\nthe payment.",
+      "voiceover": "Your trip is ready. Agents can still make mistakes, so *you* approve the payment.",
+      "voStart": 48.2,
+      "rate": "-17%"
+    },
+    {
+      "start": 54,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more AI explained simply.",
+      "tts": "Follow Data Entropy for more AI explained simply.",
+      "voStart": 54.3,
+      "rate": "+0%"
+    }
+  ]
+}

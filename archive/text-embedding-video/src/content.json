@@ -1,0 +1,72 @@
+{
+  "fps": 30,
+  "durationSeconds": 30,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "query": "cheap laptop",
+  "products": ["Budget-friendly computer", "Laptop bag", "Banana bread recipe"],
+  "vectors": ["[0.12, -0.48, 0.91, …]", "[0.10, -0.45, 0.88, …]", "[0.67, 0.21, -0.30, …]", "[-0.80, 0.55, 0.04, …]"],
+  "scores": [0.89, 0.41, 0.05],
+  "mismatchNote": "word match ≠ meaning match",
+  "modelName": "Embedding model",
+  "modelNote": "trained on lots of text",
+  "vectorNote": "embedding = list of numbers (a vector)",
+  "vectorSubNote": "real ones have hundreds of numbers (illustrative)",
+  "mapNote": "simplified to 2D",
+  "closenessNote": "closeness = similar meaning",
+  "scoresNote": "similarity scores (illustrative)",
+  "uses": ["search", "recommendations", "AI assistants"],
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How does search find\nwhat you *mean*?",
+      "voiceover": "How can search find what you *mean*, not just your words?",
+      "voStart": 0.1
+    },
+    {
+      "start": 3.4,
+      "headline": "No shared words,\n*same meaning*",
+      "voiceover": "Cheap laptop and budget-friendly computer share no words, but *mean* the same.",
+      "voStart": 3.5
+    },
+    {
+      "start": 8.6,
+      "headline": "Embedding: text as a\n*list of numbers*",
+      "voiceover": "A trained model turns each text into a *list of numbers*.",
+      "voStart": 8.7
+    },
+    {
+      "start": 14,
+      "headline": "Similar meaning →\n*nearby points*",
+      "voiceover": "Similar meanings land *close together*, and search measures that closeness.",
+      "voStart": 14.2
+    },
+    {
+      "start": 20,
+      "headline": "Powers *smart search*\nand AI assistants",
+      "voiceover": "That's how search and AI chatbots find *related* content.",
+      "voStart": 20.2
+    },
+    {
+      "start": 26,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* to learn more AI, explained simply.",
+      "tts": "Follow Data Entropy to learn more AI, explained simply.",
+      "voStart": 26.0
+    }
+  ]
+}

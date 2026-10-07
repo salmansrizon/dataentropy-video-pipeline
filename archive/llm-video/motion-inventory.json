@@ -1,0 +1,251 @@
+{
+  "video": "30-second vertical explainer that shows beginners how a large language model writes a reply one token at a time",
+  "animations": {
+    "chat_window_enter": {
+      "what": "The chat window fades in and rises into place",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 18
+    },
+    "prompt_typing": {
+      "what": "The student's message types in letter by letter at a steady pace",
+      "scene": "hook",
+      "ease": "linear",
+      "frames": 30
+    },
+    "reply_start_typing": {
+      "what": "The start of the AI reply appears word by word at a steady pace",
+      "scene": "hook",
+      "ease": "linear",
+      "frames": 30
+    },
+    "cursor_blink": {
+      "what": "A violet text cursor blinks steadily at the end of the reply",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 12
+    },
+    "camera_ease_back": {
+      "what": "The camera eases back slightly to make room below the chat",
+      "scene": "lookup",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "database_enter": {
+      "what": "A database cylinder labeled 'answer lookup?' slides in and fades into view",
+      "scene": "lookup",
+      "ease": "out",
+      "frames": 20
+    },
+    "database_cross_out": {
+      "what": "A bold violet X draws itself across the database",
+      "scene": "lookup",
+      "ease": "out",
+      "frames": 16
+    },
+    "database_exit": {
+      "what": "The crossed-out database slides away and disappears",
+      "scene": "lookup",
+      "ease": "in",
+      "frames": 15
+    },
+    "llm_node_enter": {
+      "what": "A rounded box labeled LLM fades in and grows slightly into place where the database was",
+      "scene": "lookup",
+      "ease": "out",
+      "frames": 24
+    },
+    "llm_node_pulse": {
+      "what": "The LLM box briefly swells and settles each time it produces new candidate words",
+      "scene": "tokens",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "prompt_bubble_grow": {
+      "what": "The message bubble grows taller to make room for two rows of tiles",
+      "scene": "tokens",
+      "ease": "inOut",
+      "frames": 24
+    },
+    "prompt_text_fade": {
+      "what": "The typed message text fades away as it turns into tiles",
+      "scene": "tokens",
+      "ease": "in",
+      "frames": 10
+    },
+    "token_tiles_enter": {
+      "what": "The message reappears as separate word tiles that fade in and rise one after another",
+      "scene": "tokens",
+      "ease": "out",
+      "frames": 16
+    },
+    "split_mark_draw": {
+      "what": "A violet underline draws under two tiles that are pieces of one word",
+      "scene": "tokens",
+      "ease": "out",
+      "frames": 15
+    },
+    "token_paths_draw": {
+      "what": "Curved purple lines draw from each tile down into the LLM box",
+      "scene": "tokens",
+      "ease": "out",
+      "frames": 30
+    },
+    "token_paths_exit": {
+      "what": "The curved lines from the tiles fade away",
+      "scene": "tokens",
+      "ease": "in",
+      "frames": 15
+    },
+    "candidates_rise": {
+      "what": "Candidate next words rise out of the LLM box into a list",
+      "scene": "tokens",
+      "ease": "out",
+      "frames": 14
+    },
+    "probability_bars_grow": {
+      "what": "A bar next to each candidate word grows to show its probability",
+      "scene": "tokens",
+      "ease": "out",
+      "frames": 18
+    },
+    "chosen_token_highlight": {
+      "what": "The most likely candidate turns solid violet",
+      "scene": "attention",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "chosen_token_fly": {
+      "what": "The chosen word flies up from the list into the blank at the end of the reply",
+      "scene": "attention",
+      "ease": "inOut",
+      "frames": 25
+    },
+    "candidates_sink": {
+      "what": "The candidates that were not chosen sink back into the LLM box and disappear",
+      "scene": "attention",
+      "ease": "in",
+      "frames": 14
+    },
+    "attention_arcs_draw": {
+      "what": "Purple arcs draw from the blank in the reply back to the tiles 'thank' and 'teacher'",
+      "scene": "attention",
+      "ease": "out",
+      "frames": 25
+    },
+    "attention_tile_outline": {
+      "what": "The tiles 'thank' and 'teacher' get a violet outline while the arcs point at them",
+      "scene": "attention",
+      "ease": "inOut",
+      "frames": 10
+    },
+    "attention_arcs_exit": {
+      "what": "The attention arcs fade away after the word is chosen",
+      "scene": "attention",
+      "ease": "in",
+      "frames": 10
+    },
+    "caption_enter": {
+      "what": "A short explanation line under the LLM box fades in and rises",
+      "scene": "all",
+      "ease": "out",
+      "frames": 15
+    },
+    "caption_exit": {
+      "what": "The explanation line fades out before the next one appears",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "camera_zoom_out": {
+      "what": "The camera zooms out to show more of the scene",
+      "scene": "training",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "training_paths_draw": {
+      "what": "Violet lines draw from the edges of the screen into the LLM box",
+      "scene": "training",
+      "ease": "out",
+      "frames": 28
+    },
+    "training_pages_travel": {
+      "what": "Small text pages travel along the lines, shrinking as they enter the LLM box",
+      "scene": "training",
+      "ease": "inOut",
+      "frames": 37
+    },
+    "training_paths_exit": {
+      "what": "The violet lines fade away after the pages arrive",
+      "scene": "training",
+      "ease": "in",
+      "frames": 12
+    },
+    "fact_badge_enter": {
+      "what": "A badge saying 'Check important facts' fades in and rises",
+      "scene": "training",
+      "ease": "out",
+      "frames": 18
+    },
+    "world_fade_out": {
+      "what": "The whole scene fades away before the logo appears",
+      "scene": "outro",
+      "ease": "in",
+      "frames": 18
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind an invisible edge",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out at the end of its scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_words": {
+      "what": "Subtitle words brighten in groups of three as the narrator says them",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "logo_bars_grow": {
+      "what": "Four logo bars grow upward from a baseline one after another, left to right",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "logo_wordmark_reveal": {
+      "what": "The brand name is revealed left to right by a moving edge",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "The logo bars glow brighter, then settle to a soft glow",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises into place under the logo",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises into place",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow on the button slides a little to the right once",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "video": "<one line: what this video explains and to whom>",
+  "animations": {
+    "camera_move": {"what": "The camera pans and zooms smoothly to the part of the picture being explained", "scene": "all", "ease": "inOut", "frames": 35},
+    "camera_breathing": {"what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen", "scene": "all", "ease": "sine loop", "frames": 180},
+    "headline_reveal": {"what": "Each headline line slides up into view from behind a mask", "scene": "all", "ease": "out", "frames": 18},
+    "headline_exit": {"what": "The headline fades out just before the next scene", "scene": "all", "ease": "in", "frames": 8},
+    "subtitle_bar_fade": {"what": "The subtitle bar fades in when a spoken line starts and fades out when it ends", "scene": "all", "ease": "inOut", "frames": 8},
+    "subtitle_word_reveal": {"what": "Each subtitle word brightens at the moment it is spoken", "scene": "all", "ease": "out", "frames": 8},
+    "card_outline_draw": {"what": "The outline of a card draws itself, then the card fills in", "scene": "hook", "ease": "out", "frames": 30},
+    "mark_wipe": {"what": "A lavender band spreads from left to right behind a line of text", "scene": "explanation", "ease": "out", "frames": 18},
+    "chip_wipe": {"what": "A small label chip is revealed from left to right", "scene": "explanation", "ease": "out", "frames": 16},
+    "world_exit": {"what": "The picture fades away to make room for the logo", "scene": "logo", "ease": "in", "frames": 12},
+    "logo_bars_grow": {"what": "The four logo bars grow upward one after another from left to right", "scene": "logo", "ease": "out", "frames": 18},
+    "wordmark_reveal": {"what": "The wordmark is revealed from left to right", "scene": "logo", "ease": "out", "frames": 20},
+    "logo_glow": {"what": "A soft violet glow brightens around the logo bars and settles", "scene": "logo", "ease": "inOut", "frames": 18},
+    "tagline_enter": {"what": "The tagline is revealed from left to right under the wordmark", "scene": "logo", "ease": "out", "frames": 16},
+    "cta_enter": {"what": "The call-to-action button fades in", "scene": "logo", "ease": "out", "frames": 18},
+    "cta_arrow_nudge": {"what": "The arrow in the button nudges to the right once", "scene": "logo", "ease": "inOut", "frames": 18}
+  }
+}

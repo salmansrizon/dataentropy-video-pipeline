@@ -1,0 +1,159 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners the three SQL commands that change data, INSERT, UPDATE and DELETE, and why leaving out WHERE changes or removes every row. Carry one example through the whole video: Nila, a shop manager, changes one price and finds that every price in her product list has changed. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 11 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "LEFT: the table 'products' (name, price), a white card with a bold 5px deep navy outline. RIGHT: three command chips, INSERT, UPDATE and DELETE; the active one is brand violet. BELOW: the query card with a bold 5px navy outline.",
+    "interaction_effect": "Each command acts on the table as its query appears: a row slides in, a value is swapped in place, a row fades and the table closes the gap. When the WHERE line is removed the same change runs down every row.",
+    "camera": "One continuous space: close on the table, out to the table with the command chips, then down to include the query card."
+  },
+  "timeline": [
+    {
+      "seconds": "0-6.3",
+      "visual": "A white table card named 'products' with a bold 5px deep navy outline draws itself: columns name and price, four rows, and every price reads 25 in bold navy. A large bold brand-violet question mark appears beside it. Headline with 'every product' in brand violet.",
+      "on_screen_text": "One price change hit every product",
+      "voiceover": "Nila changed one price. And every price in the shop changed. Why?"
+    },
+    {
+      "seconds": "6.3-12.2",
+      "visual": "The prices slide back to their real values, 20, 80, 450 and 300. Beside the table three white chips with bold navy outlines are revealed one after another: INSERT, UPDATE, DELETE. Headline: 'change data' in brand violet.",
+      "on_screen_text": "Three commands change data",
+      "voiceover": "Three SQL commands change data: INSERT, UPDATE and DELETE."
+    },
+    {
+      "seconds": "12.2-17.7",
+      "visual": "The INSERT chip turns brand violet. Below, a white query card with a bold 5px navy outline draws itself and types 'INSERT INTO products' and 'VALUES ('Mug', 150)' with the keywords in bold brand violet. A new row, Mug 150, slides up inside a white chip with a bold violet outline into the first free line of the table, which grows one row taller. Headline: 'INSERT' in brand violet.",
+      "on_screen_text": "INSERT adds a new row",
+      "voiceover": "INSERT adds a whole new row."
+    },
+    {
+      "seconds": "17.7-22.7",
+      "visual": "The UPDATE chip turns brand violet. The query changes to 'UPDATE products', 'SET price = 25', 'WHERE name = 'Pen''. In the Pen row the price 20 slides out and a bold navy 25 slides in, inside a bold 5px brand-violet outline. Headline: 'UPDATE' in brand violet.",
+      "on_screen_text": "UPDATE changes values in place",
+      "voiceover": "UPDATE changes values in rows that already exist."
+    },
+    {
+      "seconds": "22.7-28",
+      "visual": "A soft lavender band spreads behind the WHERE line of the query and behind the navy text of the Pen row; the other rows stay exactly as they were. Headline: 'WHERE' in brand violet.",
+      "on_screen_text": "WHERE picks which rows",
+      "voiceover": "WHERE decides which rows change. Here, only the pen."
+    },
+    {
+      "seconds": "28-33.3",
+      "visual": "The WHERE line slides out of the query. One row after another, every price in the table slides out and a bold navy 25 slides in. Headline: 'every row' in brand violet.",
+      "on_screen_text": "No WHERE: every row changes",
+      "voiceover": "Leave WHERE out and every row changes. That was Nila's mistake."
+    },
+    {
+      "seconds": "33.3-38.9",
+      "visual": "The prices return to their real values and the DELETE chip turns brand violet. The query changes to 'DELETE FROM products', 'WHERE name = 'Lamp''. The Lamp row fades away, the row below moves up and the table gets one row shorter. Headline: 'DELETE' in brand violet.",
+      "on_screen_text": "DELETE removes whole rows",
+      "voiceover": "DELETE removes whole rows. The same rule applies."
+    },
+    {
+      "seconds": "38.9-43.6",
+      "visual": "The WHERE line slides out of the query. Every remaining row fades away one after another and a white chip with a bold navy outline reads '0 rows' inside the empty table. Headline: 'an empty table' in brand violet.",
+      "on_screen_text": "No WHERE: an empty table",
+      "voiceover": "Without WHERE, DELETE empties the whole table."
+    },
+    {
+      "seconds": "43.6-49.5",
+      "visual": "The rows return. The query changes to 'SELECT * FROM products', 'WHERE name = 'Bag''. A bold 5px brand-violet outline draws itself around the Bag row and a bold violet check mark draws beside it: these are the rows the change would touch. Headline: 'SELECT first' in brand violet.",
+      "on_screen_text": "Test it with SELECT first",
+      "voiceover": "So test your WHERE with a SELECT first. See the rows before you change them."
+    },
+    {
+      "seconds": "49.5-54",
+      "visual": "The three command chips sit beside the table and a soft lavender band spreads behind the WHERE line of the query. Headline: 'your WHERE' in brand violet.",
+      "on_screen_text": "Always check your WHERE",
+      "voiceover": "Three commands and one habit: always check your WHERE."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Nothing rises or scales as it appears: card outlines draw themselves and fill in, rows and chips are wiped in from the left.",
+    "UPDATE and DELETE without WHERE act on every row; show that literally.",
+    "INSERT adds one complete row. DELETE removes whole rows, never single cells.",
+    "Do not use red for the mistakes; the changed values are bold navy and the outlines brand violet.",
+    "The advice to test a WHERE with SELECT first is a working habit, not a database rule; present it as advice."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "ProductsTable",
+      "PriceCell",
+      "CommandChips",
+      "QueryCard",
+      "InsertedRow",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Product rows",
+      "The inserted row, the updated price, the deleted and the checked product",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels and any line or text that is hard to see on white. Confirm that after each query the table shows exactly what that query does, including the two no-WHERE cases.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/dml-insert.html",
+    "https://www.postgresql.org/docs/current/dml-update.html",
+    "https://www.postgresql.org/docs/current/dml-delete.html"
+  ]
+}

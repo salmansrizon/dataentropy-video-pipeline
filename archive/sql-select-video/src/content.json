@@ -1,0 +1,166 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "leads",
+    "columns": [
+      "name",
+      "city",
+      "budget"
+    ],
+    "rows": [
+      [
+        "Arif",
+        "Dhaka",
+        9000
+      ],
+      [
+        "Mina",
+        "Sylhet",
+        3500
+      ],
+      [
+        "Rafi",
+        "Dhaka",
+        6200
+      ],
+      [
+        "Sara",
+        "Khulna",
+        1800
+      ],
+      [
+        "Nabil",
+        "Sylhet",
+        12000
+      ],
+      [
+        "Tania",
+        "Dhaka",
+        4400
+      ]
+    ]
+  },
+  "query": {
+    "select": [
+      "name",
+      "budget"
+    ],
+    "whereColumn": "budget",
+    "value": 5000,
+    "newValue": 8000
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "rows": "rows",
+    "manyRows": 6000,
+    "unchanged": "unchanged"
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "Which leads are\nworth a *call* today?",
+      "voiceover": "Maya has a list of sales leads. Who should she *call* today?",
+      "voStart": 0.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 5.5,
+      "headline": "Row by row\nis *too slow*",
+      "voiceover": "Row by row works for six leads. Not for six *thousand.*",
+      "voStart": 5.8,
+      "rate": "-13%"
+    },
+    {
+      "start": 10.1,
+      "headline": "*SQL*: a language for\nasking data questions",
+      "voiceover": "So she asks the table itself, using a language called *SQL.*",
+      "tts": "So she asks the table itself, using a language called S Q L.",
+      "voStart": 10.4,
+      "rate": "-16%"
+    },
+    {
+      "start": 15.2,
+      "headline": "*SELECT* picks\nthe columns",
+      "voiceover": "*SELECT* names the columns she wants: name and budget.",
+      "voStart": 15.5,
+      "rate": "-15%"
+    },
+    {
+      "start": 19.6,
+      "headline": "*FROM* names\nthe table",
+      "voiceover": "*FROM* says which table to look in: leads.",
+      "voStart": 19.9,
+      "rate": "-17%"
+    },
+    {
+      "start": 23.4,
+      "headline": "*WHERE* sets a test\nfor every row",
+      "voiceover": "*WHERE* is a test for each row. Is the budget above five thousand?",
+      "voStart": 23.7,
+      "rate": "-12%"
+    },
+    {
+      "start": 28.4,
+      "headline": "Rows that pass\n*go through*",
+      "voiceover": "Rows that pass *go through.* The rest stay behind.",
+      "voStart": 28.7,
+      "rate": "-20%"
+    },
+    {
+      "start": 33.7,
+      "headline": "The answer is a\n*new, smaller* table",
+      "voiceover": "What comes back is a *new table:* three leads and two columns.",
+      "voStart": 34.0,
+      "rate": "-20%"
+    },
+    {
+      "start": 39.3,
+      "headline": "The original table\nis *not changed*",
+      "voiceover": "The original list is *untouched.* SELECT only reads.",
+      "voStart": 39.6,
+      "rate": "+0%"
+    },
+    {
+      "start": 44.0,
+      "headline": "Change the test,\nget a *new answer*",
+      "voiceover": "Change one number and the same question gives a *new answer.*",
+      "voStart": 44.3,
+      "rate": "-16%"
+    },
+    {
+      "start": 48.6,
+      "headline": "*SELECT* picks columns.\n*WHERE* picks rows.",
+      "voiceover": "SELECT picks *columns.* WHERE picks *rows.* That works on any table.",
+      "voStart": 48.9,
+      "rate": "-15%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "voStart": 54.3,
+      "rate": "+0%"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners how GROUP BY and an aggregate function turn many rows into a short summary, and how HAVING tests the groups. Carry one example through the whole video: Imran, a regional manager, has a table of sales from three stores and wants to know which store earned the most. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 12 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "TOP: the source table 'sales', a white card with a bold 5px deep navy outline, a navy name tab and two columns (store, amount) with eight rows of bold navy text; the three stores are mixed together. MIDDLE: the query card with a bold 5px navy outline and a navy 'SQL' badge. BOTTOM: three group trays with bold 5px navy outlines, one per store, each with a bold brand-violet bar that stands on a navy baseline and a bold navy total above it.",
+    "interaction_effect": "GROUP BY makes every row card leave the table and slide into the tray of its store, so rows with the same store sit together. SUM makes the amounts inside one tray drop into that tray's bar: the bar grows from its baseline and the navy total counts upward. HAVING tests each tray's total: trays that pass keep a bold violet check, and the tray that fails fades to pale gray.",
+    "camera": "One continuous space. The camera starts close on the table, slides down as rows travel into the trays, pushes in softly on one tray while its total is added up, and pulls back to show all three totals."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "A white table card named 'sales' with a bold 5px deep navy outline rises into place: columns store and amount, eight rows of bold navy text with Dhaka, Sylhet and Khulna mixed together. A bold brand-violet question mark sits beside the table. Headline animates in with 'earned the most' in brand violet.",
+      "on_screen_text": "Which store earned the most?",
+      "voiceover": "Eight sales from three stores. Which store earned the most?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "A bold 5px brand-violet pointer hops between the three Dhaka rows scattered down the table while a navy running total beside it adds them slowly; a white chip with a bold navy outline counts upward from '8 rows' to '1,000,000 rows'. Headline: 'does not scale' in brand violet.",
+      "on_screen_text": "Adding by hand does not scale",
+      "voiceover": "You could add them up by hand. But not for a million sales."
+    },
+    {
+      "seconds": "10-15.5",
+      "visual": "The camera slides down. A white query card with a bold 5px navy outline rises and types 'GROUP BY store' with GROUP BY in bold brand violet. Three empty trays with bold 5px navy outlines appear under it, labelled Dhaka, Sylhet and Khulna in bold navy. Headline: 'GROUP BY' in brand violet.",
+      "on_screen_text": "GROUP BY sorts rows into groups",
+      "voiceover": "GROUP BY puts rows with the same store into one group."
+    },
+    {
+      "seconds": "15.5-20",
+      "visual": "Each row leaves the table as a white card with a bold 4px navy outline and slides along a curved path into the tray of its store, one after another, until every tray holds its own rows. Headline: 'one group' in brand violet.",
+      "on_screen_text": "One group for each store",
+      "voiceover": "Three stores so three groups."
+    },
+    {
+      "seconds": "20-25.5",
+      "visual": "Above the GROUP BY line the query types 'SELECT store, SUM(amount)' and 'FROM sales'. The camera pushes in on the Dhaka tray: its three amount cards drop one by one onto a bold brand-violet bar that grows from a navy baseline while a bold navy number counts upward 120, 320, 410. Headline: 'SUM' in brand violet.",
+      "on_screen_text": "SUM adds up each group",
+      "voiceover": "SUM adds up the amounts inside each group."
+    },
+    {
+      "seconds": "25.5-31",
+      "visual": "The camera pulls back. The Sylhet and Khulna trays do the same: their cards drop onto bold brand-violet bars and their navy totals count up to 300 and 200. A bold navy label 'many values in, one value out' sits under the three bars. Headline: 'aggregate' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "An aggregate turns many values into one",
+      "voiceover": "That is an aggregate. Many values go in and one comes out."
+    },
+    {
+      "seconds": "31-36",
+      "visual": "The three bars shrink into three rows of a result table with a bold 5px brand-violet outline and a violet 'result' tab: Dhaka 410, Sylhet 300, Khulna 200, in bold navy. Eight rows went in and three came out. Headline: 'per group' in brand violet.",
+      "on_screen_text": "One row per group",
+      "voiceover": "The answer has one row for each group."
+    },
+    {
+      "seconds": "36-40.5",
+      "visual": "A bold 5px brand-violet outline draws around the Dhaka row in the result table and its total turns brand violet; the question mark from the first scene turns into a bold violet check. Headline: 'Dhaka' in brand violet.",
+      "on_screen_text": "Dhaka earned the most",
+      "voiceover": "Dhaka earned the most. Four hundred and ten."
+    },
+    {
+      "seconds": "40.5-45.5",
+      "visual": "A new line types itself at the bottom of the query: 'HAVING SUM(amount) > 250', with HAVING in bold brand violet. A band with a bold 5px violet outline steps down the three result rows: Dhaka and Sylhet get bold violet check marks and the Khulna row fades to pale gray. Headline: 'HAVING' in brand violet.",
+      "on_screen_text": "HAVING tests the groups",
+      "voiceover": "HAVING is a test for groups after the totals exist."
+    },
+    {
+      "seconds": "45.5-50",
+      "visual": "Two bold navy labels with brand-violet arrows point at the picture: 'WHERE: tests rows' points at the source table and 'HAVING: tests groups' points at the result table. Headline: 'WHERE' and 'HAVING' in brand violet.",
+      "on_screen_text": "WHERE tests rows. HAVING tests groups.",
+      "voiceover": "WHERE tests rows before grouping. HAVING tests groups after."
+    },
+    {
+      "seconds": "50-54",
+      "visual": "The camera pulls back to show the long source table above and the short result table below, joined by a bold 5px brand-violet arrow. Headline: 'short summary' in brand violet.",
+      "on_screen_text": "A long list becomes a short summary",
+      "voiceover": "That is how a long list becomes a short summary."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark reveals, and a soft violet glow settles. The tagline 'Practical Data Skills. Real Career Impact.' appears, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Every row lands in exactly one tray. The number of cards in the trays always equals the number of rows in the table.",
+    "The totals on screen are the real sums of the amounts shown: Dhaka 410, Sylhet 300, Khulna 200.",
+    "Say that WHERE tests rows before grouping and HAVING tests groups after grouping. Do not put an aggregate in a WHERE clause.",
+    "The result has one row per group. Do not show non-grouped columns in the SELECT list; databases disagree about that."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "SourceTable",
+      "QueryCard",
+      "GroupTrays",
+      "RowCard",
+      "TotalBar",
+      "ResultTable",
+      "TestBand",
+      "ClauseLabels",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Table rows (store, amount)",
+      "Grouping column",
+      "HAVING threshold",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels, broken transformations, timing gaps, and any line or text that is hard to see on white. Confirm that each tray holds exactly the rows of its store, that every bar's number equals the sum of its cards, and that the HAVING test marks the right groups. Confirm that no scene has more than three focal points and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/tutorial-agg.html",
+    "https://www.postgresql.org/docs/current/functions-aggregate.html",
+    "https://www.postgresql.org/docs/current/sql-select.html",
+    "https://dev.mysql.com/doc/refman/8.4/en/select.html"
+  ]
+}

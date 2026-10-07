@@ -1,0 +1,173 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners that a SQL query is not processed in the order it is written: logically it goes FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY. Carry one example through the whole video: Sami, a junior analyst, writes a sales report query that fails because WHERE uses a name that SELECT has not created yet. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 12 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "CENTER: a tall query card, a white card with a bold 5px deep navy outline and a navy 'SQL' badge, holding clause lines in a monospace face with brand-violet keywords: SELECT region, SUM(amount) AS total / FROM sales / WHERE total > 100 / GROUP BY region / ORDER BY total. Each line is its own strip that can move. LEFT of the card: a column of round step badges with bold 4px navy outlines. BELOW: a small table 'sales' with a bold 5px navy outline whose rows react as each step runs.",
+    "interaction_effect": "A bold brand-violet step badge with a white number lands beside a clause when that clause runs, in run order and not in reading order, and the small table below reacts: FROM lights the table, WHERE fades rows, GROUP BY gathers rows into groups, HAVING fades a group, SELECT builds the total column, ORDER BY sorts the rows. Then the clause strips themselves slide up and down into run order. The name 'total' is a violet pill that is created at the SELECT step and cannot be used by a step with a smaller number.",
+    "camera": "One continuous space. The camera starts close on the failing line, pulls back to the whole query card and the step badges, tilts down to include the small table while the steps run, and returns to the card for the fix."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "A white query card with a bold 5px deep navy outline holds a five-line query with brand-violet keywords. The line 'WHERE total > 100' gets a bold 5px navy wavy underline and a white chip with a bold navy outline rises beside it: 'error: total not found' in bold navy. Headline animates in with 'fail' in brand violet.",
+      "on_screen_text": "Why does this query fail?",
+      "voiceover": "This query looks fine. So why does it fail?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "The camera pulls back to the whole card. A bold 5px brand-violet reading arrow runs down the left side from the first line to the last, and the first line 'SELECT region, SUM(amount) AS total' gets a soft lavender band behind its navy text. A bold navy cross then draws over the arrow. Headline: 'SELECT first' in brand violet.",
+      "on_screen_text": "You write SELECT first",
+      "voiceover": "You write SELECT first. But SQL does not start there."
+    },
+    {
+      "seconds": "10-15",
+      "visual": "A round badge with a brand-violet fill and a white number 1 lands beside 'FROM sales'. Below the card a small white table named 'sales' with a bold 5px navy outline rises into place: region, year, amount, six rows of bold navy text. Headline: 'FROM' in brand violet.",
+      "on_screen_text": "SQL starts at FROM",
+      "voiceover": "It starts at FROM. First it finds the table."
+    },
+    {
+      "seconds": "15-20",
+      "visual": "Badge 2 lands beside the WHERE line, which for now reads 'WHERE year = 2025'. In the small table the rows from other years fade to pale gray and the 2025 rows keep their bold navy text. Headline: 'WHERE' in brand violet.",
+      "on_screen_text": "Then WHERE filters the rows",
+      "voiceover": "Second, WHERE filters the rows."
+    },
+    {
+      "seconds": "20-25.5",
+      "visual": "Badge 3 lands beside 'GROUP BY region' and the remaining rows slide together into two groups with bold 4px navy outlines, East and West. Badge 4 lands beside a line 'HAVING SUM(amount) > 100' and the smaller group fades to pale gray. Headline: 'GROUP BY' and 'HAVING' in brand violet.",
+      "on_screen_text": "GROUP BY, then HAVING",
+      "voiceover": "Third, GROUP BY builds the groups. Fourth, HAVING filters them."
+    },
+    {
+      "seconds": "25.5-31",
+      "visual": "Badge 5 lands beside the first line, 'SELECT region, SUM(amount) AS total'. In the small table a new column grows from its header downward: the header is a brand-violet pill that reads 'total' in white, and a bold navy number counts up under it. Headline: 'SELECT' in brand violet.",
+      "on_screen_text": "SELECT runs near the end",
+      "voiceover": "Only then does SELECT pick the columns and name the total."
+    },
+    {
+      "seconds": "31-36",
+      "visual": "Badge 6 lands beside 'ORDER BY total'. A bold 5px brand-violet line links the violet 'total' pill to the word 'total' in the ORDER BY line, and the rows of the small table slide into sorted order. Headline: 'ORDER BY' in brand violet.",
+      "on_screen_text": "ORDER BY sorts last",
+      "voiceover": "Last of all, ORDER BY sorts the answer."
+    },
+    {
+      "seconds": "36-41.5",
+      "visual": "The six clause strips in the card slide up and down past each other into the order of their badges, 1 to 6: FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY. A bold navy label 'written order' fades and a bold navy label 'run order' takes its place. Headline: 'run order' in brand violet.",
+      "on_screen_text": "Written order is not the run order",
+      "voiceover": "So the order you write is not the order it runs."
+    },
+    {
+      "seconds": "41.5-47",
+      "visual": "The camera pushes in on badge 2 and badge 5. The WHERE strip shows 'WHERE total > 100' again and a bold 5px navy line reaches from it toward the violet 'total' pill at step 5, but the line stops short: a bold navy cross marks the gap between step 2 and step 5. Headline: 'before' in brand violet.",
+      "on_screen_text": "WHERE ran before the name existed",
+      "voiceover": "WHERE ran before SELECT named the total. That is the error."
+    },
+    {
+      "seconds": "47-51",
+      "visual": "The test 'SUM(amount) > 100' slides out of the WHERE strip and down into the HAVING strip at step 4, with a bold 6px brand-violet underline drawing beneath it. The error chip fades and a bold brand-violet check mark draws beside the card. Headline: 'HAVING' in brand violet.",
+      "on_screen_text": "Test totals in HAVING",
+      "voiceover": "Move the test to HAVING and it works."
+    },
+    {
+      "seconds": "51-54",
+      "visual": "The camera pulls back to the card in run order with its six brand-violet badges and the sorted small table beneath it. A white badge with a bold violet outline and navy text 'Read it in run order' rises beside the card. Headline: 'run order' in brand violet.",
+      "on_screen_text": "Read a query in run order",
+      "voiceover": "Read a query in this order and errors make sense."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark reveals, and a soft violet glow settles. The tagline 'Practical Data Skills. Real Career Impact.' appears, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Call it the order SQL works through the clauses, or the logical order. Do not claim the database physically executes in this order; the engine may take shortcuts that give the same answer.",
+    "The only name-visibility claims are: a name created in SELECT cannot be used in WHERE, and ORDER BY can use it. Do not show an alias used in GROUP BY or HAVING; databases disagree about that.",
+    "Leave LIMIT, TOP and FETCH off screen: the syntax differs between databases.",
+    "The error is shown in navy and brand violet with the word 'error'. Do not use red, and do not quote a specific database's error message as if it were universal.",
+    "The step badges and the reactions of the small table always agree: a step's effect appears when its badge lands."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "QueryCard",
+      "ClauseStrip",
+      "StepBadges",
+      "ReadingArrow",
+      "ErrorChip",
+      "SalesTable",
+      "GroupOutlines",
+      "TotalPill",
+      "OrderLabel",
+      "RunOrderBadge",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "The clause lines of the query",
+      "Sales rows",
+      "Run order of the clauses",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels, broken transformations, timing gaps, and any line or text that is hard to see on white. Confirm that the badges land in the order FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY, that the clause strips end in that same order, and that the totals in the small table match its rows. Confirm that no scene has more than three focal points and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/sql-select.html",
+    "https://www.postgresql.org/docs/current/queries-order.html",
+    "https://dev.mysql.com/doc/refman/8.4/en/select.html",
+    "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql",
+    "https://www.sqlite.org/lang_select.html"
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners (students and early-career learners) how an AI image generator (a diffusion model) draws a picture from noise: during practice a real picture is buried in random static step by step, the AI learns to undo one step at a time, and then it starts from pure static and clears it into a new picture. Carry one relatable example through the whole video: a picture of a cat (the cat picture and the prompt 'a cat' are illustrative examples drawn as original vector art). Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring AI learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook 0-5s, problem 5-14s, explanation 14-42s, outcome 42-54s, call to action 54-60s. 13 scenes, each 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, the picture frame and the cat's outline; brand violet (#6D4AFF) for key words, the step dial knob and active arrows; electric purple (#8B5CF6) for motion accents and the lifted noise tiles; soft lavender (#C4B5FD) only as large filled shapes or glows placed behind a darker outline. The picture is a grid of solid square tiles: static is drawn as bold, fully opaque tiles in deep navy, brand violet and electric purple on white, never as gray grain. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet (each scene's visual names the violet words). Labels weight 500, at least 32px, deep navy, one to three words each.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover_pace": "135-155 words per minute while speaking. Each line fits its scene at about 2.4 words per second or less. Few commas, because each comma adds a pause in the text-to-speech voice.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "A picture frame on a wall, unlike any earlier DataEntropy video. CENTER (x 220-860, y 470-1110): one square picture frame with a bold 6px deep navy outline and rounded 20px corners. The picture inside is a 16 by 16 grid of solid square tiles that together draw a simple cat: bold deep navy outline, brand-violet ears and collar, off-white fur, on a soft lavender backdrop. BELOW the frame (y 1180-1260): a step dial, a bold 5px deep navy track with five bold round notches running from a small cat icon on the left ('picture') to a speckle icon on the right ('static'), with a brand-violet knob that shows how much static is in the frame. UNDER the dial (y 1290-1370): a deep navy pill labelled 'AI' with a soft lavender glow behind it, which appears when the AI starts learning.",
+    "interaction_effect": "Adding noise: tiles flip in place into random deep navy, brand-violet, electric-purple or white squares, a few more at every step, while the knob clicks one notch to the right. Removing noise: a bold 5px brand-violet arrow links the AI pill to the frame, the guessed noise tiles lift out of the frame as a small electric-purple tile cluster and drop into the AI pill, the tiles left behind settle into picture colors, and the knob clicks one notch to the left. The frame never empties and never cuts: the same 256 tiles change color in place for the whole video.",
+    "camera": "One continuous visual space with smooth pans and soft zooms, never slide changes. The camera starts close on the frame, pulls back to reveal the step dial and the AI pill, pushes in when a single step is added or removed, and pulls back to show the whole wall for the result. The frame, dial and AI pill keep their identity and position from scene to scene; at the end the tiles regroup into the logo bars."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "One square picture frame with a bold 6px deep navy (#172554) outline hangs in the middle of the white background. It is full of static: a grid of bold solid tiles in deep navy, brand violet (#6D4AFF), electric purple (#8B5CF6) and white. In a wave from the center outward the tiles flip to picture colors and a simple cat with a bold navy outline and brand-violet ears appears. Headline animates in top-left with 'static' in brand violet.",
+      "on_screen_text": "How does AI draw a picture from static?",
+      "voiceover": "This picture started as random static. How did AI draw it?"
+    },
+    {
+      "seconds": "5-9",
+      "visual": "The cat tiles flip back so the frame is blank off-white inside its bold navy outline. A bold 6px brand-violet arrow labelled 'one jump' in bold navy leaps from the left edge straight into the frame. The tiles answer with a muddled blob that is not a cat, and a bold 6px deep navy cross draws over the arrow. Headline: 'too hard' in brand violet.",
+      "on_screen_text": "One big jump is too hard",
+      "voiceover": "Drawing a whole picture in one go is hard."
+    },
+    {
+      "seconds": "9-14",
+      "visual": "The camera pushes in on one corner of the frame. A handful of tiles flip into bold random squares of deep navy, brand violet and electric purple, and a bold 5px brand-violet ring circles them with the bold navy label 'noise'. A deep navy outlined brush with brand-violet bristles sweeps over the ringed tiles and they flip back to plain off-white, showing the small job: clean up a few speckles. Headline: 'Noise' in brand violet.",
+      "on_screen_text": "Noise: random speckles, like TV static",
+      "voiceover": "So AI learns a smaller job. Cleaning up random speckles called noise."
+    },
+    {
+      "seconds": "14-18",
+      "visual": "The camera pulls back to the whole frame. The tiles flip row by row into the clear cat picture: bold navy outline, brand-violet ears and collar, off-white fur, soft lavender (#C4B5FD) backdrop behind the dark outline. Below the frame the step dial draws itself as a bold 5px deep navy track with five bold round notches; its brand-violet knob sits on the far left beside a small navy cat icon. Headline: 'real pictures' in brand violet.",
+      "on_screen_text": "It practices on real pictures",
+      "voiceover": "It practices on real pictures like this cat."
+    },
+    {
+      "seconds": "18-22",
+      "visual": "The brand-violet knob clicks one notch to the right and a scatter of cat tiles flips into bold navy, violet and purple noise squares. It clicks a second notch and more tiles flip; the cat's bold navy outline is still easy to read through the speckles. A bold 5px electric-purple arrow labelled 'add noise' in bold navy points right along the dial. Headline: 'step by step' in brand violet.",
+      "on_screen_text": "Add a little noise, step by step",
+      "voiceover": "We add a little noise. Then a little more."
+    },
+    {
+      "seconds": "22-26",
+      "visual": "The knob travels through the remaining notches to the far right beside a bold navy speckle icon. With each notch more tiles flip until the cat is gone and the whole frame is bold random static in deep navy, brand violet, electric purple and white. Headline: 'pure static' in brand violet.",
+      "on_screen_text": "Many steps later: pure static",
+      "voiceover": "After many steps the cat is pure static."
+    },
+    {
+      "seconds": "26-30",
+      "visual": "The knob steps back to the middle notch so the cat is half buried. Under the dial a deep navy pill labelled 'AI' rises into place with a soft lavender glow behind its bold outline. A bold 5px brand-violet arrow draws from the pill up to the frame, and the tiles that the last step added gain bold 4px brand-violet outlines: this is the AI's guess of the noise. Headline: 'guesses' in brand violet.",
+      "on_screen_text": "The AI guesses the added noise",
+      "voiceover": "At each step the AI guesses the noise added."
+    },
+    {
+      "seconds": "30-34",
+      "visual": "The outlined noise tiles lift out of the frame as a small cluster of bold electric-purple squares, travel down the brand-violet arrow and drop into the AI pill. The tiles left behind in the frame settle into cat colors, so the bold navy outline of the cat is clearer than before. The knob clicks one notch to the left. Headline: 'clearer' in brand violet.",
+      "on_screen_text": "Remove it and the picture gets clearer",
+      "voiceover": "Take that noise away and the picture gets clearer."
+    },
+    {
+      "seconds": "34-38",
+      "visual": "The camera pulls back. The cat frame stays in the center while a row of four smaller frames with bold 4px deep navy outlines slides past above it, each holding a simple bold-outlined picture (a tree, a house, a bicycle, a cup) that fills with noise tiles and clears again. A bold navy counter beside the AI pill counts upward smoothly to 'millions'. Headline: 'millions' in brand violet.",
+      "on_screen_text": "Practice on millions of pictures",
+      "voiceover": "It repeats this practice on millions of different pictures."
+    },
+    {
+      "seconds": "38-42",
+      "visual": "The small frames slide away. The center frame's tiles all flip to bold random static in deep navy, brand violet and electric purple, and the knob jumps to the far right: no picture is hidden inside. Above the frame a prompt chip with a bold 5px deep navy outline and off-white fill types the navy text 'a cat', and a bold 5px brand-violet connector draws from the chip to the AI pill. Headline: 'pure static' in brand violet.",
+      "on_screen_text": "Now start from pure static",
+      "voiceover": "Now start from pure static. You type a cat."
+    },
+    {
+      "seconds": "42-48",
+      "visual": "The knob clicks left one notch at a time. At each click a cluster of bold electric-purple noise tiles lifts out of the frame into the AI pill and the remaining tiles shift toward picture colors: first a rough blob, then ears, then a bold navy outline. On the last click a new cat sits in the frame, facing the other way from the practice cat and wearing a brand-violet scarf. Headline: 'Diffusion' in brand violet.",
+      "on_screen_text": "Diffusion: clearing noise step by step",
+      "voiceover": "Step by step it clears noise until a new cat appears. That is diffusion."
+    },
+    {
+      "seconds": "48-54",
+      "visual": "The camera pulls back to the whole wall. The practice cat returns as a smaller frame with a bold 5px deep navy outline on the left, and the new cat frame sits on the right; a bold 5px brand-violet 'not equal' sign draws between them. A magnifier with a bold 5px deep navy outline slides over the new cat and stops on one paw that has an extra toe, and an off-white badge with a bold 4px brand-violet outline and navy text 'Check the details' appears. Headline: 'new picture' in brand violet.",
+      "on_screen_text": "A new picture, not a stored copy",
+      "voiceover": "It is a new picture not a copy. It can still get details wrong."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The new cat's tiles regroup into four columns that become the DataEntropy logo: its four brand-violet bars grow upward left to right, the wordmark reveals, and a soft violet glow sweeps once. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand-violet Inter 700 with a bold 5px brand-violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more AI explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text.",
+    "STATIC IS BOLD: draw noise as solid, fully opaque square tiles in deep navy, brand violet, electric purple and white. No gray grain, no blur, no low-opacity overlay, no flicker faster than one change per step.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Keep the picture frame, the step dial and the AI pill visually identifiable and in the same places throughout the video. The same tile grid changes color in place; the frame is never swapped for another image.",
+    "The step dial and the frame always agree: knob to the right means more static, knob to the left means a clearer picture.",
+    "Use a seeded random pattern for the static so every frame renders the same when scrubbing.",
+    "The generated cat must look different from the practice cat. Do not imply the AI stores pictures and pastes them back, or that its pictures are always correct.",
+    "Honest simplification: the video shows a handful of steps; real systems use many more and often work on a compressed version of the picture. Do not show exact step counts as facts.",
+    "The cat picture, the prompt 'a cat' and the other small pictures are illustrative examples drawn as original vector art; do not use real photos or real artworks.",
+    "Explain every necessary term (noise, static, diffusion) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "PictureFrame",
+      "TileGrid",
+      "CatPicture",
+      "NoiseTiles",
+      "StepDial",
+      "AIPill",
+      "NoiseCluster",
+      "CleanupBrush",
+      "MiniFrameRow",
+      "PromptChip",
+      "CompareSign",
+      "DetailBadge",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Tile grid size and the two cat tile maps (practice cat, generated cat)",
+      "Number of noise steps shown",
+      "Random seed for the static",
+      "Prompt text",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 5, 9, 14, 18, 22, 26, 30, 34, 38, 42, 48, 54, and 59 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, tile or text that is hard to see on white. Confirm the static reads as bold tiles and not gray grain, that the dial position matches the amount of static, that no scene has more than three focal points, and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://arxiv.org/abs/2006.11239",
+    "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
+  ]
+}

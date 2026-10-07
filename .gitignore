@@ -1,0 +1,29 @@
+# Regenerated on every machine
+node_modules/
+.venv-*/
+.hf-cache/
+__pycache__/
+
+# Rendered videos, captions and voice samples
+output/
+
+# Per-video generated files: recorded voice, music, stills, review output
+videos/*/public/
+videos/*/out/
+archive/*/public/
+archive/*/out/
+archive/*/node_modules/
+
+# Local files
+.env
+.env.*
+*.log
+.claude/settings.local.json
+
+# Third-party agent skills (sources in skills-lock.json)
+.agents/
+.claude/skills/
+
+# Leftover folders from before the restructure
+/sql-*-video/
+.tmp/

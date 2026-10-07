@@ -1,0 +1,179 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "deals",
+    "columns": [
+      "client",
+      "amount"
+    ],
+    "rows": [
+      [
+        "Cedar",
+        250
+      ],
+      [
+        "Birch",
+        900
+      ],
+      [
+        "Elm",
+        600
+      ],
+      [
+        "Delta",
+        900
+      ],
+      [
+        "Apex",
+        400
+      ]
+    ]
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "unchanged": "unchanged",
+    "tie": "a tie"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Which deals are\n*the biggest*?",
+      "voiceover": "Lina wants her biggest deals first. But the table is in *no useful order.*",
+      "voStart": 0.3,
+      "visual": "A white table card named 'deals' with a bold 5px deep navy outline draws itself: columns client and amount, five rows of bold navy text in no particular order. Headline with 'the biggest' in brand violet.",
+      "rate": "-18%"
+    },
+    {
+      "start": 6.2,
+      "headline": "A table has no\n*built-in order*",
+      "voiceover": "A table has no built-in order. The rows can come back *any way.*",
+      "voStart": 6.5,
+      "visual": "Beside it a result table with a bold 5px brand-violet outline draws itself. White chips with bold violet outlines carry a copy of every row across; they land in one order, then the rows slide past each other into a different order. Headline: 'built-in order' in brand violet.",
+      "rate": "-18%"
+    },
+    {
+      "start": 12.1,
+      "headline": "*ORDER BY*\nsorts the answer",
+      "voiceover": "*ORDER BY* tells SQL how to sort the answer.",
+      "voStart": 12.4,
+      "visual": "Under the tables a white query card with a bold 5px navy outline draws itself and types three lines with brand-violet keywords: SELECT client, amount / FROM deals / ORDER BY amount. Headline: 'ORDER BY' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 17.5,
+      "headline": "Smallest first\nby *default*",
+      "voiceover": "By default the *smallest* comes first. That is called ascending.",
+      "voStart": 17.8,
+      "visual": "The rows of the result table slide past each other until the amounts run from 250 at the top to 900 at the bottom, and a bold brand-violet arrow draws itself down the right side of the result. Headline: 'default' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 23.1,
+      "headline": "Text sorts\n*A to Z*",
+      "voiceover": "Sort by client instead and you get *A to Z.*",
+      "voStart": 23.4,
+      "visual": "The last line of the query slides out and 'ORDER BY client' slides in. The result rows slide into alphabetical order, Apex to Elm, and the client header turns brand violet with white text. Headline: 'A to Z' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 28.0,
+      "headline": "*DESC* flips it:\nlargest first",
+      "voiceover": "Add *DESC* to amount and the largest comes first.",
+      "voStart": 28.3,
+      "visual": "The line changes to 'ORDER BY amount DESC'. The amount header turns brand violet, the result rows slide so 900 is on top and 250 at the bottom, and the bold violet arrow now points up. Headline: 'DESC' in brand violet.",
+      "rate": "-10%"
+    },
+    {
+      "start": 33.0,
+      "headline": "*Ties* can land\neither way",
+      "voiceover": "Birch and Delta are *tied.* SQL may put either one first.",
+      "voStart": 33.3,
+      "visual": "Soft lavender bands appear behind the navy text of the two rows with amount 900 and a white chip with a bold violet outline reads 'a tie'. The two rows swap places once. Headline: 'Ties' in brand violet.",
+      "rate": "-4%"
+    },
+    {
+      "start": 38.8,
+      "headline": "A second column\n*breaks the tie*",
+      "voiceover": "So add a *second column.* Now ties sort by client name.",
+      "voStart": 39.1,
+      "visual": "The line changes to 'ORDER BY amount DESC, client'. The two tied rows settle with Birch above Delta and a bold brand-violet check mark draws itself beside them. Headline: 'breaks the tie' in brand violet.",
+      "rate": "-12%"
+    },
+    {
+      "start": 44.3,
+      "headline": "The table itself\nis *not changed*",
+      "voiceover": "The stored table is *untouched.* Only the answer is sorted.",
+      "voStart": 44.6,
+      "visual": "A bold 5px brand-violet outline draws itself around the source table, whose rows are still in their first order, and a white chip with a bold violet outline and navy text 'unchanged' is revealed above it. Headline: 'not changed' in brand violet.",
+      "rate": "-10%"
+    },
+    {
+      "start": 49.4,
+      "headline": "Biggest deals\n*on top*",
+      "voiceover": "Now Lina's biggest deals are *on top,* every time.",
+      "voStart": 49.7,
+      "visual": "A bold 5px brand-violet outline draws itself around the top two rows of the result table. Headline: 'on top' in brand violet.",
+      "rate": "-14%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners how ORDER BY sorts the answer of a SQL query: a table has no built-in order, sorting is ascending by default, DESC reverses it, and a second column breaks ties. Carry one example through the whole video: Lina, a sales manager, wants to see her biggest deals first.",
+    "central_visual": {
+      "description": "LEFT: the source table 'deals', a white card with a bold 5px deep navy outline, columns client and amount, five rows. RIGHT: the result table with a bold 5px brand-violet outline and the same columns. BELOW: the query card with a bold 5px navy outline.",
+      "interaction_effect": "Each change to the ORDER BY line makes the rows of the result table slide past each other into the new order. The source table never moves.",
+      "camera": "One continuous space: close on the source table, out to both tables, then down to include the query card."
+    },
+    "rules": [
+      "Without ORDER BY the order of rows is not guaranteed. Do not show the unsorted answer as 'insertion order'.",
+      "Leave LIMIT and TOP off screen; say 'first' or 'on top' instead of 'top 3'.",
+      "Tied rows may come back in either order until a second sort column is added.",
+      "The source table's row order never changes on screen."
+    ],
+    "components": [
+      "SourceTable",
+      "ResultTable",
+      "QueryCard",
+      "SortArrow",
+      "TieMark"
+    ],
+    "controls": [
+      "Table rows",
+      "The sequence of ORDER BY lines"
+    ],
+    "quality": "Confirm that after every ORDER BY line the result rows are in exactly the order that line asks for.",
+    "sources": [
+      "https://www.postgresql.org/docs/current/queries-order.html",
+      "https://www.postgresql.org/docs/current/sql-select.html",
+      "https://dev.mysql.com/doc/refman/8.4/en/sorting-rows.html"
+    ]
+  }
+}

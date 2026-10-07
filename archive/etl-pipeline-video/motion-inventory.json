@@ -1,0 +1,497 @@
+{
+  "video": "60-second vertical explainer that shows how an ETL pipeline (extract, transform, load) turns a bakery's messy sales files into one table and a dashboard",
+  "animations": {
+    "file_tumble": {
+      "what": "Each of the three source file cards drops onto the shelf, fading in and straightening from a slight tilt",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 24
+    },
+    "hook_path_draw": {
+      "what": "A dotted violet route draws itself from the files along a zigzag to the dashboard card",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 30
+    },
+    "hook_path_exit": {
+      "what": "The dotted violet route fades away for good",
+      "scene": "files",
+      "ease": "in",
+      "frames": 12
+    },
+    "dashboard_hook_enter": {
+      "what": "The dashboard card fades into view at the end of the dotted route",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "hook_bars_grow": {
+      "what": "The dashboard's three bars grow upward from the baseline, appearing for the first time",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 24
+    },
+    "dashboard_hook_exit": {
+      "what": "The dashboard card fades out and leaves the screen",
+      "scene": "files",
+      "ease": "in",
+      "frames": 14
+    },
+    "camera_push_shelf": {
+      "what": "The camera moves in from the whole scene to the shelf of files",
+      "scene": "files",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "shopfront_enter": {
+      "what": "A small bakery shopfront fades in and rises into place beside the shelf",
+      "scene": "files",
+      "ease": "out",
+      "frames": 20
+    },
+    "shopfront_exit": {
+      "what": "The bakery shopfront fades out as the camera leaves the shelf",
+      "scene": "belt",
+      "ease": "in",
+      "frames": 12
+    },
+    "file_tag_enter": {
+      "what": "A name tag fades in and rises onto each file, one file after another",
+      "scene": "files",
+      "ease": "out",
+      "frames": 16
+    },
+    "file_tag_exit": {
+      "what": "The name tags fade out and disappear",
+      "scene": "belt",
+      "ease": "in",
+      "frames": 12
+    },
+    "date_outline_enter": {
+      "what": "Dashed navy outlines and a not-equal badge fade in around two date cells written in different styles",
+      "scene": "problems",
+      "ease": "out",
+      "frames": 14
+    },
+    "repeat_bracket_enter": {
+      "what": "A navy bracket and a tag fade in beside two identical rows",
+      "scene": "problems",
+      "ease": "out",
+      "frames": 14
+    },
+    "missing_flag_enter": {
+      "what": "A navy question-mark flag fades in and grows slightly over an empty price cell",
+      "scene": "problems",
+      "ease": "out",
+      "frames": 14
+    },
+    "problems_exit": {
+      "what": "The three problem marks fade out and disappear",
+      "scene": "belt",
+      "ease": "in",
+      "frames": 10
+    },
+    "camera_pull_back": {
+      "what": "The camera pulls back from the shelf to show the whole zigzag line",
+      "scene": "belt",
+      "ease": "inOut",
+      "frames": 45
+    },
+    "belt_draw": {
+      "what": "The navy conveyor belt draws itself out of the edge of the shelf and down the frame in three runs",
+      "scene": "belt",
+      "ease": "out",
+      "frames": 30
+    },
+    "rollers_enter": {
+      "what": "The purple rollers under the belt fade into view",
+      "scene": "belt",
+      "ease": "out",
+      "frames": 20
+    },
+    "rollers_spin": {
+      "what": "The rollers under the belt keep turning at a constant speed",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 60
+    },
+    "belt_tread": {
+      "what": "Small tread marks slide along the belt at a constant speed, always in the same direction",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 20
+    },
+    "chevrons_enter": {
+      "what": "Violet direction chevrons fade into view along the belt",
+      "scene": "belt",
+      "ease": "out",
+      "frames": 12
+    },
+    "chevrons_travel": {
+      "what": "Violet chevrons travel along the belt at a steady speed to show its direction",
+      "scene": "belt",
+      "ease": "linear",
+      "frames": 100
+    },
+    "chevrons_exit": {
+      "what": "The violet chevrons fade out and disappear",
+      "scene": "belt",
+      "ease": "in",
+      "frames": 10
+    },
+    "station_rise": {
+      "what": "Each station frame and its numbered badge fades in and rises onto the belt, one after another",
+      "scene": "belt",
+      "ease": "out",
+      "frames": 20
+    },
+    "table_rise": {
+      "what": "The empty table fades in and rises into place at the end of the belt",
+      "scene": "belt",
+      "ease": "out",
+      "frames": 20
+    },
+    "camera_to_extract": {
+      "what": "The camera moves in from the whole line to the files and the funnel",
+      "scene": "extract",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "extract_paths_draw": {
+      "what": "A violet path draws itself from each file to the top of the funnel",
+      "scene": "extract",
+      "ease": "out",
+      "frames": 28
+    },
+    "copy_fly": {
+      "what": "A copy of a row, already visible on its file, glides along a curved path to the top of the funnel and shrinks",
+      "scene": "extract",
+      "ease": "inOut",
+      "frames": 36
+    },
+    "copy_drop": {
+      "what": "The copied row moves down through the funnel onto the tray and returns to full size",
+      "scene": "extract",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "camera_to_funnel": {
+      "what": "The camera pans and zooms to follow the copied rows to the funnel and the tray",
+      "scene": "extract",
+      "ease": "inOut",
+      "frames": 45
+    },
+    "tray_enter": {
+      "what": "A navy tray fades into view on the belt under the funnel",
+      "scene": "extract",
+      "ease": "out",
+      "frames": 18
+    },
+    "extract_paths_exit": {
+      "what": "The violet paths from the files fade out and disappear",
+      "scene": "transform",
+      "ease": "in",
+      "frames": 12
+    },
+    "tray_travel": {
+      "what": "The tray of rows, already on the belt, rides along it to the next station",
+      "scene": "transform",
+      "ease": "inOut",
+      "frames": 59
+    },
+    "camera_follow": {
+      "what": "The camera pans to keep the moving tray in view from one station to the next",
+      "scene": "transform",
+      "ease": "inOut",
+      "frames": 59
+    },
+    "repeat_cross_draw": {
+      "what": "A bold navy cross draws itself over the repeated row",
+      "scene": "transform",
+      "ease": "out",
+      "frames": 12
+    },
+    "repeat_tip_off": {
+      "what": "The repeated row tips off the belt, falls into the bin and does not come back",
+      "scene": "transform",
+      "ease": "in",
+      "frames": 24
+    },
+    "missing_flag_pop": {
+      "what": "A navy question-mark flag fades in over the row with no price",
+      "scene": "transform",
+      "ease": "out",
+      "frames": 12
+    },
+    "missing_slide_aside": {
+      "what": "The row with no price, already visible, slides from the tray to a side shelf",
+      "scene": "transform",
+      "ease": "inOut",
+      "frames": 22
+    },
+    "check_label_enter": {
+      "what": "The label under the side shelf fades into view",
+      "scene": "transform",
+      "ease": "out",
+      "frames": 14
+    },
+    "check_label_exit": {
+      "what": "The label under the side shelf fades out",
+      "scene": "transform",
+      "ease": "in",
+      "frames": 12
+    },
+    "rows_settle": {
+      "what": "The remaining rows on the tray slide down to close the gaps",
+      "scene": "transform",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "date_flip": {
+      "what": "Each date cell squashes flat and opens again showing the same date in one shared style",
+      "scene": "transform",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "press_down": {
+      "what": "The press plate, already visible, moves down onto the stack of rows",
+      "scene": "shape",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "press_up": {
+      "what": "The press plate moves back up to its resting position",
+      "scene": "shape",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "row_shape": {
+      "what": "Under the press each row card widens to the same width and its outline changes from navy to violet",
+      "scene": "shape",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "column_labels_enter": {
+      "what": "Three column names fade into view on the press",
+      "scene": "shape",
+      "ease": "out",
+      "frames": 16
+    },
+    "column_labels_exit": {
+      "what": "The column names on the press fade out",
+      "scene": "load",
+      "ease": "in",
+      "frames": 12
+    },
+    "arm_place_row": {
+      "what": "The stacking arm carries a row, already visible on the tray, across into its place in the table",
+      "scene": "load",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "arm_return": {
+      "what": "The stacking arm swings back from the table to the tray for the next row",
+      "scene": "load",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tray_exit": {
+      "what": "The empty tray fades out and disappears",
+      "scene": "load",
+      "ease": "in",
+      "frames": 12
+    },
+    "camera_pull_back_recap": {
+      "what": "The camera pulls back from the table to show the whole line",
+      "scene": "recap",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "badge_pulse": {
+      "what": "A numbered station badge swells slightly with a glow and returns to normal as the narrator names it",
+      "scene": "recap",
+      "ease": "inOut",
+      "frames": 16
+    },
+    "letter_lift": {
+      "what": "A large violet letter fades in and rises beside a station badge",
+      "scene": "recap",
+      "ease": "out",
+      "frames": 18
+    },
+    "letters_gather": {
+      "what": "The three violet letters, already visible, glide together and grow into the word ETL",
+      "scene": "recap",
+      "ease": "inOut",
+      "frames": 24
+    },
+    "etl_exit": {
+      "what": "The word ETL fades out and disappears",
+      "scene": "dashboard",
+      "ease": "in",
+      "frames": 10
+    },
+    "camera_to_dashboard": {
+      "what": "The camera moves in from the whole line to the table and the dashboard",
+      "scene": "dashboard",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "dashboard_rise": {
+      "what": "The dashboard card fades in and rises into place on top of the table",
+      "scene": "dashboard",
+      "ease": "out",
+      "frames": 20
+    },
+    "connector_draw": {
+      "what": "A violet connector line draws itself from the table up to the dashboard",
+      "scene": "dashboard",
+      "ease": "out",
+      "frames": 14
+    },
+    "row_pulse": {
+      "what": "A stored table row brightens with a violet glow and returns to normal",
+      "scene": "dashboard",
+      "ease": "inOut",
+      "frames": 16
+    },
+    "bar_grow": {
+      "what": "A bar appears on the dashboard and grows upward from the baseline when its table row lights up",
+      "scene": "dashboard",
+      "ease": "out",
+      "frames": 24
+    },
+    "total_count": {
+      "what": "The total number on the dashboard counts upward together with the growing bars",
+      "scene": "dashboard",
+      "ease": "linear",
+      "frames": 24
+    },
+    "camera_pull_back_night": {
+      "what": "The camera pulls back from the dashboard to show the whole line",
+      "scene": "rerun",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "clock_enter": {
+      "what": "A clock badge fades in and rises into place above the shelf",
+      "scene": "rerun",
+      "ease": "out",
+      "frames": 18
+    },
+    "clock_to_night": {
+      "what": "The hands of the clock sweep round and its face darkens from white to navy",
+      "scene": "rerun",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "new_file_drop": {
+      "what": "A new file card drops onto the shelf, fading in and straightening",
+      "scene": "rerun",
+      "ease": "out",
+      "frames": 24
+    },
+    "night_tray_enter": {
+      "what": "A fresh tray of rows fades into view on the belt",
+      "scene": "rerun",
+      "ease": "out",
+      "frames": 14
+    },
+    "night_tray_run": {
+      "what": "The fresh tray, already on the belt, rides the whole line through all three stations",
+      "scene": "rerun",
+      "ease": "inOut",
+      "frames": 60
+    },
+    "night_rows_place": {
+      "what": "The new rows move from the tray into the next free places in the table",
+      "scene": "rerun",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "night_tray_exit": {
+      "what": "The fresh tray, now empty, fades out and disappears",
+      "scene": "rerun",
+      "ease": "in",
+      "frames": 12
+    },
+    "night_bars_rise": {
+      "what": "The dashboard bars grow a little taller after the new rows land",
+      "scene": "rerun",
+      "ease": "inOut",
+      "frames": 24
+    },
+    "rule_badge_enter": {
+      "what": "A badge with a short sentence fades in and rises into place beside the belt",
+      "scene": "rerun",
+      "ease": "out",
+      "frames": 20
+    },
+    "world_exit": {
+      "what": "The whole conveyor scene fades out for good",
+      "scene": "cta",
+      "ease": "in",
+      "frames": 18
+    },
+    "camera_push_outro": {
+      "what": "The camera moves in toward the dashboard while the scene fades",
+      "scene": "cta",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward into view one after another, left to right",
+      "scene": "cta",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "cta",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens behind the finished logo and settles to a fainter glow",
+      "scene": "cta",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises into place",
+      "scene": "cta",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises into place",
+      "scene": "cta",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow inside the button slides a few pixels to the right once",
+      "scene": "cta",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind an invisible edge",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out at the end of its scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_words": {
+      "what": "Subtitle words brighten in groups of three as the narrator says them",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    }
+  }
+}

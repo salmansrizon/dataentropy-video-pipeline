@@ -1,0 +1,233 @@
+{
+  "video": "60-second vertical explainer that shows beginners why databases are normalized: a customer's city repeated on every order is moved into one row of a customers table",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "city_out": {
+      "what": "The old city in a cell slides up and fades out",
+      "scene": "hook, normalization, fixed everywhere",
+      "ease": "in",
+      "frames": 10
+    },
+    "city_in": {
+      "what": "The new city slides up into its place",
+      "scene": "hook, normalization, fixed everywhere",
+      "ease": "out",
+      "frames": 16
+    },
+    "question_marks_enter": {
+      "what": "A violet question mark fades in beside each row that still shows the old city",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 14
+    },
+    "question_marks_exit": {
+      "what": "The question marks fade away",
+      "scene": "three times",
+      "ease": "in",
+      "frames": 10
+    },
+    "copy_marks_wipe": {
+      "what": "A lavender band spreads from left to right behind each cell that repeats the same city",
+      "scene": "three times",
+      "ease": "out",
+      "frames": 18
+    },
+    "copy_ring_draw": {
+      "what": "An outline draws itself around a city cell, violet for the one that was changed and navy for the ones that were missed",
+      "scene": "miss the rest",
+      "ease": "out",
+      "frames": 24
+    },
+    "copy_ring_exit": {
+      "what": "The outlines around the city cells fade away",
+      "scene": "normalization",
+      "ease": "in",
+      "frames": 10
+    },
+    "detail_chip_enter": {
+      "what": "A white chip with a violet outline fades in around a customer's name and city on an order",
+      "scene": "own table",
+      "ease": "out",
+      "frames": 12
+    },
+    "detail_travel": {
+      "what": "A customer's name and city travel down from an order into that customer's row of the customers table",
+      "scene": "own table",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "detail_chip_exit": {
+      "what": "The travelling name and city fade out as they land",
+      "scene": "own table",
+      "ease": "in",
+      "frames": 8
+    },
+    "customer_row_enter": {
+      "what": "The customer's ID, name and city fade in on their row of the customers table",
+      "scene": "own table",
+      "ease": "out",
+      "frames": 12
+    },
+    "old_columns_exit": {
+      "what": "The customer and city text of the orders table fades out",
+      "scene": "only the ID",
+      "ease": "in",
+      "frames": 14
+    },
+    "orders_close_up": {
+      "what": "The orders table gets narrower as its customer and city columns close up into one",
+      "scene": "only the ID",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "id_column_enter": {
+      "what": "The header 'customer_id' and an ID number on every order fade in",
+      "scene": "only the ID",
+      "ease": "out",
+      "frames": 16
+    },
+    "id_headers_light": {
+      "what": "The headers of the two ID columns turn from pale to violet",
+      "scene": "only the ID",
+      "ease": "inOut",
+      "frames": 16
+    },
+    "moved_ring_draw": {
+      "what": "A violet outline draws itself around the one city cell in the customers table",
+      "scene": "fixed everywhere, one home",
+      "ease": "out",
+      "frames": 24
+    },
+    "moved_ring_exit": {
+      "what": "The outline around the city cell fades away",
+      "scene": "JOIN",
+      "ease": "in",
+      "frames": 10
+    },
+    "id_marks_wipe": {
+      "what": "A lavender band spreads from left to right behind the ID of each order that belongs to that customer",
+      "scene": "fixed everywhere",
+      "ease": "out",
+      "frames": 18
+    },
+    "id_marks_exit": {
+      "what": "The lavender bands behind the IDs fade away",
+      "scene": "JOIN",
+      "ease": "in",
+      "frames": 10
+    },
+    "join_mark_wipe": {
+      "what": "A lavender band spreads from left to right behind the JOIN line of the query",
+      "scene": "a cost",
+      "ease": "out",
+      "frames": 18
+    }
+  }
+}

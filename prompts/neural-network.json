@@ -1,0 +1,128 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 30-second, 9:16 DataEntropy explainer animation that shows beginners (students and early-career learners) how a neural network works: clues go in as numbers, layers of connected neurons add them up using weights and an activation, an answer comes out, and training compares that answer with the right one and nudges the weights, over many examples. Carry one relatable example through the whole video: an inbox deciding whether the email 'You WON a free phone!!! Click here' is spam. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 30,
+    "total_frames": 900,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring AI learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, neuron outlines and connections; brand violet (#6D4AFF) for key words, active neurons and the answer; electric purple (#8B5CF6) for signals travelling along connections and training nudges; soft lavender (#C4B5FD) only as large filled neuron glows placed behind a darker outline. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple; stronger weights are shown as even bolder strokes (up to 10px), never as lighter ones. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned, maximum two lines, with one or two key words in brand violet. Labels weight 500, at least 32px, deep navy. Maximum 12 words of on-screen text per scene.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "One small network stays on screen for the whole video: three input circles on the left (clues from the email: 'free / won', 'unknown sender', 'many links'), one hidden layer of four neurons in the middle, and one output neuron on the right that shows a spam score. The suspicious email card stays pinned above the network so viewers always know what it is judging.",
+    "interaction_effect": "Signals travel left to right as electric-purple pulses along the connections. Connection stroke width shows each weight: bolder line = the clue matters more. Each hidden neuron fills with a lavender glow behind its navy outline according to its activation. During training, a gap bar between the network's guess and the right answer drives electric-purple pulses backward, and connection widths visibly adjust.",
+    "camera": "Use one continuous visual space with smooth pans and soft zooms. Clues, neurons and connections keep their identity across all scenes."
+  },
+  "timeline": [
+    {
+      "seconds": "0-3",
+      "visual": "A phone inbox with a bold 5px deep navy (#172554) outline sits on the white background. An email card 'You WON a free phone!!! Click here' slides in, then glides along a bold 5px brand-violet (#6D4AFF) arrow into a folder labelled 'Spam'. Headline animates in top-left: 'spam' in brand violet.",
+      "on_screen_text": "How does your inbox spot spam?",
+      "voiceover": "How does your inbox know this email is spam?"
+    },
+    {
+      "seconds": "3-8",
+      "visual": "Hand-written rule cards ('if \"free\" → spam', 'if \"won\" → spam', ...) with 4px deep navy outlines pile up faster and faster, then tilt and slide off-screen. A new scam email variant 'Congrats, claim your prize' slips past them, marked by a bold 6px brand-violet question mark. The rule pile gives way to the outline of a network drawn with bold 5px deep navy lines, label 'neural network' in brand violet.",
+      "on_screen_text": "Too many tricks for hand-written rules",
+      "voiceover": "Rules can't catch every trick, so a network learns from examples."
+    },
+    {
+      "seconds": "8-14",
+      "visual": "The email's clues lift off the card and become three input circles (4px deep navy outlines) holding numbers 1, 1, 0.8 in navy text. Bold deep navy connections (4-10px, width = weight) draw toward four hidden neurons; label 'weight = how much a clue matters'. Electric-purple (#8B5CF6) pulses travel along the lines; each neuron shows a small navy '+' as it adds its weighted inputs, then fills with a soft lavender (#C4B5FD) glow behind its 5px navy outline when its total is high; label 'activation: pass on a strong signal'. The output neuron (6px brand-violet outline) shows 'Spam: 30%'.",
+      "on_screen_text": "Neurons add weighted clues, then pass the signal on",
+      "voiceover": "Clues become numbers. Each neuron adds them up, weighted by importance."
+    },
+    {
+      "seconds": "14-20",
+      "visual": "An off-white answer card with a 5px deep navy outline slides in beside the output: 'Right answer: Spam'. A bold brand-violet gap bar (6px outline, lavender fill) stretches between 'Spam: 30%' and the right answer, labelled 'error'. Electric-purple pulses run backward from output to inputs along the connections; the 'free / won' connection grows bolder and the others adjust slightly. Label 'training = nudge weights to shrink the error' in deep navy.",
+      "on_screen_text": "Compare with the right answer. Nudge the weights.",
+      "voiceover": "Training compares its guess with the right answer, then nudges weights."
+    },
+    {
+      "seconds": "20-26",
+      "visual": "Many example emails (card outlines 4px deep navy) flip through the network one after another while a navy counter climbs '1 → 10,000 examples'. The gap bar shrinks each time and the output rises to 'Spam: 97%'. Finally the new variant 'Congrats, claim your prize' from scene two enters and the output lights brand violet with a 5px outline: 'Likely spam'.",
+      "on_screen_text": "Many examples later, it flags spam it never saw",
+      "voiceover": "After many examples, it can flag spam it has never seen."
+    },
+    {
+      "seconds": "26-30",
+      "visual": "The network's neurons slide together and hand off into the DataEntropy logo: its four brand-violet bars grow upward left to right, the wordmark reveals, and a soft violet glow sweeps once. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand-violet Inter 700 with a bold 5px brand-violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least one second.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy to learn more AI, explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text. Never render elements faint, pale, hairline, ghosted or in light gray; show a weak weight as a 4px line, not a lighter one.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Keep the example email and the same network visually identifiable throughout the video.",
+    "Show each neuron as: add up weighted inputs, then an activation decides how strongly to pass the signal on.",
+    "Show training as compare guess with right answer, send the error backward, adjust weights, repeat over many examples; weights change gradually, not in one jump.",
+    "Label spam scores and example counts as illustrative; do not claim the network is always right.",
+    "Explain every necessary term (neuron, weight, activation, training, error) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "Inbox",
+      "EmailCard",
+      "RuleCard",
+      "InputNode",
+      "Neuron",
+      "WeightedConnection",
+      "SignalPulse",
+      "OutputScore",
+      "AnswerCard",
+      "ErrorGap",
+      "ExampleCounter",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Email text and clues",
+      "Input values and weights",
+      "Illustrative spam scores",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "30-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 3, 8, 14, 20, 26, and 29 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, dot or text that is hard to see on white. Confirm all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://developers.google.com/machine-learning/crash-course/neural-networks/nodes-hidden-layers",
+    "https://developers.google.com/machine-learning/crash-course/neural-networks/backpropagation",
+    "https://www.3blue1brown.com/lessons/neural-networks"
+  ]
+}

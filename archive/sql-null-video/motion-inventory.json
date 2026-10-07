@@ -1,0 +1,239 @@
+{
+  "video": "60-second vertical explainer that shows beginners what NULL means in SQL, why a row with a missing salary fails every ordinary comparison, and how IS NULL finds it",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "lists_exit": {
+      "what": "The two lists and the count of staff fade away",
+      "scene": "missing",
+      "ease": "in",
+      "frames": 10
+    },
+    "empty_box_draw": {
+      "what": "A violet outline draws itself around each empty salary cell",
+      "scene": "missing",
+      "ease": "out",
+      "frames": 20
+    },
+    "null_pill_wipe": {
+      "what": "A lavender pill with the word NULL spreads from left to right inside each empty cell",
+      "scene": "NULL",
+      "ease": "out",
+      "frames": 18
+    },
+    "not_equal_draw": {
+      "what": "A violet not-equal sign draws itself between the NULL pill and a chip",
+      "scene": "not zero",
+      "ease": "out",
+      "frames": 16
+    },
+    "meaning_exit": {
+      "what": "The not-equal signs and the chips beside the table fade away",
+      "scene": "not zero",
+      "ease": "in",
+      "frames": 10
+    },
+    "test_band_enter": {
+      "what": "A violet outlined band fades in over the first row of the staff table",
+      "scene": "unknown",
+      "ease": "out",
+      "frames": 12
+    },
+    "test_band_step": {
+      "what": "The violet band slides down from one row to the next",
+      "scene": "unknown",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "test_band_exit": {
+      "what": "The violet band fades away after the last row",
+      "scene": "unknown",
+      "ease": "in",
+      "frames": 8
+    },
+    "verdict_enter": {
+      "what": "A small chip reading true, false or unknown fades in beside a row when the band reaches it",
+      "scene": "unknown",
+      "ease": "out",
+      "frames": 12
+    },
+    "row_dim": {
+      "what": "The text of a row whose verdict is not true fades from navy to pale gray",
+      "scene": "true rows",
+      "ease": "inOut",
+      "frames": 12
+    },
+    "pass_chip_enter": {
+      "what": "A white chip with a violet outline fades in around the name of a row whose verdict is true",
+      "scene": "true rows, IS NULL",
+      "ease": "out",
+      "frames": 12
+    },
+    "pass_travel": {
+      "what": "The name of a row whose verdict is true travels down behind the query card into the result table",
+      "scene": "true rows, IS NULL",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "pass_chip_exit": {
+      "what": "The chip around the travelling name fades away as it lands",
+      "scene": "true rows, IS NULL",
+      "ease": "in",
+      "frames": 8
+    },
+    "condition_out": {
+      "what": "The condition in the query slides up and fades out",
+      "scene": "= NULL, IS NULL",
+      "ease": "in",
+      "frames": 10
+    },
+    "condition_in": {
+      "what": "A new condition slides up into the query in place of the old one",
+      "scene": "= NULL, IS NULL",
+      "ease": "out",
+      "frames": 16
+    },
+    "condition_underline_draw": {
+      "what": "A violet underline draws itself under the new condition",
+      "scene": "= NULL, IS NULL",
+      "ease": "out",
+      "frames": 14
+    },
+    "verdict_out": {
+      "what": "The old verdict chip beside a row fades out",
+      "scene": "= NULL, IS NULL",
+      "ease": "in",
+      "frames": 8
+    },
+    "verdict_in": {
+      "what": "A new verdict chip fades in beside the row in its place",
+      "scene": "= NULL, IS NULL",
+      "ease": "out",
+      "frames": 12
+    },
+    "result_row_exit": {
+      "what": "The name in the result table fades out when no row passes any more",
+      "scene": "= NULL",
+      "ease": "in",
+      "frames": 12
+    },
+    "table_restore": {
+      "what": "The pale rows of the staff table return to navy and the verdict chips fade away",
+      "scene": "COUNT",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "counter_count": {
+      "what": "The number at the end of a counter chip counts upward steadily",
+      "scene": "COUNT, average",
+      "ease": "linear",
+      "frames": 30
+    }
+  }
+}

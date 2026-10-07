@@ -1,0 +1,196 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "orders",
+    "columns": [
+      "customer",
+      "amount"
+    ],
+    "rows": [
+      [
+        "Arif",
+        300
+      ],
+      [
+        "Mina",
+        200
+      ],
+      [
+        "Arif",
+        400
+      ],
+      [
+        "Rafi",
+        150
+      ],
+      [
+        "Mina",
+        450
+      ],
+      [
+        "Rafi",
+        100
+      ]
+    ]
+  },
+  "cte": {
+    "name": "totals",
+    "alias": "total",
+    "min": 500
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "steps": [
+      "add up each customer",
+      "filter the totals"
+    ],
+    "temporary": "temporary"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Who spent more\nthan *500 in total*?",
+      "voiceover": "Rumi wants every customer who spent more than five hundred *in total.*",
+      "voStart": 0.3,
+      "visual": "A white table card named 'orders' with a bold 5px deep navy outline draws itself: columns customer and amount, six rows with three customers mixed together. Headline with '500 in total' in brand violet.",
+      "rate": "-14%"
+    },
+    {
+      "start": 5.1,
+      "headline": "It takes\n*two steps*",
+      "voiceover": "That takes two steps. First add up each customer. *Then* filter the totals.",
+      "voStart": 5.4,
+      "visual": "Beside the table two white step chips with bold navy outlines are revealed one after the other: '1. add up each customer' and '2. filter the totals', joined by a bold 5px brand-violet arrow. Headline: 'two steps' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 11.8,
+      "headline": "A query in a query\nis *hard to read*",
+      "voiceover": "You can put one query inside another. But it gets *hard to read.*",
+      "voStart": 12.1,
+      "visual": "Below, a wide query card with a bold 5px navy outline draws itself and types a nested query with brand-violet keywords; the inner query sits in the middle on a soft lavender band, wrapped by the outer one. Headline: 'hard to read' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 17.5,
+      "headline": "*WITH* gives a\nstep a name",
+      "voiceover": "*WITH* lets you write step one first and give it a name. That is a *CTE.*",
+      "voStart": 17.8,
+      "visual": "The lines of the query slide out and a new version slides in: 'WITH totals AS (' on top, the same inner query under it, then the final query below. The name 'totals' sits on a soft lavender pill. Headline: 'WITH' in brand violet.",
+      "tts": "WITH lets you write step one first and give it a name. That is a C T E.",
+      "rate": "-13%"
+    },
+    {
+      "start": 23.5,
+      "headline": "Step one builds\n*totals*",
+      "voiceover": "Step one adds up the orders into a small table called *totals.*",
+      "voStart": 23.8,
+      "visual": "Beside the orders table a card with a bold 5px brand-violet outline and the tab 'totals' draws itself. Each order's amount travels across in a white chip with a bold violet outline to its customer's row, where a bold navy total counts up: Arif 700, Mina 650, Rafi 250. Headline: 'totals' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 28.8,
+      "headline": "It lives only\n*inside this query*",
+      "voiceover": "It is temporary. It exists *only inside* this one query.",
+      "voStart": 29.1,
+      "visual": "A white chip with a bold brand-violet outline and navy text 'temporary' is revealed beside the totals tab, and a bold 5px brand-violet outline draws itself around the first four lines of the query, the part that defines totals. Headline: 'inside this query' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 34.0,
+      "headline": "Step two reads it\n*like any table*",
+      "voiceover": "Step two reads totals *like any other table* and keeps the big spenders.",
+      "voStart": 34.3,
+      "visual": "A soft lavender band spreads behind the last two lines of the query. A band with a bold violet outline steps down the totals rows: Arif and Mina get bold violet check marks and travel into a result table with a bold violet outline, while Rafi fades to pale gray. Headline: 'like any table' in brand violet.",
+      "rate": "-13%"
+    },
+    {
+      "start": 39.7,
+      "headline": "It reads\n*top to bottom*",
+      "voiceover": "Now the query reads *top to bottom,* in the order you think.",
+      "voStart": 40.0,
+      "visual": "Two round brand-violet badges with white numbers appear beside the query: 1 beside 'WITH totals AS (' and 2 beside the final SELECT, and a bold 5px brand-violet arrow draws itself down the left side of the card from 1 to 2. Headline: 'top to bottom' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 44.4,
+      "headline": "Afterwards the\nstep table *is gone*",
+      "voiceover": "When the query ends, totals is *gone.* Only the answer remains.",
+      "voStart": 44.7,
+      "visual": "The totals card and its 'temporary' chip fade away. The result table with Arif and Mina stays, with a bold violet outline. Headline: 'is gone' in brand violet.",
+      "rate": "-1%"
+    },
+    {
+      "start": 50.0,
+      "headline": "Big question,\n*small named steps*",
+      "voiceover": "So break a big question into *small named steps.*",
+      "voStart": 50.3,
+      "visual": "The orders table, the query with its two numbered badges and the result table sit together; a bold 5px brand-violet outline draws itself around the result. Headline: 'small named steps' in brand violet.",
+      "rate": "-17%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a common table expression (CTE) is: WITH lets you write the first step of a query up front, give its result a name, and read from it like a table in the second step. Carry one example through the whole video: Rumi, an analyst, wants every customer whose orders add up to more than 500.",
+    "central_visual": {
+      "description": "TOP LEFT: the table 'orders' (customer, amount), a white card with a bold 5px deep navy outline. TOP RIGHT: the temporary 'totals' table with a bold 5px brand-violet outline, and under it the result table. BELOW: a wide query card with a bold 5px navy outline.",
+      "interaction_effect": "Step one makes the order amounts travel into the totals table and add up. Step two tests the totals rows and sends the ones that pass to the result. When the query ends the totals table fades away.",
+      "camera": "One continuous space, held steady so the long query stays readable."
+    },
+    "rules": [
+      "'Temporary table' is a way to picture a CTE, not a promise about storage: say it 'acts like' a small table that exists only inside this query.",
+      "The subquery version must be valid SQL too: a subquery in FROM gets an alias.",
+      "A CTE is not saved in the database; show it disappearing when the query ends.",
+      "Code in this video is 34px on screen because the inner SELECT line is long."
+    ],
+    "components": [
+      "OrdersTable",
+      "StepChips",
+      "QueryCard",
+      "TotalsTable",
+      "TestBand",
+      "ResultTable",
+      "StepBadges"
+    ],
+    "controls": [
+      "Order rows",
+      "The spending threshold",
+      "The CTE name"
+    ],
+    "quality": "Confirm that each total is the real sum of that customer's orders and that the result holds exactly the customers above the threshold.",
+    "sources": [
+      "https://www.postgresql.org/docs/current/queries-with.html",
+      "https://www.postgresql.org/docs/current/functions-subquery.html",
+      "https://dev.mysql.com/doc/refman/8.4/en/with.html",
+      "https://www.sqlite.org/lang_with.html"
+    ]
+  }
+}

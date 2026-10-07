@@ -1,0 +1,158 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "customers": {
+    "name": "customers",
+    "columns": [
+      "name",
+      "id"
+    ],
+    "rows": [
+      [
+        "Arif",
+        1
+      ],
+      [
+        "Mina",
+        2
+      ],
+      [
+        "Rafi",
+        3
+      ]
+    ]
+  },
+  "orders": {
+    "name": "orders",
+    "columns": [
+      "customer_id",
+      "amount"
+    ],
+    "rows": [
+      [
+        1,
+        500
+      ],
+      [
+        3,
+        250
+      ],
+      [
+        1,
+        300
+      ]
+    ]
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "null": "NULL",
+    "noValue": "no value"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "*Who* placed\neach order?",
+      "voiceover": "Orders only store a customer number. So *who* ordered what?",
+      "voStart": 0.3,
+      "rate": "-9%"
+    },
+    {
+      "start": 5.2,
+      "headline": "The names live in\n*another table*",
+      "voiceover": "The names live in a different table called *customers.*",
+      "voStart": 5.5,
+      "rate": "-20%"
+    },
+    {
+      "start": 9.8,
+      "headline": "Both tables\nshare an *ID*",
+      "voiceover": "But both tables share one thing. The customer's *ID.*",
+      "voStart": 10.1,
+      "rate": "-3%"
+    },
+    {
+      "start": 14.7,
+      "headline": "*JOIN* puts two tables\nside by side",
+      "voiceover": "*JOIN* brings the two tables together.",
+      "voStart": 15.0,
+      "rate": "-13%"
+    },
+    {
+      "start": 19.5,
+      "headline": "*ON* says which\nrows match",
+      "voiceover": "*ON* says how rows match. The order's customer ID equals the customer's ID.",
+      "voStart": 19.8,
+      "rate": "+0%"
+    },
+    {
+      "start": 26.3,
+      "headline": "Matching rows\n*snap together*",
+      "voiceover": "Each matching pair becomes *one wider row.*",
+      "voStart": 26.6,
+      "rate": "-7%"
+    },
+    {
+      "start": 31.5,
+      "headline": "Two orders,\n*two rows* for Arif",
+      "voiceover": "Arif has two orders so Arif appears *twice.*",
+      "voStart": 31.8,
+      "rate": "-8%"
+    },
+    {
+      "start": 36.0,
+      "headline": "No match,\n*no row*",
+      "voiceover": "Mina has no orders so she is *left out.*",
+      "voStart": 36.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 40.4,
+      "headline": "*LEFT JOIN* keeps\nevery customer",
+      "voiceover": "A *LEFT JOIN* keeps every customer even without an order.",
+      "voStart": 40.7,
+      "rate": "-12%"
+    },
+    {
+      "start": 45.6,
+      "headline": "*NULL*: no value here",
+      "voiceover": "Her amount is empty. SQL calls that *NULL.*",
+      "voStart": 45.9,
+      "tts": "Her amount is empty. S Q L calls that null.",
+      "rate": "+0%"
+    },
+    {
+      "start": 50.4,
+      "headline": "One question across\n*two tables*",
+      "voiceover": "Now one question can use *both tables.*",
+      "voStart": 50.7,
+      "rate": "-15%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ]
+}

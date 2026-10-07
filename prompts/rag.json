@@ -1,0 +1,109 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 30-second, 9:16 explainer animation that makes the RAG process feel like one interactive visual experiment. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 30,
+    "total_frames": 900,
+    "language": "English",
+    "style": "Minimal vector motion graphics on a deep charcoal background, with cyan for the question, violet for knowledge, amber for retrieved evidence, and white for the answer.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "Keep a glowing user question visible as the camera follows it through the entire RAG pipeline. Documents split into chunks, chunks become searchable points, relevant points respond to the question, and those points travel into the model to form an answer.",
+    "interaction_effect": "As the question moves near the indexed points, relevant points brighten and move toward it while irrelevant points recede. A visible similarity pulse makes retrieval understandable without showing equations.",
+    "camera": "Use one continuous visual space with smooth pans and zooms. Preserve object identity as elements transform."
+  },
+  "timeline": [
+    {
+      "seconds": "0-4",
+      "visual": "A question appears: 'What is our refund policy?' An empty answer box tries to respond, then pauses. A nearby library of company documents comes into view.",
+      "on_screen_text": "How can AI answer from your documents?",
+      "voiceover": "How can AI answer using your own documents?"
+    },
+    {
+      "seconds": "4-9",
+      "visual": "The camera enters the library. Two documents unfold and split into small, readable text cards. The cards smoothly transform into dots in a searchable map.",
+      "on_screen_text": "Documents → chunks → index",
+      "voiceover": "First, documents become small, searchable pieces."
+    },
+    {
+      "seconds": "9-15",
+      "visual": "The cyan question enters the map and sends out a pulse. Three relevant dots glow amber and rise toward the question. Other dots dim. Show a tiny source label on each selected card.",
+      "on_screen_text": "Find relevant pieces",
+      "voiceover": "The question finds the pieces most relevant to it."
+    },
+    {
+      "seconds": "15-21",
+      "visual": "The three selected cards and the question slide together into a single prompt. The combined prompt enters a simple language-model node.",
+      "on_screen_text": "Question + context → AI model",
+      "voiceover": "Those pieces join the question as context for the model."
+    },
+    {
+      "seconds": "21-27",
+      "visual": "An answer forms word by word: 'Refunds are available within 7 days...' A thin animated line connects the statement to its supporting source card. Use this policy only as a clearly fictional example.",
+      "on_screen_text": "Answer grounded in retrieved context",
+      "voiceover": "The model writes an answer using that retrieved context."
+    },
+    {
+      "seconds": "27-30",
+      "visual": "Zoom out to reveal the complete animated path. The three core stages illuminate in sequence. Hold the final composition for at least one second.",
+      "on_screen_text": "RAG = Retrieve → Add context → Generate",
+      "voiceover": "That is RAG: retrieve, add context, generate."
+    }
+  ],
+  "animation_rules": [
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Make retrieval visibly selective: only relevant chunks travel to the model.",
+    "Keep the question visually identifiable throughout the video.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Avoid implying that documents retrain the model or that RAG guarantees a correct answer."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Question",
+      "Document",
+      "Chunk",
+      "SearchableMap",
+      "RetrievalPulse",
+      "Prompt",
+      "Model",
+      "Answer",
+      "SourceConnector"
+    ],
+    "editable_controls": [
+      "Question text",
+      "Example answer",
+      "Document snippets",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "30-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 4, 9, 15, 21, 27, and 29 seconds. Fix clipping, unreadable labels, broken transformations, and timing gaps before delivering."
+}

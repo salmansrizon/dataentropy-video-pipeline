@@ -1,0 +1,716 @@
+{
+  "voice": {
+    "engine": "kokoro",
+    "name": "af_heart"
+  },
+  "for": "893b5ac625e5c2e0",
+  "scenes": [
+    {
+      "duration": 4.14,
+      "timing": "model",
+      "words": [
+        {
+          "text": "Maya",
+          "start": 0.4,
+          "end": 0.787
+        },
+        {
+          "text": "has",
+          "start": 0.787,
+          "end": 1.038
+        },
+        {
+          "text": "a",
+          "start": 1.038,
+          "end": 1.125
+        },
+        {
+          "text": "list",
+          "start": 1.125,
+          "end": 1.363
+        },
+        {
+          "text": "of",
+          "start": 1.363,
+          "end": 1.488
+        },
+        {
+          "text": "sales",
+          "start": 1.488,
+          "end": 1.913
+        },
+        {
+          "text": "leads",
+          "start": 1.913,
+          "end": 2.625
+        },
+        {
+          "text": "Who",
+          "start": 2.763,
+          "end": 2.962
+        },
+        {
+          "text": "should",
+          "start": 2.962,
+          "end": 3.15
+        },
+        {
+          "text": "she",
+          "start": 3.15,
+          "end": 3.312
+        },
+        {
+          "text": "call",
+          "start": 3.312,
+          "end": 3.663
+        },
+        {
+          "text": "today",
+          "start": 3.663,
+          "end": 4.4
+        }
+      ]
+    },
+    {
+      "duration": 4.01,
+      "timing": "model",
+      "words": [
+        {
+          "text": "Row",
+          "start": 0.375,
+          "end": 0.625
+        },
+        {
+          "text": "by",
+          "start": 0.625,
+          "end": 0.838
+        },
+        {
+          "text": "row",
+          "start": 0.838,
+          "end": 1.125
+        },
+        {
+          "text": "works",
+          "start": 1.125,
+          "end": 1.425
+        },
+        {
+          "text": "for",
+          "start": 1.425,
+          "end": 1.587
+        },
+        {
+          "text": "six",
+          "start": 1.587,
+          "end": 1.875
+        },
+        {
+          "text": "leads",
+          "start": 1.875,
+          "end": 2.575
+        },
+        {
+          "text": "Not",
+          "start": 2.712,
+          "end": 2.95
+        },
+        {
+          "text": "for",
+          "start": 2.95,
+          "end": 3.112
+        },
+        {
+          "text": "six",
+          "start": 3.112,
+          "end": 3.425
+        },
+        {
+          "text": "thousand",
+          "start": 3.425,
+          "end": 4.3
+        }
+      ]
+    },
+    {
+      "duration": 4.59,
+      "timing": "model",
+      "words": [
+        {
+          "text": "So",
+          "start": 0.35,
+          "end": 0.525
+        },
+        {
+          "text": "she",
+          "start": 0.525,
+          "end": 0.7
+        },
+        {
+          "text": "asks",
+          "start": 0.7,
+          "end": 1.1
+        },
+        {
+          "text": "the",
+          "start": 1.1,
+          "end": 1.2
+        },
+        {
+          "text": "table",
+          "start": 1.2,
+          "end": 1.55
+        },
+        {
+          "text": "itself",
+          "start": 1.55,
+          "end": 2.4
+        },
+        {
+          "text": "using",
+          "start": 2.538,
+          "end": 2.875
+        },
+        {
+          "text": "a",
+          "start": 2.875,
+          "end": 2.975
+        },
+        {
+          "text": "language",
+          "start": 2.975,
+          "end": 3.475
+        },
+        {
+          "text": "called",
+          "start": 3.475,
+          "end": 3.775
+        },
+        {
+          "text": "S",
+          "start": 3.775,
+          "end": 4.013
+        },
+        {
+          "text": "Q",
+          "start": 4.013,
+          "end": 4.263
+        },
+        {
+          "text": "L.",
+          "start": 4.263,
+          "end": 4.95
+        }
+      ]
+    },
+    {
+      "duration": 3.63,
+      "timing": "model",
+      "words": [
+        {
+          "text": "SELECT",
+          "start": 0.375,
+          "end": 0.75
+        },
+        {
+          "text": "names",
+          "start": 0.75,
+          "end": 1.087
+        },
+        {
+          "text": "the",
+          "start": 1.087,
+          "end": 1.175
+        },
+        {
+          "text": "columns",
+          "start": 1.175,
+          "end": 1.575
+        },
+        {
+          "text": "she",
+          "start": 1.575,
+          "end": 1.725
+        },
+        {
+          "text": "wants",
+          "start": 1.725,
+          "end": 2.4
+        },
+        {
+          "text": "name",
+          "start": 2.587,
+          "end": 3.025
+        },
+        {
+          "text": "and",
+          "start": 3.025,
+          "end": 3.15
+        },
+        {
+          "text": "budget",
+          "start": 3.15,
+          "end": 3.925
+        }
+      ]
+    },
+    {
+      "duration": 3.33,
+      "timing": "model",
+      "words": [
+        {
+          "text": "FROM",
+          "start": 0.375,
+          "end": 0.662
+        },
+        {
+          "text": "says",
+          "start": 0.662,
+          "end": 0.975
+        },
+        {
+          "text": "which",
+          "start": 0.975,
+          "end": 1.212
+        },
+        {
+          "text": "table",
+          "start": 1.212,
+          "end": 1.65
+        },
+        {
+          "text": "to",
+          "start": 1.65,
+          "end": 1.775
+        },
+        {
+          "text": "look",
+          "start": 1.775,
+          "end": 2.0
+        },
+        {
+          "text": "in",
+          "start": 2.0,
+          "end": 2.525
+        },
+        {
+          "text": "leads",
+          "start": 2.725,
+          "end": 3.575
+        }
+      ]
+    },
+    {
+      "duration": 3.97,
+      "timing": "model",
+      "words": [
+        {
+          "text": "WHERE",
+          "start": 0.325,
+          "end": 0.55
+        },
+        {
+          "text": "is",
+          "start": 0.55,
+          "end": 0.662
+        },
+        {
+          "text": "a",
+          "start": 0.662,
+          "end": 0.75
+        },
+        {
+          "text": "test",
+          "start": 0.75,
+          "end": 1.075
+        },
+        {
+          "text": "for",
+          "start": 1.075,
+          "end": 1.2
+        },
+        {
+          "text": "each",
+          "start": 1.2,
+          "end": 1.425
+        },
+        {
+          "text": "row",
+          "start": 1.425,
+          "end": 1.925
+        },
+        {
+          "text": "Is",
+          "start": 2.075,
+          "end": 2.263
+        },
+        {
+          "text": "the",
+          "start": 2.263,
+          "end": 2.35
+        },
+        {
+          "text": "budget",
+          "start": 2.35,
+          "end": 2.725
+        },
+        {
+          "text": "above",
+          "start": 2.725,
+          "end": 3.05
+        },
+        {
+          "text": "five",
+          "start": 3.05,
+          "end": 3.425
+        },
+        {
+          "text": "thousand",
+          "start": 3.425,
+          "end": 4.25
+        }
+      ]
+    },
+    {
+      "duration": 3.67,
+      "timing": "model",
+      "words": [
+        {
+          "text": "Rows",
+          "start": 0.4,
+          "end": 0.75
+        },
+        {
+          "text": "that",
+          "start": 0.75,
+          "end": 0.963
+        },
+        {
+          "text": "pass",
+          "start": 0.963,
+          "end": 1.375
+        },
+        {
+          "text": "go",
+          "start": 1.375,
+          "end": 1.625
+        },
+        {
+          "text": "through",
+          "start": 1.625,
+          "end": 2.15
+        },
+        {
+          "text": "The",
+          "start": 2.325,
+          "end": 2.425
+        },
+        {
+          "text": "rest",
+          "start": 2.425,
+          "end": 2.75
+        },
+        {
+          "text": "stay",
+          "start": 2.75,
+          "end": 3.025
+        },
+        {
+          "text": "behind",
+          "start": 3.025,
+          "end": 3.975
+        }
+      ]
+    },
+    {
+      "duration": 4.55,
+      "timing": "model",
+      "words": [
+        {
+          "text": "What",
+          "start": 0.35,
+          "end": 0.5
+        },
+        {
+          "text": "comes",
+          "start": 0.5,
+          "end": 0.8
+        },
+        {
+          "text": "back",
+          "start": 0.8,
+          "end": 1.175
+        },
+        {
+          "text": "is",
+          "start": 1.175,
+          "end": 1.288
+        },
+        {
+          "text": "a",
+          "start": 1.288,
+          "end": 1.387
+        },
+        {
+          "text": "new",
+          "start": 1.387,
+          "end": 1.663
+        },
+        {
+          "text": "table",
+          "start": 1.663,
+          "end": 2.4
+        },
+        {
+          "text": "three",
+          "start": 2.575,
+          "end": 2.938
+        },
+        {
+          "text": "leads",
+          "start": 2.938,
+          "end": 3.438
+        },
+        {
+          "text": "and",
+          "start": 3.438,
+          "end": 3.587
+        },
+        {
+          "text": "two",
+          "start": 3.587,
+          "end": 3.812
+        },
+        {
+          "text": "columns",
+          "start": 3.812,
+          "end": 4.825
+        }
+      ]
+    },
+    {
+      "duration": 3.45,
+      "timing": "model",
+      "words": [
+        {
+          "text": "The",
+          "start": 0.25,
+          "end": 0.375
+        },
+        {
+          "text": "original",
+          "start": 0.375,
+          "end": 0.825
+        },
+        {
+          "text": "list",
+          "start": 0.825,
+          "end": 1.15
+        },
+        {
+          "text": "is",
+          "start": 1.15,
+          "end": 1.3
+        },
+        {
+          "text": "untouched",
+          "start": 1.3,
+          "end": 2.1
+        },
+        {
+          "text": "SELECT",
+          "start": 2.237,
+          "end": 2.675
+        },
+        {
+          "text": "only",
+          "start": 2.675,
+          "end": 2.975
+        },
+        {
+          "text": "reads",
+          "start": 2.975,
+          "end": 3.675
+        }
+      ]
+    },
+    {
+      "duration": 4.2,
+      "timing": "model",
+      "words": [
+        {
+          "text": "Change",
+          "start": 0.375,
+          "end": 0.812
+        },
+        {
+          "text": "one",
+          "start": 0.812,
+          "end": 1.075
+        },
+        {
+          "text": "number",
+          "start": 1.075,
+          "end": 1.887
+        },
+        {
+          "text": "and",
+          "start": 1.887,
+          "end": 2.038
+        },
+        {
+          "text": "the",
+          "start": 2.038,
+          "end": 2.15
+        },
+        {
+          "text": "same",
+          "start": 2.15,
+          "end": 2.525
+        },
+        {
+          "text": "question",
+          "start": 2.525,
+          "end": 3.112
+        },
+        {
+          "text": "gives",
+          "start": 3.112,
+          "end": 3.337
+        },
+        {
+          "text": "a",
+          "start": 3.337,
+          "end": 3.4
+        },
+        {
+          "text": "new",
+          "start": 3.4,
+          "end": 3.638
+        },
+        {
+          "text": "answer",
+          "start": 3.638,
+          "end": 4.55
+        }
+      ]
+    },
+    {
+      "duration": 4.46,
+      "timing": "model",
+      "words": [
+        {
+          "text": "SELECT",
+          "start": 0.375,
+          "end": 0.775
+        },
+        {
+          "text": "picks",
+          "start": 0.775,
+          "end": 1.075
+        },
+        {
+          "text": "columns",
+          "start": 1.075,
+          "end": 1.85
+        },
+        {
+          "text": "WHERE",
+          "start": 1.95,
+          "end": 2.125
+        },
+        {
+          "text": "picks",
+          "start": 2.125,
+          "end": 2.425
+        },
+        {
+          "text": "rows",
+          "start": 2.425,
+          "end": 3.025
+        },
+        {
+          "text": "That",
+          "start": 3.138,
+          "end": 3.413
+        },
+        {
+          "text": "works",
+          "start": 3.413,
+          "end": 3.638
+        },
+        {
+          "text": "on",
+          "start": 3.638,
+          "end": 3.775
+        },
+        {
+          "text": "any",
+          "start": 3.775,
+          "end": 3.975
+        },
+        {
+          "text": "table",
+          "start": 3.975,
+          "end": 4.775
+        }
+      ]
+    },
+    {
+      "duration": 3.45,
+      "timing": "model",
+      "words": [
+        {
+          "text": "Follow",
+          "start": 0.275,
+          "end": 0.575
+        },
+        {
+          "text": "Data",
+          "start": 0.575,
+          "end": 0.85
+        },
+        {
+          "text": "Entropy",
+          "start": 0.85,
+          "end": 1.375
+        },
+        {
+          "text": "for",
+          "start": 1.375,
+          "end": 1.5
+        },
+        {
+          "text": "more",
+          "start": 1.5,
+          "end": 1.7
+        },
+        {
+          "text": "S",
+          "start": 1.7,
+          "end": 1.9
+        },
+        {
+          "text": "Q",
+          "start": 1.9,
+          "end": 2.138
+        },
+        {
+          "text": "L",
+          "start": 2.138,
+          "end": 2.538
+        },
+        {
+          "text": "explained",
+          "start": 2.538,
+          "end": 3.1
+        },
+        {
+          "text": "simply",
+          "start": 3.1,
+          "end": 3.75
+        }
+      ]
+    }
+  ]
+}

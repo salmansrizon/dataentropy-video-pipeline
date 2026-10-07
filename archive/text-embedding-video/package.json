@@ -1,0 +1,29 @@
+{
+  "name": "text-embedding-video",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preview": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts TextEmbeddingExplainer ../output/text-embedding-explainer.mp4",
+    "still": "remotion still src/index.ts TextEmbeddingExplainer",
+    "typecheck": "tsc --noEmit",
+    "srt": "node scripts/make-srt.mjs",
+    "vo": "python scripts/make-vo.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dataentropy-video-pipeline",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "engine",
+    "videos/*"
+  ],
+  "scripts": {
+    "setup": "python tools/setup.py",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}

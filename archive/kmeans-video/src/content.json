@@ -1,0 +1,299 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "chart": {
+    "xTitle": "Visits per month",
+    "yTitle": "Spend per visit",
+    "xMax": 12,
+    "yMax": 40,
+    "xTicks": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "yTicks": [
+      10,
+      20,
+      30,
+      40
+    ],
+    "yPrefix": "$"
+  },
+  "customers": [
+    [
+      8,
+      5
+    ],
+    [
+      9.5,
+      5
+    ],
+    [
+      8.5,
+      3
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      11,
+      8
+    ],
+    [
+      9.5,
+      12
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      6.5,
+      9
+    ],
+    [
+      10.5,
+      12
+    ],
+    [
+      10,
+      7
+    ],
+    [
+      3,
+      32
+    ],
+    [
+      4.5,
+      28
+    ],
+    [
+      1,
+      24
+    ],
+    [
+      2.5,
+      23
+    ],
+    [
+      3.5,
+      30
+    ],
+    [
+      3.5,
+      27
+    ],
+    [
+      2,
+      35
+    ],
+    [
+      4.5,
+      24
+    ],
+    [
+      2,
+      26
+    ],
+    [
+      1,
+      37
+    ],
+    [
+      1,
+      14
+    ],
+    [
+      4.5,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3.5,
+      11
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1.5,
+      11
+    ],
+    [
+      5,
+      13
+    ],
+    [
+      4,
+      13
+    ],
+    [
+      2.5,
+      12
+    ]
+  ],
+  "startCenters": [
+    [
+      5,
+      36
+    ],
+    [
+      8,
+      28
+    ],
+    [
+      11,
+      24
+    ]
+  ],
+  "example": {
+    "customer": 0,
+    "badge": "Maya (fictional)"
+  },
+  "lassos": [
+    {
+      "visits": 5.8,
+      "spend": 10,
+      "halfVisits": 2.5,
+      "halfSpend": 7
+    },
+    {
+      "visits": 2,
+      "spend": 19,
+      "halfVisits": 1.9,
+      "halfSpend": 12
+    }
+  ],
+  "labels": {
+    "center": "center = a guess",
+    "nearest": "nearest = shortest line",
+    "middle": "middle = average spot",
+    "round": "round",
+    "settled": "no changes",
+    "k": "k = {k} groups",
+    "mean": "mean = average spot"
+  },
+  "groupNames": {
+    "mostVisits": "Daily regulars",
+    "biggestSpend": "Big-basket visitors",
+    "rest": "Rare drop-ins"
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How does a computer *group*\ncustomers by itself?",
+      "voiceover": "Can a computer sort a shop's customers into *groups* by itself?",
+      "voStart": 0.3,
+      "rate": "-18%"
+    },
+    {
+      "start": 5,
+      "headline": "Each dot is\n*one customer*",
+      "voiceover": "Each dot is *one customer,* placed by visits and spending.",
+      "voStart": 5.3,
+      "rate": "-8%"
+    },
+    {
+      "start": 10,
+      "headline": "All dots look alike.\nWhere are the *groups*?",
+      "voiceover": "All the dots look alike. Where are the *groups?*",
+      "voStart": 10.2,
+      "rate": "-18%"
+    },
+    {
+      "start": 14,
+      "headline": "Ask for three groups.\nDrop *three centers*.",
+      "voiceover": "We ask for *three* groups. Three center markers land anywhere.",
+      "voStart": 14.3,
+      "rate": "-4%"
+    },
+    {
+      "start": 19,
+      "headline": "Each dot joins its\n*nearest* center",
+      "voiceover": "Every dot joins its *nearest* center, and takes that center's color.",
+      "voStart": 19.3,
+      "rate": "-10%"
+    },
+    {
+      "start": 24,
+      "headline": "Each center *jumps*\nto the middle",
+      "voiceover": "Then each center jumps to the *middle* of its own dots.",
+      "voStart": 24.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 29,
+      "headline": "Some dots *switch* groups",
+      "voiceover": "Now some dots are closer to a *different* center.",
+      "voStart": 29.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 33,
+      "headline": "Join. Jump. *Repeat.*",
+      "voiceover": "Dots join the nearest center, and centers jump *again and again.*",
+      "voStart": 33.3,
+      "rate": "-17%"
+    },
+    {
+      "start": 38,
+      "headline": "No dot switches.\nThe groups are *settled*.",
+      "voiceover": "When no dot switches, the groups are *settled.*",
+      "voStart": 38.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 42,
+      "headline": "This is *k-means*",
+      "voiceover": "This is *k-means.* K is how many groups. Mean is the average spot.",
+      "voStart": 42.3,
+      "rate": "-9%"
+    },
+    {
+      "start": 48,
+      "headline": "Three groups. The *right*\n*offer* for each.",
+      "voiceover": "The shop names each group and sends the *right offer* to each one.",
+      "voStart": 48.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 54,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more data skills explained simply.",
+      "tts": "Follow Data Entropy for more data skills explained simply.",
+      "voStart": 54.3,
+      "rate": "+0%"
+    }
+  ]
+}

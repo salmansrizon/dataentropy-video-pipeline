@@ -1,0 +1,245 @@
+{
+  "video": "60-second vertical explainer that shows beginners how INSERT, UPDATE and DELETE change a table of shop products, and what happens when WHERE is left out",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the part of the picture being explained, then back out to show everything",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "card_outline_draw": {
+      "what": "The outline of a table or card draws itself, then the card fills in",
+      "scene": "all",
+      "ease": "out",
+      "frames": 30
+    },
+    "table_rows_wipe": {
+      "what": "Each row of a table is revealed from left to right, one row after another",
+      "scene": "all",
+      "ease": "out",
+      "frames": 20
+    },
+    "chip_wipe": {
+      "what": "A small label chip is revealed from left to right",
+      "scene": "all",
+      "ease": "out",
+      "frames": 16
+    },
+    "chip_exit": {
+      "what": "A label chip fades away",
+      "scene": "all",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_typing": {
+      "what": "One line of the query is typed letter by letter",
+      "scene": "all",
+      "ease": "linear",
+      "frames": 30
+    },
+    "world_exit": {
+      "what": "The tables and the query card fade away to make room for the logo",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline is revealed from left to right under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "question_mark_enter": {
+      "what": "A large violet question mark fades in beside the products table",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 14
+    },
+    "question_mark_exit": {
+      "what": "The question mark fades away",
+      "scene": "three commands",
+      "ease": "in",
+      "frames": 10
+    },
+    "price_out": {
+      "what": "The old price in a row slides up and fades out",
+      "scene": "three commands, UPDATE, no WHERE, DELETE",
+      "ease": "in",
+      "frames": 10
+    },
+    "price_in": {
+      "what": "The new price slides up into its place",
+      "scene": "three commands, UPDATE, no WHERE, DELETE",
+      "ease": "out",
+      "frames": 16
+    },
+    "command_chip_wipe": {
+      "what": "A chip with the name of a command is revealed from left to right beside the table",
+      "scene": "three commands",
+      "ease": "out",
+      "frames": 16
+    },
+    "command_chip_light": {
+      "what": "The chip of the command being shown turns from white to violet",
+      "scene": "INSERT, UPDATE, DELETE",
+      "ease": "inOut",
+      "frames": 14
+    },
+    "new_row_slide_in": {
+      "what": "A new row inside a white chip slides up into the first free line of the table",
+      "scene": "INSERT",
+      "ease": "out",
+      "frames": 30
+    },
+    "new_row_chip_exit": {
+      "what": "The chip around the new row fades away once it is in the table",
+      "scene": "INSERT",
+      "ease": "in",
+      "frames": 10
+    },
+    "table_grow": {
+      "what": "The table gets one row taller to hold the new row",
+      "scene": "INSERT",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "query_line_out": {
+      "what": "A line of the query slides up and fades out",
+      "scene": "UPDATE, no WHERE, DELETE, SELECT first",
+      "ease": "in",
+      "frames": 10
+    },
+    "query_line_in": {
+      "what": "A new line of the query slides up into its place",
+      "scene": "UPDATE, DELETE, SELECT first",
+      "ease": "out",
+      "frames": 16
+    },
+    "price_ring_draw": {
+      "what": "A violet outline draws itself around the one price that changes",
+      "scene": "UPDATE",
+      "ease": "out",
+      "frames": 24
+    },
+    "where_marks_wipe": {
+      "what": "A lavender band spreads from left to right behind the WHERE line of the query and behind the one row it picks",
+      "scene": "WHERE",
+      "ease": "out",
+      "frames": 18
+    },
+    "where_marks_exit": {
+      "what": "The lavender bands and the outline around the price fade away",
+      "scene": "no WHERE",
+      "ease": "in",
+      "frames": 10
+    },
+    "row_delete_fade": {
+      "what": "The deleted row fades out of the table",
+      "scene": "DELETE",
+      "ease": "in",
+      "frames": 12
+    },
+    "table_close_gap": {
+      "what": "The row below moves up and the table gets one row shorter",
+      "scene": "DELETE",
+      "ease": "inOut",
+      "frames": 20
+    },
+    "rows_wipe_out": {
+      "what": "Every remaining row fades out of the table, one after another",
+      "scene": "empty table",
+      "ease": "in",
+      "frames": 12
+    },
+    "rows_return": {
+      "what": "The rows fade back into the table",
+      "scene": "SELECT first",
+      "ease": "out",
+      "frames": 14
+    },
+    "check_ring_draw": {
+      "what": "A violet outline draws itself around the row the WHERE would touch",
+      "scene": "SELECT first",
+      "ease": "out",
+      "frames": 24
+    },
+    "check_draw": {
+      "what": "A violet check mark fades in beside that row",
+      "scene": "SELECT first",
+      "ease": "out",
+      "frames": 14
+    },
+    "check_exit": {
+      "what": "The outline and the check mark fade away",
+      "scene": "check WHERE",
+      "ease": "in",
+      "frames": 10
+    },
+    "final_mark_wipe": {
+      "what": "A lavender band spreads from left to right behind the WHERE line of the query",
+      "scene": "check WHERE",
+      "ease": "out",
+      "frames": 18
+    }
+  }
+}

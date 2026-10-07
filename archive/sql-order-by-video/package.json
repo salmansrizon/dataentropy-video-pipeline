@@ -1,0 +1,29 @@
+{
+  "name": "sql-order-by-video",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preview": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts SqlOrderByExplainer ../output/sql-order-by-explainer.mp4",
+    "still": "remotion still src/index.ts SqlOrderByExplainer",
+    "typecheck": "tsc --noEmit",
+    "srt": "node scripts/make-srt.mjs",
+    "vo": "python scripts/make-vo.py --voice en-US-AvaNeural"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

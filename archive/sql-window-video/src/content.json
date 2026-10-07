@@ -1,0 +1,189 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "sales",
+    "columns": [
+      "rep",
+      "region",
+      "amount"
+    ],
+    "rows": [
+      [
+        "Arif",
+        "East",
+        300
+      ],
+      [
+        "Mina",
+        "East",
+        500
+      ],
+      [
+        "Rafi",
+        "West",
+        200
+      ],
+      [
+        "Sara",
+        "West",
+        400
+      ],
+      [
+        "Nabil",
+        "West",
+        100
+      ]
+    ]
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "total": "total",
+    "rank": "rank",
+    "rowsKept": "5 rows in, 5 rows out",
+    "squeezed": "5 rows became 2",
+    "grouped": "GROUP BY"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Each sale *beside*\nits team total?",
+      "voiceover": "Farid wants every sale *next to* its team total. On the same row.",
+      "voStart": 0.3,
+      "visual": "A white table card named 'sales' with a bold 5px deep navy outline draws itself: columns rep, region and amount, five rows of bold navy text, and one more column with an empty header and a bold brand-violet question mark in it. Headline with 'beside' in brand violet.",
+      "rate": "-16%"
+    },
+    {
+      "start": 5.6,
+      "headline": "GROUP BY *squeezes*\nthe rows away",
+      "voiceover": "GROUP BY gives the totals. But it *squeezes* five rows into two.",
+      "voStart": 5.9,
+      "visual": "Under the table a small result card with a bold 5px navy outline and the tab 'GROUP BY' draws itself with two rows, East 800 and West 700, and a white chip with a bold navy outline reads '5 rows became 2'. Headline: 'squeezes' in brand violet.",
+      "rate": "-12%"
+    },
+    {
+      "start": 11.2,
+      "headline": "A *window function*\nkeeps every row",
+      "voiceover": "A *window function* adds up too. But it keeps every row.",
+      "voStart": 11.5,
+      "visual": "The small result card fades away. In the sales table the header of the last column turns brand violet with the white word 'total', and a bold 5px brand-violet outline draws itself around that column, still empty, beside all five rows. Headline: 'window function' in brand violet.",
+      "rate": "-16%"
+    },
+    {
+      "start": 16.2,
+      "headline": "*OVER* opens\nthe window",
+      "voiceover": "*OVER* means: look through a window at other rows. Here, all of them.",
+      "voStart": 16.5,
+      "visual": "Below, a white query card with a bold 5px navy outline draws itself and types four lines: SELECT rep, amount, then SUM(amount) OVER with an open bracket, a closing bracket, and FROM sales, with the keywords in bold brand violet. A bold 5px brand-violet outline, the window, draws itself around all five rows, and every row's total reads 1,500. Headline: 'OVER' in brand violet.",
+      "rate": "-12%"
+    },
+    {
+      "start": 22.3,
+      "headline": "*PARTITION BY*: one\nwindow per team",
+      "voiceover": "*PARTITION BY* region makes one window for each team.",
+      "voStart": 22.6,
+      "visual": "Inside the brackets of the query 'PARTITION BY region' slides in. The single window fades and two bold 5px brand-violet windows draw themselves, one around the two East rows and one around the three West rows. The totals slide to 800 for the East rows and 700 for the West rows. Headline: 'PARTITION BY' in brand violet.",
+      "rate": "-18%"
+    },
+    {
+      "start": 27.6,
+      "headline": "Five rows in,\n*five rows out*",
+      "voiceover": "Each row gets its team's total and *stays its own row.*",
+      "voStart": 27.9,
+      "visual": "A white chip with a bold brand-violet outline and navy text '5 rows in, 5 rows out' is revealed above the table, and soft lavender bands spread behind the navy totals. Headline: 'five rows out' in brand violet.",
+      "rate": "-18%"
+    },
+    {
+      "start": 32.1,
+      "headline": "*ORDER BY* inside:\na running total",
+      "voiceover": "Put *ORDER BY* inside the window and the sum becomes a *running total.*",
+      "voStart": 32.4,
+      "visual": "The line inside the brackets changes to 'ORDER BY amount'. The two windows fade, the totals clear, and the rows slide past each other until the amounts run from 100 at the top to 500 at the bottom. A bold 5px brand-violet window appears around the first row only and its total reads 100. Headline: 'running total' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 37.7,
+      "headline": "The window grows\n*row by row*",
+      "voiceover": "The window grows one row at a time, down to the *current row.*",
+      "voStart": 38.0,
+      "visual": "The brand-violet window stretches down one row at a time, and each time the newly included row gets its total: 300, 600, 1,000 and 1,500. Headline: 'row by row' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 43.0,
+      "headline": "Same window,\n*other functions*",
+      "voiceover": "Swap SUM for RANK and the same window gives each sale a *rank.*",
+      "voStart": 43.3,
+      "visual": "In the query SUM(amount) slides out and RANK() slides in. The header of the last column changes from 'total' to 'rank' and the totals slide out as the bold navy ranks 1 to 5 slide in. Headline: 'other functions' in brand violet.",
+      "rate": "-15%"
+    },
+    {
+      "start": 48.4,
+      "headline": "Totals and detail\n*side by side*",
+      "voiceover": "Totals and detail, *side by side.* That is a window function.",
+      "voStart": 48.7,
+      "visual": "A bold 5px brand-violet outline draws itself around the last column of the table, next to the five untouched rows. Headline: 'side by side' in brand violet.",
+      "rate": "-4%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a SQL window function is: it calculates across a set of related rows, the window, while every row stays its own row. Show OVER, PARTITION BY and ORDER BY inside the window. Carry one example through the whole video: Farid, a sales manager, wants each sale shown beside its team total.",
+    "central_visual": {
+      "description": "TOP: the table 'sales' (rep, region, amount) with one extra column for the window function's result, a white card with a bold 5px deep navy outline. BELOW: the query card with a bold 5px navy outline.",
+      "interaction_effect": "The window is a bold brand-violet outline around the rows a calculation can see: all rows for an empty OVER, one window per team for PARTITION BY, and a window that grows row by row for ORDER BY. The last column's values change with it.",
+      "camera": "One continuous space: close on the table, then out to the table and the query card."
+    },
+    "rules": [
+      "A window function never removes or merges rows: five rows go in and five come out in every scene after GROUP BY is set aside.",
+      "An empty OVER looks at all rows; PARTITION BY makes one window per group; ORDER BY inside OVER makes the window run from the first row to the current row, which is why the sum becomes a running total.",
+      "Amounts are all different, so the running total has no ties to explain.",
+      "Window functions need MySQL 8.0 or later and SQLite 3.25 or later; do not name versions on screen."
+    ],
+    "components": [
+      "SalesTable",
+      "WindowOutline",
+      "ResultColumn",
+      "GroupedCard",
+      "QueryCard"
+    ],
+    "controls": [
+      "Sales rows",
+      "The three window definitions"
+    ],
+    "quality": "Confirm every value in the last column: 1,500 for all rows, then 800 and 700 by team, then the running totals 100, 300, 600, 1,000, 1,500, then ranks 1 to 5.",
+    "sources": [
+      "https://www.postgresql.org/docs/current/tutorial-window.html",
+      "https://dev.mysql.com/doc/refman/8.4/en/window-functions-usage.html",
+      "https://www.sqlite.org/windowfunctions.html",
+      "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql"
+    ]
+  }
+}

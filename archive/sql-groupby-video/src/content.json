@@ -1,0 +1,162 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "sales",
+    "columns": [
+      "store",
+      "amount"
+    ],
+    "rows": [
+      [
+        "Dhaka",
+        120
+      ],
+      [
+        "Sylhet",
+        80
+      ],
+      [
+        "Dhaka",
+        200
+      ],
+      [
+        "Khulna",
+        60
+      ],
+      [
+        "Sylhet",
+        150
+      ],
+      [
+        "Dhaka",
+        90
+      ],
+      [
+        "Khulna",
+        140
+      ],
+      [
+        "Sylhet",
+        70
+      ]
+    ]
+  },
+  "query": {
+    "having": 250
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "sum": "sum",
+    "rows": "rows",
+    "manyRows": 1000000,
+    "where": "WHERE tests rows",
+    "having": "HAVING tests groups"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Which store\n*earned the most*?",
+      "voiceover": "Eight sales from three stores. Which store *earned the most?*",
+      "voStart": 0.3,
+      "rate": "-3%"
+    },
+    {
+      "start": 5.2,
+      "headline": "Adding by hand\n*does not scale*",
+      "voiceover": "You could add them up by hand. But not for a *million* sales.",
+      "voStart": 5.5,
+      "rate": "-20%"
+    },
+    {
+      "start": 10.0,
+      "headline": "*GROUP BY* sorts\nrows into groups",
+      "voiceover": "*GROUP BY* puts rows with the same store into one group.",
+      "voStart": 10.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 15.2,
+      "headline": "*One group*\nfor each store",
+      "voiceover": "Three stores so *three groups.*",
+      "voStart": 15.5,
+      "rate": "+0%"
+    },
+    {
+      "start": 20.0,
+      "headline": "*SUM* adds up\neach group",
+      "voiceover": "*SUM* adds up the amounts inside each group.",
+      "voStart": 20.3,
+      "rate": "-20%"
+    },
+    {
+      "start": 25.4,
+      "headline": "An *aggregate*: many\nvalues into one",
+      "voiceover": "That is an *aggregate.* Many values go in and one comes out.",
+      "voStart": 25.7,
+      "rate": "-19%"
+    },
+    {
+      "start": 30.6,
+      "headline": "One row\n*per group*",
+      "voiceover": "The answer has *one row* for each group.",
+      "voStart": 30.9,
+      "rate": "-20%"
+    },
+    {
+      "start": 35.0,
+      "headline": "*Dhaka* earned\nthe most",
+      "voiceover": "*Dhaka* earned the most. Four hundred and ten.",
+      "voStart": 35.3,
+      "rate": "-7%"
+    },
+    {
+      "start": 39.2,
+      "headline": "*HAVING* tests\nthe groups",
+      "voiceover": "*HAVING* is a test for groups after the totals exist.",
+      "voStart": 39.5,
+      "rate": "-20%"
+    },
+    {
+      "start": 44.6,
+      "headline": "*WHERE* tests rows.\n*HAVING* tests groups.",
+      "voiceover": "WHERE tests *rows* before grouping. HAVING tests *groups* after.",
+      "voStart": 44.9,
+      "rate": "+0%"
+    },
+    {
+      "start": 49.9,
+      "headline": "A long list becomes\na *short summary*",
+      "voiceover": "That is how a long list becomes a *short summary.*",
+      "voStart": 50.2,
+      "rate": "-20%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ]
+}

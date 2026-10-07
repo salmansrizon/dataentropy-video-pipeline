@@ -1,0 +1,162 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a database transaction is: several changes bundled so that all of them happen or none do, saved by COMMIT and undone by a rollback. Carry one example through the whole video: Sadia sends Karim 100, the app crashes halfway and the money seems to vanish. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 11 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "TOP: the table 'accounts' (name, balance, and later a pending column), a white card with a bold 5px deep navy outline, with a total chip above it. BELOW: the query card with a bold 5px navy outline holding BEGIN, the two steps and COMMIT.",
+    "interaction_effect": "Inside the transaction each step writes a lavender pending pill beside the stored balance. COMMIT slides both pending numbers into the balance column together; a crash before COMMIT makes the pending pills fade and leaves the stored balances untouched.",
+    "camera": "One continuous space, held steady on the table and the query card."
+  },
+  "timeline": [
+    {
+      "seconds": "0-7",
+      "visual": "A white table card named 'accounts' with a bold 5px deep navy outline draws itself: Sadia 500 and Karim 200. Sadia's balance slides to 400 while Karim's stays at 200, and a white chip with a bold navy outline counts the total down from 700 to 600. Headline with 'money go' in brand violet.",
+      "on_screen_text": "Where did the money go?",
+      "voiceover": "Sadia sends Karim one hundred. Her balance drops. His never rises."
+    },
+    {
+      "seconds": "7-12.5",
+      "visual": "Under the table two white step chips with bold navy outlines are revealed: 'take 100 from Sadia' with a bold violet check mark and 'give 100 to Karim'. A bold navy cross draws itself between them and a chip reads 'crash'. Headline: 'crash between' in brand violet.",
+      "on_screen_text": "Two steps, and a crash between",
+      "voiceover": "A transfer is two steps. The app crashed after the first one."
+    },
+    {
+      "seconds": "12.5-18.7",
+      "visual": "The balances return to 500 and 200. A white query card with a bold 5px navy outline draws itself and types four lines: BEGIN and COMMIT in bold brand violet with the two steps between them. Headline: 'transaction' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "A transaction: all or nothing",
+      "voiceover": "A transaction ties the steps together. All of them happen or none do."
+    },
+    {
+      "seconds": "18.7-23.7",
+      "visual": "A soft lavender band spreads behind the BEGIN line, and in the table a third column named 'pending' is revealed with a brand-violet header. Headline: 'BEGIN' in brand violet.",
+      "on_screen_text": "BEGIN opens the transaction",
+      "voiceover": "BEGIN opens the transaction. Changes are now pending."
+    },
+    {
+      "seconds": "23.7-29.2",
+      "visual": "The lavender band moves to the first step in the query. In Sadia's row a soft lavender pill with the bold navy number 400 spreads into the pending column, while her stored balance still reads 500. Headline: 'not final yet' in brand violet.",
+      "on_screen_text": "Step one is not final yet",
+      "voiceover": "Step one takes one hundred from Sadia. It is not final yet."
+    },
+    {
+      "seconds": "29.2-33.4",
+      "visual": "The lavender band moves to the second step. In Karim's row a soft lavender pill with the bold navy number 300 spreads into the pending column; his stored balance still reads 200. Headline: 'completes the pair' in brand violet.",
+      "on_screen_text": "Step two completes the pair",
+      "voiceover": "Step two gives one hundred to Karim."
+    },
+    {
+      "seconds": "33.4-38.2",
+      "visual": "The lavender band moves to COMMIT. Both pending numbers slide into the balance column at the same moment, replacing 500 and 200 with 400 and 300, and the total chip still reads 700 with a bold violet check mark. Headline: 'COMMIT' in brand violet.",
+      "on_screen_text": "COMMIT saves both together",
+      "voiceover": "COMMIT saves both changes together, for good."
+    },
+    {
+      "seconds": "38.2-44.3",
+      "visual": "A second transfer starts: a pending pill with 300 appears in Sadia's row. A bold navy cross draws itself and a chip reads 'crash'. The pending pill fades away, her stored balance still reads 400, and the last line of the query changes from COMMIT to ROLLBACK. Headline: 'everything is undone' in brand violet.",
+      "on_screen_text": "No COMMIT: everything is undone",
+      "voiceover": "Crash before COMMIT and everything is undone. That is a rollback."
+    },
+    {
+      "seconds": "44.3-48.8",
+      "visual": "A white chip with a bold brand-violet outline is revealed under the table: 'everyone else sees 400 and 300'. The pending column is empty. Headline: 'half a transfer' in brand violet.",
+      "on_screen_text": "Nobody sees half a transfer",
+      "voiceover": "And nobody else ever sees a half-finished transfer."
+    },
+    {
+      "seconds": "48.8-54",
+      "visual": "A bold 5px brand-violet outline draws itself around the total chip, which reads 700, the same as at the very start. Headline: 'right' in brand violet.",
+      "on_screen_text": "All or nothing keeps your data right",
+      "voiceover": "All or nothing. That is how money never goes missing."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Nothing rises or scales as it appears: card outlines draw themselves and fill in, rows and chips are wiped in from the left.",
+    "Atomicity is the point: all steps or none. Durability and isolation are each given one plain sentence, without naming isolation levels.",
+    "The two UPDATE statements are shown as SQL comments, '-- take 100 from Sadia' and '-- give 100 to Karim', so the four-line shape BEGIN ... COMMIT stays readable.",
+    "The transaction is opened with BEGIN as in PostgreSQL and SQLite; other databases write START TRANSACTION or BEGIN TRANSACTION. Do not claim one spelling works everywhere.",
+    "The crash is drawn in navy with the word 'crash'; do not use red.",
+    "The total of the stored balances is 700 at the start and at the end."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "AccountsTable",
+      "BalanceCell",
+      "PendingPill",
+      "TotalChip",
+      "StepChips",
+      "QueryCard",
+      "CrashMark",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Account rows",
+      "Transfer amount",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels and any line or text that is hard to see on white. Confirm that the stored balances only change at COMMIT, and that the total chip reads 700 in every scene after the transaction is introduced.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+    "https://www.postgresql.org/docs/current/glossary.html",
+    "https://www.postgresql.org/docs/current/transaction-iso.html"
+  ]
+}

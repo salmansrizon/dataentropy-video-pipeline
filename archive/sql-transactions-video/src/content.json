@@ -1,0 +1,177 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "table": {
+    "name": "accounts",
+    "columns": [
+      "name",
+      "balance"
+    ],
+    "rows": [
+      [
+        "Sadia",
+        500
+      ],
+      [
+        "Karim",
+        200
+      ]
+    ]
+  },
+  "amount": 100,
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "pending": "pending",
+    "total": "total",
+    "crash": "crash",
+    "others": "everyone else sees",
+    "steps": [
+      "take 100 from Sadia",
+      "give 100 to Karim"
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "Where did the\n*money go*?",
+      "voiceover": "Sadia sends Karim one hundred. Her balance drops. His *never rises.*",
+      "voStart": 0.3,
+      "visual": "A white table card named 'accounts' with a bold 5px deep navy outline draws itself: Sadia 500 and Karim 200. Sadia's balance slides to 400 while Karim's stays at 200, and a white chip with a bold navy outline counts the total down from 700 to 600. Headline with 'money go' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 7.0,
+      "headline": "Two steps, and a\n*crash between*",
+      "voiceover": "A transfer is two steps. The app *crashed* after the first one.",
+      "voStart": 7.3,
+      "visual": "Under the table two white step chips with bold navy outlines are revealed: 'take 100 from Sadia' with a bold violet check mark and 'give 100 to Karim'. A bold navy cross draws itself between them and a chip reads 'crash'. Headline: 'crash between' in brand violet.",
+      "rate": "-15%"
+    },
+    {
+      "start": 12.5,
+      "headline": "A *transaction*:\nall or nothing",
+      "voiceover": "A *transaction* ties the steps together. All of them happen or none do.",
+      "voStart": 12.8,
+      "visual": "The balances return to 500 and 200. A white query card with a bold 5px navy outline draws itself and types four lines: BEGIN and COMMIT in bold brand violet with the two steps between them. Headline: 'transaction' in brand violet, followed by its plain meaning.",
+      "rate": "-9%"
+    },
+    {
+      "start": 18.7,
+      "headline": "*BEGIN* opens\nthe transaction",
+      "voiceover": "*BEGIN* opens the transaction. Changes are now *pending.*",
+      "voStart": 19.0,
+      "visual": "A soft lavender band spreads behind the BEGIN line, and in the table a third column named 'pending' is revealed with a brand-violet header. Headline: 'BEGIN' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 23.7,
+      "headline": "Step one is\n*not final yet*",
+      "voiceover": "Step one takes one hundred from Sadia. It is *not final* yet.",
+      "voStart": 24.0,
+      "visual": "The lavender band moves to the first step in the query. In Sadia's row a soft lavender pill with the bold navy number 400 spreads into the pending column, while her stored balance still reads 500. Headline: 'not final yet' in brand violet.",
+      "rate": "-14%"
+    },
+    {
+      "start": 29.2,
+      "headline": "Step two\n*completes the pair*",
+      "voiceover": "Step two gives one hundred to Karim.",
+      "voStart": 29.5,
+      "visual": "The lavender band moves to the second step. In Karim's row a soft lavender pill with the bold navy number 300 spreads into the pending column; his stored balance still reads 200. Headline: 'completes the pair' in brand violet.",
+      "rate": "-14%"
+    },
+    {
+      "start": 33.4,
+      "headline": "*COMMIT* saves\nboth together",
+      "voiceover": "*COMMIT* saves both changes together, for good.",
+      "voStart": 33.7,
+      "visual": "The lavender band moves to COMMIT. Both pending numbers slide into the balance column at the same moment, replacing 500 and 200 with 400 and 300, and the total chip still reads 700 with a bold violet check mark. Headline: 'COMMIT' in brand violet.",
+      "rate": "-9%"
+    },
+    {
+      "start": 38.2,
+      "headline": "No COMMIT:\n*everything is undone*",
+      "voiceover": "Crash before COMMIT and everything is *undone.* That is a rollback.",
+      "voStart": 38.5,
+      "visual": "A second transfer starts: a pending pill with 300 appears in Sadia's row. A bold navy cross draws itself and a chip reads 'crash'. The pending pill fades away, her stored balance still reads 400, and the last line of the query changes from COMMIT to ROLLBACK. Headline: 'everything is undone' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 44.3,
+      "headline": "Nobody sees\n*half a transfer*",
+      "voiceover": "And nobody else ever sees a *half-finished* transfer.",
+      "voStart": 44.6,
+      "visual": "A white chip with a bold brand-violet outline is revealed under the table: 'everyone else sees 400 and 300'. The pending column is empty. Headline: 'half a transfer' in brand violet.",
+      "rate": "-4%"
+    },
+    {
+      "start": 48.8,
+      "headline": "All or nothing keeps\nyour data *right*",
+      "voiceover": "All or nothing. That is how money *never goes missing.*",
+      "voStart": 49.1,
+      "visual": "A bold 5px brand-violet outline draws itself around the total chip, which reads 700, the same as at the very start. Headline: 'right' in brand violet.",
+      "rate": "-4%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a database transaction is: several changes bundled so that all of them happen or none do, saved by COMMIT and undone by a rollback. Carry one example through the whole video: Sadia sends Karim 100, the app crashes halfway and the money seems to vanish.",
+    "central_visual": {
+      "description": "TOP: the table 'accounts' (name, balance, and later a pending column), a white card with a bold 5px deep navy outline, with a total chip above it. BELOW: the query card with a bold 5px navy outline holding BEGIN, the two steps and COMMIT.",
+      "interaction_effect": "Inside the transaction each step writes a lavender pending pill beside the stored balance. COMMIT slides both pending numbers into the balance column together; a crash before COMMIT makes the pending pills fade and leaves the stored balances untouched.",
+      "camera": "One continuous space, held steady on the table and the query card."
+    },
+    "rules": [
+      "Atomicity is the point: all steps or none. Durability and isolation are each given one plain sentence, without naming isolation levels.",
+      "The two UPDATE statements are shown as SQL comments, '-- take 100 from Sadia' and '-- give 100 to Karim', so the four-line shape BEGIN ... COMMIT stays readable.",
+      "The transaction is opened with BEGIN as in PostgreSQL and SQLite; other databases write START TRANSACTION or BEGIN TRANSACTION. Do not claim one spelling works everywhere.",
+      "The crash is drawn in navy with the word 'crash'; do not use red.",
+      "The total of the stored balances is 700 at the start and at the end."
+    ],
+    "components": [
+      "AccountsTable",
+      "BalanceCell",
+      "PendingPill",
+      "TotalChip",
+      "StepChips",
+      "QueryCard",
+      "CrashMark"
+    ],
+    "controls": [
+      "Account rows",
+      "Transfer amount"
+    ],
+    "quality": "Confirm that the stored balances only change at COMMIT, and that the total chip reads 700 in every scene after the transaction is introduced.",
+    "sources": [
+      "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+      "https://www.postgresql.org/docs/current/glossary.html",
+      "https://www.postgresql.org/docs/current/transaction-iso.html"
+    ]
+  }
+}

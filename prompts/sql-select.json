@@ -1,0 +1,168 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners how a SQL query asks a table a question: SELECT picks the columns, FROM names the table, and WHERE keeps the rows that pass a test. Carry one example through the whole video: Maya, a sales rep, has a table of sales leads and wants to know who is worth a call today. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 12 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "Three objects stacked top to bottom in one space. TOP: the source table 'leads', a white card with a bold 5px deep navy outline, a navy name tab and three columns (name, city, budget) with six rows of bold navy text; a narrow gutter on its right holds one mark per row. MIDDLE: the query card, a white card with a bold 5px navy outline and a small navy 'SQL' badge, where the query is typed in a monospace face with violet keywords. BOTTOM: the result table, a smaller white card with a bold 5px brand-violet outline and a violet 'result' tab.",
+    "interaction_effect": "The query acts on the table as it is typed: SELECT turns two column headers violet and fades the unpicked column to pale gray; FROM lights the table's name tab and a bold violet line links the word to the tab; WHERE highlights its condition, a violet outline draws around the tested column, and a violet band steps down the rows turning each question mark into a bold violet check or fading the row. Copies of the picked cells then travel down behind the query card and land in the result table.",
+    "camera": "One continuous space. The camera starts close on the table, slides down to frame the table with the query card, then pulls back once to show table, query and result together. No cuts."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5.5",
+      "visual": "A white table card named 'leads' with a bold 5px deep navy outline rises into place: columns name, city, budget and six rows of bold navy text that rise in one after another. A bold brand-violet question mark appears beside every row. Headline animates in top-left with 'call' in brand violet.",
+      "on_screen_text": "Which leads are worth a call today?",
+      "voiceover": "Maya has a list of sales leads. Who should she call today?"
+    },
+    {
+      "seconds": "5.5-10.1",
+      "visual": "A magnifier with a bold 7px deep navy outline slides down the table one row at a time, with a soft lavender band behind the navy text of the row it is on. A white chip with a bold navy outline above the table counts upward smoothly from '6 rows' to '6,000 rows'. Headline: 'too slow' in brand violet.",
+      "on_screen_text": "Row by row is too slow",
+      "voiceover": "Row by row works for six leads. Not for six thousand."
+    },
+    {
+      "seconds": "10.1-15.2",
+      "visual": "The camera slides down. Under the table a white query card with a bold 5px deep navy outline rises into place; it carries a small navy badge 'SQL' with white text and a bold brand-violet text cursor on its first line. Headline: 'SQL' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "SQL: a language for asking data questions",
+      "voiceover": "So she asks the table itself, using a language called SQL."
+    },
+    {
+      "seconds": "15.2-19.6",
+      "visual": "The first line types itself in the card: 'SELECT name, budget', with SELECT in bold brand violet and the rest in navy. In the table the 'name' and 'budget' headers turn brand violet with white text, and the text of the 'city' column fades to pale gray because it was not picked. Headline: 'SELECT' in brand violet.",
+      "on_screen_text": "SELECT picks the columns",
+      "voiceover": "SELECT names the columns she wants: name and budget."
+    },
+    {
+      "seconds": "19.6-23.4",
+      "visual": "The second line types itself: 'FROM leads'. The table's name tab turns from navy to brand violet and a bold 5px brand-violet line with an arrowhead draws from the word 'leads' around the left side up to the tab. Headline: 'FROM' in brand violet.",
+      "on_screen_text": "FROM names the table",
+      "voiceover": "FROM says which table to look in: leads."
+    },
+    {
+      "seconds": "23.4-28.4",
+      "visual": "The third line types itself: 'WHERE budget > 5000'. A soft lavender pill spreads behind the navy condition text, and a bold 5px brand-violet outline draws around the table's budget column: this is the column the test looks at. Headline: 'WHERE' in brand violet.",
+      "on_screen_text": "WHERE sets a test for every row",
+      "voiceover": "WHERE is a test for each row. Is the budget above five thousand?"
+    },
+    {
+      "seconds": "28.4-33.7",
+      "visual": "A band with a bold 5px brand-violet outline steps down the table one row at a time. On each row the question mark fades: rows with a budget above 5000 get a bold 7px brand-violet check mark, and the text of the other rows fades to pale gray. Three rows keep their bold navy text. Headline: 'go through' in brand violet.",
+      "on_screen_text": "Rows that pass go through",
+      "voiceover": "Rows that pass go through. The rest stay behind."
+    },
+    {
+      "seconds": "33.7-39.3",
+      "visual": "The camera pulls back. Under the query card a result table with a bold 5px brand-violet outline and a violet 'result' tab rises into place with two headers, name and budget. One at a time, a white chip with a bold violet outline lifts a copy of each passing row's name and budget out of the table, carries it down behind the query card, and sets it in the result table: three rows. Headline: 'new, smaller' in brand violet.",
+      "on_screen_text": "The answer is a new, smaller table",
+      "voiceover": "What comes back is a new table: three leads and two columns."
+    },
+    {
+      "seconds": "39.3-44",
+      "visual": "In the source table the pale text returns to bold navy row by row, the headers and the name tab return to their first colors and the check marks fade: the table looks exactly as it did at the start. A white chip with a bold brand-violet outline and navy text 'unchanged' rises above it. Headline: 'not changed' in brand violet.",
+      "on_screen_text": "The original table is not changed",
+      "voiceover": "The original list is untouched. SELECT only reads."
+    },
+    {
+      "seconds": "44-48.6",
+      "visual": "In the query card the number 5000 slides up and out and the bold navy number 8000 slides in, with a bold 6px brand-violet underline drawing beneath it. In the result table the row with budget 6,200 fades out and the row below moves up, leaving two rows. Headline: 'new answer' in brand violet.",
+      "on_screen_text": "Change the test, get a new answer",
+      "voiceover": "Change one number and the same question gives a new answer."
+    },
+    {
+      "seconds": "48.6-54",
+      "visual": "On the source table soft lavender bands grow downward over the name and budget columns behind the navy text while their headers turn brand violet, then bold 5px brand-violet outlines draw around the two rows that pass. Where bands and outlines cross are exactly the cells in the result table. Headline: 'SELECT' and 'WHERE' in brand violet.",
+      "on_screen_text": "SELECT picks columns. WHERE picks rows.",
+      "voiceover": "SELECT picks columns. WHERE picks rows. That works on any table."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark reveals, and a soft violet glow settles. The tagline 'Practical Data Skills. Real Career Impact.' appears, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "The source table is never emptied or rearranged: failing rows only fade to pale gray, and the answer is built from copies. This shows that SELECT reads and does not change the table.",
+    "WHERE keeps a row only when its test is true. Do not show a failing row being deleted.",
+    "The video explains the clauses in the order they are written. Do not claim this is the order the database runs them; that is a separate video."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "SourceTable",
+      "RowMarks",
+      "RowByRow",
+      "QueryCard",
+      "FromLink",
+      "RowTest",
+      "ResultTable",
+      "UnchangedChip",
+      "RecapBands",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Table name, columns and rows",
+      "Selected columns",
+      "WHERE column, first value and the changed value",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels, broken transformations, timing gaps, and any line or text that is hard to see on white. Confirm that the rows in the result table are exactly the rows that pass the test for both numbers, that the typed query matches the highlighted columns, and that the source table at 43 s is identical to the source table at 5 s. Confirm that no scene has more than three focal points and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/sql-select.html",
+    "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+    "https://www.postgresql.org/docs/current/tutorial-concepts.html"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a database index is: without one the database checks every row, with one it searches a small sorted list and follows a pointer to the row, and every index makes writes a little slower. Carry one example through the whole video: Hasan, a support agent, looks up one customer by email. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 11 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "LEFT: the table 'customers' (id, email), a white card with a bold 5px deep navy outline, rows in no order. RIGHT: the 'email index', a card with a bold 5px brand-violet outline holding the same emails in alphabetical order, each with the number of its row. BELOW: the query card.",
+    "interaction_effect": "Without the index a violet band steps down every row of the table. With it, a lavender band jumps to the middle of the sorted list, discards half, jumps again, then a glowing violet line follows the entry's pointer to the row.",
+    "camera": "One continuous space with a soft push-in on the index while it is searched."
+  },
+  "timeline": [
+    {
+      "seconds": "0-6.1",
+      "visual": "A white table card named 'customers' with a bold 5px deep navy outline draws itself: columns id and email, seven rows in no order. Below it a query card with a bold 5px navy outline types 'SELECT id FROM customers WHERE email = 'rafi@x.io'' with brand-violet keywords. Headline with 'so slow' in brand violet.",
+      "on_screen_text": "Why is this lookup so slow?",
+      "voiceover": "Hasan looks up one customer by email. On a big table it takes forever."
+    },
+    {
+      "seconds": "6.1-12.2",
+      "visual": "A band with a bold 5px brand-violet outline steps down the table one row at a time. Each row that is not the one fades to pale gray; the matching row gets a bold violet check, and the band still goes on to the last row. A white chip with a bold navy outline counts the rows checked, up to 7. Headline: 'every row' in brand violet.",
+      "on_screen_text": "No index: check every row",
+      "voiceover": "With no help, the database checks every row, one by one."
+    },
+    {
+      "seconds": "12.2-16.9",
+      "visual": "The number in the chip counts upward smoothly from 7 to 2,000,000 while the rows of the table return to bold navy. Headline: 'not for millions' in brand violet.",
+      "on_screen_text": "Fine for 7 rows, not for millions",
+      "voiceover": "Seven rows is quick. Two million rows is not."
+    },
+    {
+      "seconds": "16.9-22.3",
+      "visual": "Beside the table a second card with a bold 5px brand-violet outline and the tab 'email index' draws itself. Copies of the seven emails travel across in white chips with bold violet outlines and land in alphabetical order. The query card shows 'CREATE INDEX idx_email ON customers (email)'. Headline: 'index' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "An index: a sorted list of one column",
+      "voiceover": "An index is a small sorted list of one column."
+    },
+    {
+      "seconds": "22.3-27.1",
+      "visual": "A second column named 'row' is revealed in the index: next to each email, the bold navy number of its row in the table. A glowing bold 5px brand-violet line draws itself from one entry across to its row and fades again. Headline: 'points' in brand violet.",
+      "on_screen_text": "Each entry points to its row",
+      "voiceover": "Each entry points back to its row in the table."
+    },
+    {
+      "seconds": "27.1-33",
+      "visual": "The query card shows the lookup again. In the index a soft lavender band lands on the middle entry; the half that cannot contain the email fades to pale gray. The band jumps to the middle of what is left, that half fades too, and the band lands on the email with a bold violet check. Headline: 'jump, not scan' in brand violet.",
+      "on_screen_text": "Sorted means jump, not scan",
+      "voiceover": "Because it is sorted, the search can jump and cut the list in half."
+    },
+    {
+      "seconds": "33-38.2",
+      "visual": "A glowing bold 5px brand-violet line draws itself from the found entry to its row in the table and a bold violet outline draws around that row. Two white chips appear: '7 checks' with a navy outline above the table and '3 checks' with a brand-violet outline above the index. Headline: '3 checks' in brand violet.",
+      "on_screen_text": "3 checks, not 7",
+      "voiceover": "Three checks instead of seven. Then it goes straight to the row."
+    },
+    {
+      "seconds": "38.2-43.3",
+      "visual": "The found row keeps its bold violet outline and a white chip with a bold violet outline and navy text 'same answer' is revealed under the table. The pale entries of the index return to bold navy. Headline: 'faster search' in brand violet.",
+      "on_screen_text": "Same answer, faster search",
+      "voiceover": "The answer is exactly the same. Only the search is faster."
+    },
+    {
+      "seconds": "43.3-48.9",
+      "visual": "A new row slides up into the first free line of the table inside a white chip with a bold violet outline. A copy of its email travels to the index, the entries below its place move down to make room, and both cards get one row taller. Headline: 'slows writes' in brand violet.",
+      "on_screen_text": "Every index slows writes",
+      "voiceover": "But there is a cost. Every new row must be added to the index too."
+    },
+    {
+      "seconds": "48.9-54",
+      "visual": "A soft lavender band spreads behind the WHERE line of the query and a bold 5px brand-violet outline draws itself around the email column of the table. Headline: 'search by' in brand violet.",
+      "on_screen_text": "Index what you search by",
+      "voiceover": "So index the columns you search by, not every column."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Nothing rises or scales as it appears: card outlines draw themselves and fill in, rows and chips are wiped in from the left.",
+    "Honest simplification: the video shows the index as a sorted list searched by halving. Real indexes are tree structures built on the same idea; do not show exact step counts for real tables as facts.",
+    "An index never changes the answer of a query, only how the rows are found.",
+    "The database decides whether to use an index; do not claim an index is always used or always faster.",
+    "Use 'CREATE INDEX idx_email ON customers (email)', which works in PostgreSQL, MySQL, SQLite and SQL Server."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "CustomersTable",
+      "ScanBand",
+      "Counter",
+      "IndexCard",
+      "PointerLine",
+      "HalvingSearch",
+      "NewRow",
+      "QueryCard",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Table rows",
+      "The email that is looked up",
+      "The row that is added",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels and any line or text that is hard to see on white. Confirm that the index is in alphabetical order, that each entry's row number is right, and that the halving search visits exactly the entries it should.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/indexes-intro.html",
+    "https://www.postgresql.org/docs/current/glossary.html",
+    "https://www.postgresql.org/docs/current/ddl-constraints.html"
+  ]
+}

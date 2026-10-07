@@ -1,0 +1,169 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners how a SQL JOIN combines two tables by matching a shared ID, why one customer can appear more than once, and what a LEFT JOIN keeps. Carry one example through the whole video: Nadia, a support analyst, has an orders table that only stores a customer number and needs to see who placed each order. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 12 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "LEFT: the table 'customers', a white card with a bold 5px deep navy outline and a navy name tab, columns id and name, three rows (1 Arif, 2 Mina, 3 Rafi). RIGHT: the table 'orders' with the same styling, columns customer_id and amount, three rows (1 500, 3 250, 1 300). The two ID columns face each other across a gap. BELOW: the query card with a bold 5px navy outline and a navy 'SQL' badge. Later the joined table with a bold 5px brand-violet outline forms in the middle.",
+    "interaction_effect": "The ON clause makes glowing bold brand-violet lines draw across the gap from each order's customer_id to the customer row with the same id. Each connected pair then slides together and snaps into one wider row of the joined table. A customer with two lines produces two rows; a customer with no line produces none and fades to pale gray, until LEFT JOIN brings that row back with an empty amount.",
+    "camera": "One continuous space. The camera starts on the orders table, slides left to reveal the customers table, pulls back to frame both with the query card, and settles on the joined table."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "A white table card named 'orders' with a bold 5px deep navy outline rises into place: columns customer_id and amount, three rows of bold navy text. The customer_id column holds only numbers; a bold brand-violet question mark sits beside each one. Headline animates in with 'who' in brand violet.",
+      "on_screen_text": "Who placed each order?",
+      "voiceover": "Orders only store a customer number. So who ordered what?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "The camera slides left to reveal a second white table card named 'customers' with a bold 5px navy outline: columns id and name, rows 1 Arif, 2 Mina, 3 Rafi in bold navy. Headline: 'another table' in brand violet.",
+      "on_screen_text": "The names live in another table",
+      "voiceover": "The names live in a different table called customers."
+    },
+    {
+      "seconds": "10-15",
+      "visual": "The camera pulls back to frame both tables. Bold 5px brand-violet outlines draw around the 'id' column of customers and the 'customer_id' column of orders, and their headers turn brand violet with white text. Headline: 'ID' in brand violet.",
+      "on_screen_text": "Both tables share an ID",
+      "voiceover": "But both tables share one thing. The customer's ID."
+    },
+    {
+      "seconds": "15-20.5",
+      "visual": "Under the tables a white query card with a bold 5px navy outline rises and types 'SELECT name, amount' and 'FROM customers JOIN orders', with the keywords in bold brand violet. The two table cards slide closer together until only a narrow gap separates their ID columns. Headline: 'JOIN' in brand violet.",
+      "on_screen_text": "JOIN puts two tables side by side",
+      "voiceover": "JOIN brings the two tables together."
+    },
+    {
+      "seconds": "20.5-26.5",
+      "visual": "The query types 'ON orders.customer_id = customers.id'. Glowing bold 5px brand-violet lines draw across the gap one after another, each from an order's customer_id to the customer row with the same number: two lines reach Arif, one reaches Rafi, none reaches Mina. Headline: 'ON' in brand violet.",
+      "on_screen_text": "ON says which rows match",
+      "voiceover": "ON says how rows match. The order's customer ID equals the customer's ID."
+    },
+    {
+      "seconds": "26.5-31.5",
+      "visual": "Each connected pair slides along its violet line and snaps together into one wider row inside a joined table with a bold 5px brand-violet outline: name and amount side by side in bold navy. Three rows form. Headline: 'snap together' in brand violet.",
+      "on_screen_text": "Matching rows snap together",
+      "voiceover": "Each matching pair becomes one wider row."
+    },
+    {
+      "seconds": "31.5-36.5",
+      "visual": "In the joined table the two rows that came from Arif get a soft lavender band behind their navy text and a bold violet bracket joins them: Arif 500 and Arif 300. Headline: 'two rows' in brand violet.",
+      "on_screen_text": "Two orders, two rows for Arif",
+      "voiceover": "Arif has two orders so Arif appears twice."
+    },
+    {
+      "seconds": "36.5-41.5",
+      "visual": "In the customers table the Mina row, which no violet line reached, fades to pale gray, and a bold navy label 'no match' with a bold navy dash sits beside it. The joined table has no row for her. Headline: 'no row' in brand violet.",
+      "on_screen_text": "No match, no row",
+      "voiceover": "Mina has no orders so she is left out."
+    },
+    {
+      "seconds": "41.5-47",
+      "visual": "In the query the word JOIN slides out and 'LEFT JOIN' slides in with a bold 6px brand-violet underline. The Mina row returns to bold navy, travels into the joined table as a fourth row, and its amount cell stays empty inside a bold 4px brand-violet outlined box. Headline: 'LEFT JOIN' in brand violet.",
+      "on_screen_text": "LEFT JOIN keeps every customer",
+      "voiceover": "A LEFT JOIN keeps every customer even without an order."
+    },
+    {
+      "seconds": "47-50.5",
+      "visual": "The empty amount cell fills with a soft lavender pill that reads 'NULL' in bold navy, and a bold navy label 'no value' appears under it. Headline: 'NULL' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "NULL: no value here",
+      "voiceover": "Her amount is empty. SQL calls that NULL."
+    },
+    {
+      "seconds": "50.5-54",
+      "visual": "The camera settles on the finished joined table with its bold violet outline, the two source tables smaller above it and still unchanged, and the query card beside them. Headline: 'two tables' in brand violet.",
+      "on_screen_text": "One question across two tables",
+      "voiceover": "Now one question can use both tables."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark reveals, and a soft violet glow settles. The tagline 'Practical Data Skills. Real Career Impact.' appears, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "A join returns one row per matching pair, not one row per customer. Arif must appear twice.",
+    "Write the join as 'FROM customers JOIN orders ON orders.customer_id = customers.id' so that the later LEFT JOIN keeps every customer. Do not show FULL JOIN: not every database supports it.",
+    "The source tables are never changed by the join; the joined table is built from copies.",
+    "Introduce NULL only as 'no value'. Its comparison rules are a separate video."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "TableCard",
+      "IdOutlines",
+      "QueryCard",
+      "MatchLines",
+      "JoinedTable",
+      "PairSnap",
+      "NoMatchLabel",
+      "NullPill",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Customers rows",
+      "Orders rows",
+      "Join columns",
+      "Join type shown in the second half",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels, broken transformations, timing gaps, and any line or text that is hard to see on white. Confirm that every violet line connects equal IDs, that the joined table has three rows for the inner join and four for the LEFT JOIN, and that the two source tables look the same at the end as at the start. Confirm that no scene has more than three focal points and that all text and the logo sit inside the safe area.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+    "https://dev.mysql.com/doc/refman/8.4/en/join.html",
+    "https://learn.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql"
+  ]
+}

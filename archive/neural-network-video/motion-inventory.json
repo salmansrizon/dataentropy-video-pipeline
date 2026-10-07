@@ -1,0 +1,257 @@
+{
+  "video": "30-second vertical explainer that shows beginners how a neural network learns to spot spam emails",
+  "animations": {
+    "email_card_enter": {
+      "what": "The suspicious email card fades in and rises into place at the top",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 17
+    },
+    "spam_arrow_draw": {
+      "what": "A violet arrow draws from the email toward a Spam folder",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 20
+    },
+    "spam_folder_enter": {
+      "what": "A folder labeled Spam fades into view",
+      "scene": "hook",
+      "ease": "out",
+      "frames": 15
+    },
+    "envelope_to_folder": {
+      "what": "A small envelope travels along the arrow into the Spam folder",
+      "scene": "hook",
+      "ease": "inOut",
+      "frames": 25
+    },
+    "folder_pulse": {
+      "what": "The Spam folder briefly swells and settles when the envelope arrives",
+      "scene": "hook",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "folder_exit": {
+      "what": "The folder and arrow fade away",
+      "scene": "rules",
+      "ease": "in",
+      "frames": 13
+    },
+    "rule_cards_enter": {
+      "what": "Hand-written rule cards appear one after another, faster and faster, each fading in and rising",
+      "scene": "rules",
+      "ease": "out",
+      "frames": 12
+    },
+    "rule_cards_exit": {
+      "what": "The pile of rule cards tilts and slides off the screen",
+      "scene": "rules",
+      "ease": "in",
+      "frames": 20
+    },
+    "variant_card_enter": {
+      "what": "A new scam email card slides in from the right",
+      "scene": "rules",
+      "ease": "out",
+      "frames": 18
+    },
+    "question_mark_enter": {
+      "what": "A large violet question mark appears above the new scam email",
+      "scene": "rules",
+      "ease": "out",
+      "frames": 14
+    },
+    "variant_card_exit": {
+      "what": "The new scam email card fades away",
+      "scene": "rules",
+      "ease": "in",
+      "frames": 13
+    },
+    "network_draw": {
+      "what": "The network's circles and connecting lines draw themselves",
+      "scene": "rules",
+      "ease": "out",
+      "frames": 30
+    },
+    "clues_to_inputs": {
+      "what": "The email's clues drop from the card into the input circles as numbers",
+      "scene": "neurons",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "input_labels_enter": {
+      "what": "Labels for each clue fade in beside the input circles",
+      "scene": "neurons",
+      "ease": "out",
+      "frames": 15
+    },
+    "weights_grow": {
+      "what": "Connection lines grow thicker or thinner to show how much each clue matters",
+      "scene": "neurons",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "forward_pulses": {
+      "what": "Purple dots travel along the connections from inputs to neurons at a steady speed",
+      "scene": "neurons",
+      "ease": "linear",
+      "frames": 30
+    },
+    "neuron_plus_enter": {
+      "what": "A plus sign appears in each hidden neuron as it adds its inputs",
+      "scene": "neurons",
+      "ease": "out",
+      "frames": 12
+    },
+    "neuron_activation_glow": {
+      "what": "Each hidden neuron glows according to how strong its signal is",
+      "scene": "neurons",
+      "ease": "out",
+      "frames": 18
+    },
+    "output_score_enter": {
+      "what": "The output score 'Spam: 30%' fades in under the output neuron",
+      "scene": "neurons",
+      "ease": "out",
+      "frames": 18
+    },
+    "answer_card_enter": {
+      "what": "A 'Right answer: Spam' card slides in beside the output",
+      "scene": "training",
+      "ease": "out",
+      "frames": 18
+    },
+    "error_bar_grow": {
+      "what": "A violet error bar grows between the guess and the right answer",
+      "scene": "training",
+      "ease": "out",
+      "frames": 20
+    },
+    "backward_pulses": {
+      "what": "Purple dots travel backward from the output to the inputs at a steady speed",
+      "scene": "training",
+      "ease": "linear",
+      "frames": 50
+    },
+    "weights_adjust": {
+      "what": "The connection lines change thickness as the weights are adjusted",
+      "scene": "training",
+      "ease": "inOut",
+      "frames": 40
+    },
+    "example_flip": {
+      "what": "The email card flips quickly to show one training example after another",
+      "scene": "examples",
+      "ease": "out",
+      "frames": 4
+    },
+    "counter_count_up": {
+      "what": "A counter of examples seen counts up from 1 to 10,000",
+      "scene": "examples",
+      "ease": "linear",
+      "frames": 85
+    },
+    "score_count_up": {
+      "what": "The spam score counts up from 30% to 97%",
+      "scene": "examples",
+      "ease": "linear",
+      "frames": 85
+    },
+    "error_bar_shrink": {
+      "what": "The error bar shrinks as the network improves",
+      "scene": "examples",
+      "ease": "linear",
+      "frames": 85
+    },
+    "answer_card_exit": {
+      "what": "The right-answer card and error bar fade away",
+      "scene": "examples",
+      "ease": "in",
+      "frames": 12
+    },
+    "output_verdict": {
+      "what": "The output neuron glows violet and its label changes to 'Likely spam'",
+      "scene": "examples",
+      "ease": "out",
+      "frames": 15
+    },
+    "caption_enter": {
+      "what": "A short explanation line under the network fades in and rises",
+      "scene": "all",
+      "ease": "out",
+      "frames": 15
+    },
+    "caption_exit": {
+      "what": "The explanation line fades out before the next one appears",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "camera_zoom": {
+      "what": "The camera zooms out slightly to fit the whole network",
+      "scene": "rules",
+      "ease": "inOut",
+      "frames": 50
+    },
+    "world_fade_out": {
+      "what": "The whole scene fades away before the logo appears",
+      "scene": "outro",
+      "ease": "in",
+      "frames": 18
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind an invisible edge",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out at the end of its scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_words": {
+      "what": "Subtitle words brighten in groups of three as the narrator says them",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "logo_bars_grow": {
+      "what": "Four logo bars grow upward from a baseline one after another, left to right",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "logo_wordmark_reveal": {
+      "what": "The brand name is revealed left to right by a moving edge",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "The logo bars glow brighter, then settle to a soft glow",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises into place under the logo",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises into place",
+      "scene": "outro",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow on the button slides a little to the right once",
+      "scene": "outro",
+      "ease": "inOut",
+      "frames": 18
+    }
+  }
+}

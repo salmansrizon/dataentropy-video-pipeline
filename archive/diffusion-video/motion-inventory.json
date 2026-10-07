@@ -1,0 +1,353 @@
+{
+  "video": "60-second vertical explainer that shows how an AI image generator (a diffusion model) draws a picture by clearing noise step by step",
+  "animations": {
+    "camera_move": {
+      "what": "The camera pans and zooms smoothly to the next part of the wall",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 35
+    },
+    "tile_flip": {
+      "what": "A square tile in the picture flips over in place and shows a new colour",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "headline_reveal": {
+      "what": "Each headline line slides up into view from behind a mask",
+      "scene": "all",
+      "ease": "out",
+      "frames": 18
+    },
+    "headline_exit": {
+      "what": "The headline fades out just before the next scene",
+      "scene": "all",
+      "ease": "in",
+      "frames": 8
+    },
+    "subtitle_bar_fade": {
+      "what": "The subtitle bar fades in when a spoken line starts and fades out when it ends",
+      "scene": "all",
+      "ease": "inOut",
+      "frames": 8
+    },
+    "subtitle_word_reveal": {
+      "what": "Subtitle words brighten in groups of three as they are spoken",
+      "scene": "all",
+      "ease": "out",
+      "frames": 8
+    },
+    "jump_arrow_draw": {
+      "what": "A violet arrow draws itself from the left edge into the empty picture frame",
+      "scene": "one big jump",
+      "ease": "out",
+      "frames": 18
+    },
+    "jump_label_enter": {
+      "what": "The label 'one jump' fades in and rises above the arrow",
+      "scene": "one big jump",
+      "ease": "out",
+      "frames": 16
+    },
+    "jump_cross_draw": {
+      "what": "A navy cross draws itself over the arrow, one stroke after the other",
+      "scene": "one big jump",
+      "ease": "out",
+      "frames": 14
+    },
+    "jump_exit": {
+      "what": "The arrow, its label and the cross fade away",
+      "scene": "one big jump",
+      "ease": "in",
+      "frames": 10
+    },
+    "noise_ring_draw": {
+      "what": "A violet ring draws itself around a handful of speckled tiles",
+      "scene": "noise",
+      "ease": "out",
+      "frames": 24
+    },
+    "noise_label_enter": {
+      "what": "The label 'noise' fades in and rises under the ring",
+      "scene": "noise",
+      "ease": "out",
+      "frames": 16
+    },
+    "brush_enter": {
+      "what": "A paint brush fades in beside the ringed tiles",
+      "scene": "noise",
+      "ease": "out",
+      "frames": 14
+    },
+    "brush_sweep": {
+      "what": "The brush sweeps across the ringed tiles from left to right and the speckles it passes turn clean",
+      "scene": "noise",
+      "ease": "inOut",
+      "frames": 36
+    },
+    "brush_exit": {
+      "what": "The brush fades away after its sweep",
+      "scene": "noise",
+      "ease": "in",
+      "frames": 10
+    },
+    "noise_closeup_exit": {
+      "what": "The ring and its label fade away",
+      "scene": "practice picture",
+      "ease": "in",
+      "frames": 10
+    },
+    "dial_track_draw": {
+      "what": "The step dial's track draws itself from left to right below the frame",
+      "scene": "practice picture",
+      "ease": "out",
+      "frames": 30
+    },
+    "dial_notches_enter": {
+      "what": "Five round notches appear on the dial one after another",
+      "scene": "practice picture",
+      "ease": "out",
+      "frames": 14
+    },
+    "dial_icons_enter": {
+      "what": "A small cat icon and a speckle icon fade in at the two ends of the dial",
+      "scene": "practice picture",
+      "ease": "out",
+      "frames": 18
+    },
+    "knob_enter": {
+      "what": "The violet knob appears at the left end of the dial",
+      "scene": "practice picture",
+      "ease": "out",
+      "frames": 18
+    },
+    "knob_click": {
+      "what": "The violet knob slides one notch along the dial",
+      "scene": "add noise, remove noise, generate",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "knob_travel": {
+      "what": "The violet knob glides several notches along the dial in one move",
+      "scene": "guess, start from static",
+      "ease": "inOut",
+      "frames": 30
+    },
+    "add_noise_arrow_draw": {
+      "what": "A purple arrow draws itself to the right under the dial",
+      "scene": "add noise",
+      "ease": "out",
+      "frames": 20
+    },
+    "add_noise_label_enter": {
+      "what": "The label 'add noise' fades in and rises under the arrow",
+      "scene": "add noise",
+      "ease": "out",
+      "frames": 16
+    },
+    "add_noise_exit": {
+      "what": "The 'add noise' arrow and label fade away",
+      "scene": "guess",
+      "ease": "in",
+      "frames": 10
+    },
+    "ai_pill_enter": {
+      "what": "The AI pill fades in and rises into place under the dial",
+      "scene": "guess",
+      "ease": "out",
+      "frames": 20
+    },
+    "ai_pill_swell": {
+      "what": "The AI pill swells slightly and settles back when a cluster of noise tiles drops into it",
+      "scene": "remove noise, generate",
+      "ease": "inOut",
+      "frames": 22
+    },
+    "guess_arrow_draw": {
+      "what": "A violet arrow draws itself from the AI pill up to the picture frame",
+      "scene": "guess, generate",
+      "ease": "out",
+      "frames": 25
+    },
+    "guess_arrow_exit": {
+      "what": "The arrow between the AI pill and the frame fades away",
+      "scene": "millions",
+      "ease": "in",
+      "frames": 12
+    },
+    "guess_outlines_enter": {
+      "what": "Violet outlines appear around the tiles the AI guesses are noise",
+      "scene": "guess",
+      "ease": "out",
+      "frames": 12
+    },
+    "guess_outlines_exit": {
+      "what": "Each violet outline fades as its tile lifts away",
+      "scene": "remove noise",
+      "ease": "in",
+      "frames": 8
+    },
+    "noise_cluster_lift": {
+      "what": "Purple noise tiles lift out of the frame, travel down the arrow, shrink and drop into the AI pill",
+      "scene": "remove noise, generate",
+      "ease": "inOut",
+      "frames": 38
+    },
+    "noise_cluster_fade": {
+      "what": "Each purple noise tile fades out as it reaches the AI pill",
+      "scene": "remove noise, generate",
+      "ease": "in",
+      "frames": 8
+    },
+    "mini_frames_enter": {
+      "what": "A row of four small picture frames slides in from the right and fades in above the cat",
+      "scene": "millions",
+      "ease": "out",
+      "frames": 26
+    },
+    "mini_noise_fill": {
+      "what": "Noise tiles flip in over each small picture, then flip away again",
+      "scene": "millions",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "mini_frames_exit": {
+      "what": "The row of small frames slides off to the left and fades",
+      "scene": "start from static",
+      "ease": "in",
+      "frames": 16
+    },
+    "counter_enter": {
+      "what": "A number fades in beside the AI pill",
+      "scene": "millions",
+      "ease": "out",
+      "frames": 14
+    },
+    "counter_count": {
+      "what": "The number beside the AI pill counts upward steadily and ends on the word 'millions'",
+      "scene": "millions",
+      "ease": "linear",
+      "frames": 50
+    },
+    "counter_exit": {
+      "what": "The counter fades away",
+      "scene": "start from static",
+      "ease": "in",
+      "frames": 10
+    },
+    "chip_enter": {
+      "what": "The prompt chip fades in and rises into place above the frame",
+      "scene": "start from static",
+      "ease": "out",
+      "frames": 18
+    },
+    "chip_typing": {
+      "what": "The prompt text 'a cat' is typed letter by letter",
+      "scene": "start from static",
+      "ease": "linear",
+      "frames": 20
+    },
+    "chip_link_draw": {
+      "what": "A violet line draws itself from the prompt chip down to the AI pill",
+      "scene": "start from static",
+      "ease": "out",
+      "frames": 26
+    },
+    "wall_exit": {
+      "what": "The dial, AI pill, prompt chip and arrows fade away, leaving only the picture",
+      "scene": "new picture",
+      "ease": "in",
+      "frames": 12
+    },
+    "old_frame_enter": {
+      "what": "The practice cat returns as a smaller frame, fading in and rising beside the new cat",
+      "scene": "new picture",
+      "ease": "out",
+      "frames": 24
+    },
+    "not_equal_draw": {
+      "what": "A violet not-equal sign draws itself between the two frames, stroke by stroke",
+      "scene": "new picture",
+      "ease": "out",
+      "frames": 16
+    },
+    "magnifier_enter": {
+      "what": "A magnifier fades in over the new cat",
+      "scene": "new picture",
+      "ease": "out",
+      "frames": 18
+    },
+    "magnifier_slide": {
+      "what": "The magnifier slides across the new cat and stops on one paw",
+      "scene": "new picture",
+      "ease": "inOut",
+      "frames": 36
+    },
+    "badge_enter": {
+      "what": "The badge 'Check the details' fades in and rises under the new cat",
+      "scene": "new picture",
+      "ease": "out",
+      "frames": 20
+    },
+    "compare_exit": {
+      "what": "The frame outlines, the practice cat, the sign, the magnifier and the badge fade away",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 12
+    },
+    "tiles_regroup": {
+      "what": "The new cat's tiles shrink, turn purple and gather into four small columns",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 28
+    },
+    "tiles_into_bars": {
+      "what": "Each column of tiles fades away as a logo bar grows out of it",
+      "scene": "logo",
+      "ease": "in",
+      "frames": 10
+    },
+    "logo_bars_grow": {
+      "what": "The four logo bars grow upward one after another from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "wordmark_reveal": {
+      "what": "The DataEntropy wordmark is revealed from left to right",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 20
+    },
+    "logo_glow": {
+      "what": "A soft violet glow brightens around the logo bars and settles",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "tagline_enter": {
+      "what": "The tagline fades in and rises under the wordmark",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 16
+    },
+    "cta_enter": {
+      "what": "The call-to-action button fades in and rises",
+      "scene": "logo",
+      "ease": "out",
+      "frames": 18
+    },
+    "cta_arrow_nudge": {
+      "what": "The arrow in the button nudges to the right once",
+      "scene": "logo",
+      "ease": "inOut",
+      "frames": 18
+    },
+    "camera_breathing": {
+      "what": "The whole picture slowly and very slightly zooms in and out in a continuous loop, so held frames do not look frozen",
+      "scene": "all",
+      "ease": "sine loop",
+      "frames": 180
+    }
+  }
+}

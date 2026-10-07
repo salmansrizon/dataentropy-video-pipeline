@@ -1,0 +1,112 @@
+{
+  "fps": 30,
+  "durationSeconds": 30,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "question": "What is our refund policy?",
+  "answer": "Refunds are available within 7 days of purchase, for unused items, back to your original card.",
+  "answerNote": "Fictional example",
+  "documents": [
+    {
+      "title": "Refund Policy",
+      "chunks": [
+        {
+          "text": "Refunds within 7 days",
+          "relevant": true,
+          "source": "Refund Policy · §1"
+        },
+        {
+          "text": "Office hours 9am–5pm",
+          "relevant": false,
+          "source": "Refund Policy · §2"
+        },
+        {
+          "text": "Refund to original card",
+          "relevant": true,
+          "source": "Refund Policy · §3"
+        }
+      ]
+    },
+    {
+      "title": "Returns FAQ",
+      "chunks": [
+        {
+          "text": "Items must be unused",
+          "relevant": true,
+          "source": "Returns FAQ · §1"
+        },
+        {
+          "text": "We ship to 40 countries",
+          "relevant": false,
+          "source": "Returns FAQ · §2"
+        },
+        {
+          "text": "New catalog each spring",
+          "relevant": false,
+          "source": "Returns FAQ · §3"
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "headline": "How can AI answer from\n*your documents*?",
+      "voiceover": "How can AI answer from your *own documents*?",
+      "voStart": 0.3
+    },
+    {
+      "start": 4,
+      "headline": "Documents become\n*searchable chunks*",
+      "voiceover": "Documents are split into small *searchable chunks*.",
+      "voStart": 4.2
+    },
+    {
+      "start": 8.5,
+      "headline": "The question finds\n*relevant chunks*",
+      "voiceover": "The question finds the chunks most *relevant* to it.",
+      "voStart": 8.9
+    },
+    {
+      "start": 13.5,
+      "headline": "Question + context\n→ *AI model*",
+      "voiceover": "Those chunks join the question as *context* for the model.",
+      "voStart": 13.8
+    },
+    {
+      "start": 18.5,
+      "headline": "Answer grounded in\n*retrieved context*",
+      "voiceover": "The model writes an answer *grounded* in that context.",
+      "voStart": 19.0
+    },
+    {
+      "start": 22.1,
+      "headline": "RAG = *Retrieve* →\n*Add context* → *Generate*",
+      "voiceover": "That's RAG: *retrieve*, *add context*, *generate*.",
+      "voStart": 22.2
+    },
+    {
+      "start": 26.8,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for practical data skills.",
+      "tts": "Follow Data Entropy for practical data skills.",
+      "voStart": 27.0
+    }
+  ]
+}

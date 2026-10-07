@@ -1,0 +1,160 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners what a primary key and a foreign key are: a primary key gives every row a unique, never-empty ID, and a foreign key stores that ID in another table so rows stay correctly connected. Carry one example through the whole video: an online shop with two customers both called Rafi Khan, and an order for a laptop. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "project": "diffusion-video (60-second template) and sql-select-video (the series pilot: table cards, query card, typing, check marks)",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students and early-career professionals who want practical data skills. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "structure": "The brand guideline's 30-second structure scaled to 60 seconds: hook, problem, explanation, outcome, call to action in the last 6 seconds. 11 scenes, each about 4-6 seconds.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, table outlines and cell text; brand violet (#6D4AFF) for SQL keywords, the active table part, check marks and arrows; electric purple (#8B5CF6) for motion accents; soft lavender (#C4B5FD) only as filled bands, pills or glows placed behind navy text or a darker outline. Tables are white rounded cards with a bold 5px outline, a navy name tab and bold navy text. Text that is not picked turns pale gray (#D6D2E0) and is never the focus. Every line, arrow, connector and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft low-opacity violet-tinted shadows. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned at the top of the safe area, maximum two lines and 12 words, with one or two key words in brand violet. Table text and labels at least 32px on screen, deep navy. SQL code in JetBrains Mono, at least 32px on screen.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover; key words in soft lavender (#C4B5FD).",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px. Headline zone y 192-400; world content y 400-1390; subtitle bar bottom edge at y 1560.",
+    "voiceover": "Voice en-US-AvaNeural (the diffusion explainer's voice), per-line pace fitted with tools/fit_vo_pace.py. 135-155 words per minute while speaking. Few commas, because each comma adds a pause.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins."
+  },
+  "central_visual": {
+    "description": "LEFT: the table 'customers' (name, id), a white card with a bold 5px deep navy outline. RIGHT: the table 'orders' (customer_id, item) with the same styling; the two ID columns face each other across a gap. BELOW: a query card with a bold 5px navy outline showing the column definitions.",
+    "interaction_effect": "IDs are revealed in the customers table, the orders table swaps names for IDs, and glowing brand-violet lines link each order to its customer. Rows that would break a key rule travel in, meet a bold navy cross and fade away.",
+    "camera": "One continuous space: both tables, then down to include the query card."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5.7",
+      "visual": "Two white table cards with bold 5px deep navy outlines draw themselves: 'customers' with three names, two of them Rafi Khan, and 'orders' with a customer name and an item. A bold brand-violet question mark appears beside the laptop order. Headline with 'Rafi' in brand violet.",
+      "on_screen_text": "Which Rafi ordered the laptop?",
+      "voiceover": "Two customers are both called Rafi Khan. So which one ordered the laptop?"
+    },
+    {
+      "seconds": "5.7-10.5",
+      "visual": "Soft lavender bands spread behind the navy text of the two Rafi Khan rows in the customers table, and bold brand-violet question marks appear beside both. Headline: 'not unique' in brand violet.",
+      "on_screen_text": "Names are not unique",
+      "voiceover": "Names repeat. So a name cannot identify a row."
+    },
+    {
+      "seconds": "10.5-16.8",
+      "visual": "In the customers table an id column is revealed row by row with the bold navy numbers 1, 2 and 3, and its header turns brand violet with white text. Below the tables a white query card with a bold 5px navy outline draws itself and types 'id INTEGER PRIMARY KEY' with PRIMARY KEY in bold brand violet. Headline: 'primary key' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "A primary key: one ID per row",
+      "voiceover": "So every customer gets an ID of their own. That column is the primary key."
+    },
+    {
+      "seconds": "16.8-23.5",
+      "visual": "A white chip with a bold violet outline carrying a new customer with id 3 travels toward the bottom of the customers table. A bold navy cross draws itself over it, a white chip with a bold navy outline reads 'refused', and the new row fades away. Headline: 'unique' in brand violet.",
+      "on_screen_text": "Always unique, never empty",
+      "voiceover": "A primary key is always unique and never empty. A second three is refused."
+    },
+    {
+      "seconds": "23.5-28.9",
+      "visual": "In the orders table each customer name slides out and a bold navy ID number slides in, and the column header changes to customer_id in brand violet. Headline: 'customer's ID' in brand violet.",
+      "on_screen_text": "Orders store the customer's ID",
+      "voiceover": "An order does not store the name. It stores the customer's ID."
+    },
+    {
+      "seconds": "28.9-34.5",
+      "visual": "The query card types 'customer_id INTEGER REFERENCES customers (id)' on two lines with REFERENCES in bold brand violet. Glowing bold 5px brand-violet lines draw themselves from each order's customer_id across the gap to the customer row with the same id. Headline: 'foreign key' in brand violet, followed by its plain meaning.",
+      "on_screen_text": "A foreign key points to another table",
+      "voiceover": "That column is a foreign key. It points to a row in another table."
+    },
+    {
+      "seconds": "34.5-39.5",
+      "visual": "A bold 5px brand-violet outline draws itself around the laptop order and another around the customer row with id 3; the other Rafi Khan row keeps its plain navy text. Headline: 'exact' in brand violet.",
+      "on_screen_text": "Now the answer is exact",
+      "voiceover": "Now it is exact. The laptop belongs to customer three."
+    },
+    {
+      "seconds": "39.5-45",
+      "visual": "A white chip with a bold violet outline carrying a new order for customer 7 travels to the bottom of the orders table. A bold navy line reaches from its 7 toward the customers table and stops short at a bold navy cross; a chip reads 'refused' and the new order fades away. Headline: 'refused' in brand violet.",
+      "on_screen_text": "An unknown ID is refused",
+      "voiceover": "Try to save an order for customer seven. The database refuses."
+    },
+    {
+      "seconds": "45-50",
+      "visual": "The customer row with id 3 starts to fade to pale gray, the brand-violet line from the laptop order holds it, the row returns to bold navy and a white chip with a bold navy outline reads 'delete refused'. Headline: 'cannot vanish' in brand violet.",
+      "on_screen_text": "Customers with orders cannot vanish",
+      "voiceover": "And a customer who has orders cannot be deleted by accident."
+    },
+    {
+      "seconds": "50-54",
+      "visual": "Both tables sit side by side joined by their glowing bold brand-violet lines, with the brand-violet id and customer_id headers facing each other. Headline: 'connected' in brand violet.",
+      "on_screen_text": "Keys keep tables connected",
+      "voiceover": "Keys keep your tables connected and your answers right."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more SQL explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6). Use soft lavender (#C4B5FD) only for filled bands, pills or glows behind navy text, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene transforms naturally into the next in one continuous space with a camera.",
+    "Animate concepts, not decorative particles. Every animation has a job.",
+    "One example carries the whole video. The tables keep their identity and position from scene to scene.",
+    "SQL on screen is one short query in a monospace face, typed clause by clause, with keywords in brand violet. Use only syntax that works the same in PostgreSQL, MySQL, SQLite and SQL Server; leave dialect-specific syntax such as LIMIT or TOP off screen.",
+    "Rows have no built-in order. Do not say or imply that an answer comes back in table order unless the query has ORDER BY.",
+    "All names, cities and amounts are invented illustrative examples.",
+    "Explain every necessary term in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing.",
+    "Nothing rises or scales as it appears: card outlines draw themselves and fill in, rows and chips are wiped in from the left.",
+    "A primary key is unique and not null; a table has at most one.",
+    "A foreign key value must match a row in the other table. Show the default behaviour: an order for a missing customer is refused, and a customer that orders point to cannot be deleted.",
+    "Do not mention cascading deletes or database-specific settings.",
+    "Refusals are shown in navy with the word 'refused'; do not use red."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "CustomersTable",
+      "OrdersTable",
+      "KeyLinks",
+      "RejectedRow",
+      "QueryCard",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Customer rows",
+      "Order rows",
+      "The rejected rows",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect a still at the key moment of every scene. Fix clipping, overlaps, unreadable labels and any line or text that is hard to see on white. Confirm that every violet line connects equal IDs and that both rejected rows end up outside the tables.",
+  "sources": [
+    "prompts/research/sql-core-topics.md",
+    "https://www.postgresql.org/docs/current/ddl-constraints.html",
+    "https://www.sqlite.org/foreignkeys.html",
+    "https://dev.mysql.com/doc/refman/8.4/en/create-table-foreign-keys.html"
+  ]
+}

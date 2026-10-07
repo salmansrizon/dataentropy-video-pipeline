@@ -1,0 +1,168 @@
+{
+  "role": "You are a visual educator, motion designer, and Remotion developer.",
+  "task": "Build a 60-second, 9:16 DataEntropy explainer animation titled 'How raw data becomes a dashboard'. It shows beginners (students and early-career learners) how an ETL pipeline works: extract collects a copy of the data from every source, transform cleans it and reshapes it into one common layout, and load stores it in one table that a dashboard reads. Carry one relatable example through the whole video: a small fictional bakery, 'Sunny Loaf', keeps its sales in three messy files and wants one clear screen of charts. Deliver complete, editable Remotion code and a rendered MP4.",
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+    "take_inspiration_from": [
+      "Visual-first explanation",
+      "Continuous transformations instead of slide changes",
+      "Objects moving in response to a question",
+      "Labels appearing exactly when their meaning becomes clear",
+      "A viewer feeling as though they are discovering the mechanism"
+    ],
+    "originality": "Create original artwork, colors, typography, and compositions. Do not reproduce the reference video's graphics. The visual world must also differ from the other DataEntropy videos (RAG: documents flying into a map; LLM: token tiles and probability bars; neural network: nodes and weights; embeddings: points in a meaning space; k-means: a scatter chart). This video is a factory conveyor belt with three stations that ends in a table and a dashboard chart."
+  },
+  "video": {
+    "resolution": "1080x1920",
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 60,
+    "total_frames": 1800,
+    "language": "English",
+    "audience": "Beginners: students, early-career professionals and aspiring data learners. Simple, friendly language; every necessary term is explained in plain words in the same scene.",
+    "style": "Clean, minimal vector line-art motion graphics on a white (#FFFFFF) background with off-white (#F8F7FC) content cards and generous whitespace. Deep navy (#172554) for headlines, labels, the belt and main outlines; brand violet (#6D4AFF) for key words, cleaned rows and active paths; electric purple (#8B5CF6) for motion accents, belt rollers and chart bars; soft lavender (#C4B5FD) only as large filled shapes or glows placed behind a darker outline. Problems in the data are shown without red: a bold navy cross for a repeated row, a bold navy question-mark flag for a missing value, a bold dashed navy outline for a mismatched cell. Every line, arrow, connector, dot and outline is a bold 4-6px stroke with rounded endpoints in deep navy, brand violet or electric purple. Rounded corners 8-20px, soft violet-tinted shadows under cards. No dark backgrounds, no red, orange or neon colors. At most three focal points per scene.",
+    "typography": "Inter (fallback Arial, sans-serif). Headlines weight 700, at least 54px, deep navy, left-aligned, maximum two lines, with one or two key words in brand violet. Labels weight 500, at least 32px, deep navy. Maximum 12 words of headline text per scene.",
+    "subtitles": "Enabled in the lower-middle safe area. Inter SemiBold white (#FFFFFF) text inside a solid rounded deep navy (#172554, 88% opacity) box; maximum 2 lines and 7 words per line; word-group reveal synchronized with the voiceover. The current key word sits on a soft lavender (#C4B5FD) pill with deep navy text.",
+    "safe_area": "Top 10%, bottom 18%, left 7%, right 7%. Headlines, subtitles, logo and CTA stay inside x 76-1004px and y 192-1574px.",
+    "mobile_readability": "Use large text, short labels, and generous spacing. Keep essential content inside platform-safe margins.",
+    "structure": "Hook 0-5s, problem 5-14s, explanation 14-42s, outcome 42-54s, call to action 54-60s. Twelve scenes of 4-6 seconds each."
+  },
+  "central_visual": {
+    "description": "One conveyor belt runs through the whole video. It is a bold 6px deep navy belt on electric purple rollers that zigzags down the frame in three runs, so the complete line fits a portrait screen between the headline at the top and the navy subtitle bar below (about y 460-1320). Top run, left to right: a shelf with the bakery's three sales files and the Extract station, a collecting funnel. Middle run, right to left: the Transform station, a cleaning arch followed by a shaping press. Bottom run, left to right: the Load station, a stacking arm, which ends at one table (columns date, item, amount) with a dashboard card of bar charts standing on top of it. The data travels as small row cards on trays. The fictional bakery 'Sunny Loaf', its files, items and amounts are invented examples.",
+    "interaction_effect": "Row cards change as they ride the belt. Out of the files they are mismatched: different widths, different date styles, one repeated row, one blank price. Under the cleaning arch the repeated row gets a bold navy cross and tips off the belt into a bin, the blank price gets a bold navy question-mark flag and moves to a side tray labelled 'check with owner', and every date rewrites into one style. Under the press each row is stamped into the same three columns and its outline turns brand violet. The stacking arm places the rows into the table one by one, and each stored row makes a bar on the dashboard grow from its baseline.",
+    "camera": "One continuous world with a camera: it starts on the file shelf, follows a tray of rows along the belt from station to station with smooth pans and soft zooms, and pulls back at the end to show the whole zigzag line running at once. No slide changes; the same row cards keep their identity from file to table to chart."
+  },
+  "timeline": [
+    {
+      "seconds": "0-5",
+      "visual": "Three sales files tumble onto a shelf at the top-left: a spreadsheet card, a text export card and a photographed notebook page, each with a bold 5px deep navy (#172554) outline, an off-white fill and crooked rows inside. A bold 5px brand violet (#6D4AFF) dotted path shoots from the files across the frame and ends at a dashboard card with a bold navy outline, whose three electric purple (#8B5CF6) bars grow from the baseline with a soft lavender (#C4B5FD) glow behind the card. Navy label on the card: 'dashboard = one screen of charts'. Headline animates in top-left with 'dashboard' in brand violet.",
+      "on_screen_text": "How do messy files become a dashboard?",
+      "voiceover": "How do messy sales files become one screen of clear charts?"
+    },
+    {
+      "seconds": "5-10",
+      "visual": "The camera pushes in on the shelf and the dashboard slides out of frame. A small bakery shopfront for the fictional 'Sunny Loaf' with a bold navy outline sits beside the shelf. The three files fan out and get navy name tags one by one: 'Till spreadsheet', 'Online orders', 'Market stall notes'. Each file opens to show a few sales rows with clearly different layouts: different column order, different widths. Headline: 'three' in brand violet.",
+      "on_screen_text": "Sales live in three different files",
+      "voiceover": "A small bakery keeps its sales in three very different files."
+    },
+    {
+      "seconds": "10-14",
+      "visual": "The camera moves across the open files and three problems light up in turn, each with a bold navy mark: two date cells, '03/04/2026' and '4 March', get bold dashed navy outlines and a bold violet 'not equal' sign between them; two identical rows get a bold 5px navy bracket and the tag 'same sale twice'; an empty price cell gets a bold navy question-mark flag. All values are fictional. Headline: 'not agree' in brand violet.",
+      "on_screen_text": "The files do not agree",
+      "voiceover": "Dates clash. Rows repeat. Some prices are missing."
+    },
+    {
+      "seconds": "14-19",
+      "visual": "The shelf's front edge unrolls into a conveyor belt: a bold 6px deep navy belt line with electric purple rollers that start turning. The camera pulls back as the belt draws itself down the frame in a zigzag of three runs, and three station frames with bold 5px navy outlines rise onto it one after another, numbered 1, 2 and 3 in brand violet circles. At the far end an empty table outline waits. Bold violet chevrons travel along the belt to show its direction. Headline: 'three stations' in brand violet.",
+      "on_screen_text": "One belt. Three stations.",
+      "voiceover": "The fix is a belt that carries data through three stations."
+    },
+    {
+      "seconds": "19-24",
+      "visual": "The camera moves in on station 1, a collecting funnel with a bold navy outline and a sign that writes on: 'Extract = collect a copy'. Bold 5px brand violet paths run from each of the three files into the funnel. A copy of every row lifts off its file, slides along its path and drops onto a tray on the belt; the original files stay on the shelf with their rows intact. The tray, loaded with mismatched row cards, rolls off to the right. Headline: 'Extract' in brand violet.",
+      "on_screen_text": "Extract = collect a copy",
+      "voiceover": "Station one is extract. It pulls a copy from every file."
+    },
+    {
+      "seconds": "24-29",
+      "visual": "The camera follows the tray around the bend to station 2, a cleaning arch with a bold navy outline and a sign: 'Transform = change the data'. As the rows pass under the arch, the repeated row gets a bold 6px navy cross and tips off the belt into a bin; the row with the empty price gets its navy question-mark flag and slides to a side tray labelled 'check with owner'; every date flips to one style, '2026-03-04'. A navy tally card counts 'cleaned rows'. Headline: 'Transform' in brand violet.",
+      "on_screen_text": "Transform = change. First, clean.",
+      "voiceover": "Station two is transform which means change. First it cleans rows."
+    },
+    {
+      "seconds": "29-33",
+      "visual": "Still inside station 2, the cleaned rows roll under a shaping press with a bold navy outline. The press comes down once per row: each row card, whatever its width and column order, is stamped into the same three boxes labelled 'date', 'item', 'amount', and its outline turns bold 5px brand violet. The rows leave the press as a neat, identical-width line on the belt. Navy label: 'column = one kind of fact'. Headline: 'same columns' in brand violet.",
+      "on_screen_text": "Then the same columns for every row",
+      "voiceover": "Then it reshapes them into the same columns."
+    },
+    {
+      "seconds": "33-37",
+      "visual": "The camera follows the belt around the second bend to station 3, a stacking arm with a bold navy outline and a sign: 'Load = store in one table'. The arm picks up each violet-outlined row and places it into the waiting table, which fills from the top down under a bold navy header row 'date | item | amount'. A navy counter on the table counts the stored rows upward. Headline: 'Load' in brand violet.",
+      "on_screen_text": "Load = store in one table",
+      "voiceover": "Station three is load. Clean rows fill one table."
+    },
+    {
+      "seconds": "37-42",
+      "visual": "The camera pulls back until all three stations are in frame along the zigzag belt, still running. The three station signs pulse in order as the voice names them and a large brand violet letter lifts out of each: E from 'Extract = collect', T from 'Transform = clean and reshape', L from 'Load = store'. The three letters glide together along a bold violet path and lock into the word 'ETL' beside the belt. Headline: 'ETL' in brand violet.",
+      "on_screen_text": "Extract + Transform + Load = ETL",
+      "voiceover": "Extract collects. Transform cleans. Load stores. Together they are ETL."
+    },
+    {
+      "seconds": "42-48",
+      "visual": "The camera glides to the end of the belt. The dashboard card from the opening rises out of the full table and stands on top of it, joined to it by a bold 5px brand violet connector. Rows in the table pulse one by one and for each pulse a bar on the dashboard grows from its baseline: electric purple bars with bold 4px navy outlines for 'Bread', 'Cakes', 'Coffee', and a navy total that counts upward (fictional figures). Navy label: 'dashboard = one screen of charts'. Headline: 'one table' in brand violet.",
+      "on_screen_text": "One table feeds the dashboard",
+      "voiceover": "A dashboard is a screen of charts that reads from that one table."
+    },
+    {
+      "seconds": "48-54",
+      "visual": "The camera pulls back to the whole line. A navy clock badge beside the shelf turns to night and a new file card, 'Today's sales', drops onto the shelf. The rollers spin up, a fresh tray of rows rides through all three stations in quick succession, new rows land in the table and the dashboard bars rise a little higher. A small off-white badge with a bold 4px brand violet outline and navy text appears: 'People write the rules. The belt repeats them.' Headline: 'runs again' in brand violet.",
+      "on_screen_text": "New sales? The belt runs again.",
+      "voiceover": "Each night the belt runs again and the charts stay up to date."
+    },
+    {
+      "seconds": "54-60",
+      "visual": "The camera moves in on the dashboard. Its chart bars slide together and reshape into the four brand violet bars of the DataEntropy logo, growing left to right; the wordmark reveals and a soft violet glow sweeps once behind it. The tagline 'Practical Data Skills. Real Career Impact.' appears in deep navy Inter 600. Below it, one CTA in brand violet Inter 700 with a bold 5px brand violet animated arrow: 'Follow DataEntropy'. Hold the final composition for at least one second.",
+      "on_screen_text": "Follow DataEntropy",
+      "voiceover": "Follow DataEntropy for more data skills explained simply."
+    }
+  ],
+  "animation_rules": [
+    "VISIBILITY ON WHITE: every line, arrow, connector, dot, outline and text must be clearly visible on the white background. Draw them as bold strokes of at least 4px in deep navy (#172554), brand violet (#6D4AFF) or electric purple (#8B5CF6); this raises the brand's 2-3px default for mobile legibility. Use soft lavender (#C4B5FD) only for large filled shapes, glows or highlights behind a darker outline, never for lines, small dots or text.",
+    "No abrupt slide cuts; every scene should transform naturally into the next.",
+    "Animate concepts, not decorative particles.",
+    "Keep the conveyor belt, the bakery's files and the same row cards identifiable throughout the video; the belt direction never reverses.",
+    "Show problems in the data without red or orange: navy cross for a repeated row, navy question-mark flag for a missing value, dashed navy outline for a mismatched cell.",
+    "Extract copies the data; the source files stay unchanged on the shelf.",
+    "A missing value is flagged and set aside for a person to check. Never show the pipeline inventing a value.",
+    "Mark the bakery, its file names, items, dates and amounts as fictional examples.",
+    "Do not imply that ETL makes data correct by itself, that cleaning rules are discovered automatically, or that a dashboard is always right. People write the rules; the pipeline repeats them on a schedule.",
+    "Explain every necessary term (dashboard, extract, transform, load, column, ETL) in plain words in the same scene it appears.",
+    "Synchronize each label and highlight with its voiceover phrase.",
+    "Use deterministic frame-based animation so any frame renders correctly when scrubbing the timeline.",
+    "Use the brand easing cubic-bezier(0.22, 1, 0.36, 1); no rapid flashing, glitch effects or excessive bouncing."
+  ],
+  "implementation": {
+    "framework": "Remotion with React and TypeScript",
+    "graphics": "Original SVG and code-generated shapes; no stock footage or paid assets",
+    "components": [
+      "Headline",
+      "Subtitles",
+      "FileShelf",
+      "SourceFile",
+      "ConveyorBelt",
+      "Station",
+      "RowCard",
+      "CleaningArch",
+      "ShapingPress",
+      "StackingArm",
+      "DataTable",
+      "DashboardCard",
+      "ClockBadge",
+      "DataEntropyLogo",
+      "CallToAction"
+    ],
+    "editable_controls": [
+      "Source file names and example rows",
+      "Data problems shown (repeated row, missing price, date styles)",
+      "Table columns",
+      "Dashboard categories and illustrative values",
+      "Colors",
+      "Voiceover timing",
+      "Scene timing"
+    ]
+  },
+  "deliverables": [
+    "Complete project files",
+    "60-second English voiceover script",
+    "Timed SRT captions",
+    "Remotion preview and MP4 render commands",
+    "Final 1080x1920 MP4",
+    "Brief explanation of where to edit text, colors, and timing"
+  ],
+  "quality_check": "Render and inspect frames at 0, 5, 10, 14, 19, 24, 29, 33, 37, 42, 48, 54, and 59 seconds. Fix clipping, unreadable labels, broken transformations, timing gaps, and any line, dot or text that is hard to see on white. Confirm the belt, station signs and table text are readable, no red or orange appears, and all text and the logo sit inside the safe area.",
+  "sources": [
+    "https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/etl",
+    "https://cloud.google.com/learn/what-is-etl",
+    "https://en.wikipedia.org/wiki/Extract,_transform,_load"
+  ]
+}

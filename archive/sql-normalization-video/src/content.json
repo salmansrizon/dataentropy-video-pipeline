@@ -1,0 +1,199 @@
+{
+  "fps": 30,
+  "durationSeconds": 60,
+  "colors": {
+    "background": "#F8F7FC",
+    "grid": "#E7E5EB",
+    "navy": "#172554",
+    "violet": "#6D4AFF",
+    "purple": "#8B5CF6",
+    "lavender": "#C4B5FD",
+    "lavenderTint": "#EEE9FF",
+    "card": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#64748B",
+    "dimmed": "#D6D2E0"
+  },
+  "brand": {
+    "name": "DataEntropy",
+    "tagline": "Practical Data Skills. Real Career Impact.",
+    "cta": "Follow DataEntropy"
+  },
+  "orders": {
+    "name": "orders",
+    "columns": [
+      "order",
+      "customer",
+      "city",
+      "item"
+    ],
+    "idColumn": "customer_id",
+    "rows": [
+      [
+        1,
+        "Arif",
+        "Dhaka",
+        "Laptop"
+      ],
+      [
+        2,
+        "Mina",
+        "Sylhet",
+        "Phone"
+      ],
+      [
+        3,
+        "Arif",
+        "Dhaka",
+        "Mouse"
+      ],
+      [
+        4,
+        "Arif",
+        "Dhaka",
+        "Bag"
+      ]
+    ]
+  },
+  "customers": {
+    "name": "customers",
+    "columns": [
+      "id",
+      "name",
+      "city"
+    ]
+  },
+  "moves": {
+    "who": "Arif",
+    "first": "Khulna",
+    "second": "Barishal"
+  },
+  "labels": {
+    "sql": "SQL",
+    "result": "result",
+    "cost": "more tables, more joins",
+    "once": "stored once"
+  },
+  "scenes": [
+    {
+      "start": 0.0,
+      "headline": "One customer,\n*two cities*?",
+      "voiceover": "Arif moved to Khulna. But the database shows him in *two cities.*",
+      "voStart": 0.3,
+      "visual": "A white table card named 'orders' with a bold 5px deep navy outline draws itself: columns order, customer, city and item, four rows; three of them are Arif in Dhaka. In the first row Dhaka slides out and Khulna slides in; the other two Arif rows still say Dhaka and bold brand-violet question marks appear beside them. Headline with 'two cities' in brand violet.",
+      "rate": "-11%"
+    },
+    {
+      "start": 5.7,
+      "headline": "The same fact,\n*stored three times*",
+      "voiceover": "His city is stored *three times,* once on every order.",
+      "voStart": 6.0,
+      "visual": "Soft lavender bands spread behind the navy text of the three city cells that belong to Arif, one after another. Headline: 'stored three times' in brand violet.",
+      "rate": "-9%"
+    },
+    {
+      "start": 10.7,
+      "headline": "Change one copy,\n*miss the rest*",
+      "voiceover": "Change one copy and miss the others. Now the data *disagrees.*",
+      "voStart": 11.0,
+      "visual": "A bold 5px brand-violet outline draws itself around the one city cell that was changed, and bold navy outlines draw themselves around the two cells that were missed. Headline: 'miss the rest' in brand violet.",
+      "rate": "-2%"
+    },
+    {
+      "start": 16.4,
+      "headline": "*Normalization*: store\neach fact once",
+      "voiceover": "*Normalization* means storing each fact in *one place.*",
+      "voStart": 16.7,
+      "visual": "The two missed cells are corrected: Dhaka slides out and Khulna slides in, the outlines fade, and the three lavender bands remain: three copies of one fact. Headline: 'Normalization' in brand violet, followed by its plain meaning.",
+      "rate": "+0%"
+    },
+    {
+      "start": 21.2,
+      "headline": "Customers get\n*their own table*",
+      "voiceover": "So customers get their own table. One row for each customer.",
+      "voStart": 21.5,
+      "visual": "Under the orders table a second card with a bold 5px brand-violet outline and the tab 'customers' draws itself with columns id, name and city. Each name and city travels down in a white chip with a bold violet outline; the three Arif copies land on the same row, so the table has just two rows, numbered 1 and 2. Headline: 'their own table' in brand violet.",
+      "rate": "-7%"
+    },
+    {
+      "start": 26.8,
+      "headline": "Orders keep\n*only the ID*",
+      "voiceover": "Orders keep only a *customer ID* that points to that row.",
+      "voStart": 27.1,
+      "visual": "In the orders table the customer and city columns fade and close up into one narrow column whose brand-violet header reads customer_id, holding the bold navy numbers 1, 2, 1, 1. The card gets narrower. Headline: 'only the ID' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 32.0,
+      "headline": "Change it once,\n*fixed everywhere*",
+      "voiceover": "Now Arif moves again. *One change* fixes every order.",
+      "voStart": 32.3,
+      "visual": "In the customers table Arif's city slides out and a new city slides in inside a bold 5px brand-violet outline. In the orders table soft lavender bands spread behind the three customer_id cells that read 1: all three now point at the new city. Headline: 'fixed everywhere' in brand violet.",
+      "rate": "+0%"
+    },
+    {
+      "start": 37.3,
+      "headline": "A *JOIN* puts it\nback together",
+      "voiceover": "Need the full picture? A *JOIN* puts the tables back together.",
+      "voStart": 37.6,
+      "visual": "Below, a white query card with a bold 5px navy outline draws itself and types three lines with brand-violet keywords: SELECT item, city, then FROM orders JOIN customers, then ON customer_id = customers.id. Headline: 'JOIN' in brand violet.",
+      "rate": "-20%"
+    },
+    {
+      "start": 42.9,
+      "headline": "Splitting has\n*a cost*",
+      "voiceover": "Splitting has a cost: more joins. So split *as far as it helps.*",
+      "voStart": 43.2,
+      "visual": "A white chip with a bold navy outline and navy text 'more tables, more joins' is revealed beside the customers tab, and a soft lavender band spreads behind the JOIN line of the query. Headline: 'a cost' in brand violet.",
+      "rate": "-10%"
+    },
+    {
+      "start": 49.1,
+      "headline": "Each fact,\n*one home*",
+      "voiceover": "Each fact in one place. That keeps your data *telling the truth.*",
+      "voStart": 49.4,
+      "visual": "A bold 5px brand-violet outline draws itself around the single city cell of Arif in the customers table and a white chip with a bold violet outline reads 'stored once'. Headline: 'one home' in brand violet.",
+      "rate": "-17%"
+    },
+    {
+      "start": 54.0,
+      "headline": "",
+      "voiceover": "Follow *DataEntropy* for more SQL explained simply.",
+      "voStart": 54.3,
+      "visual": "The tables and the query card fade away. The DataEntropy logo's four bars grow upward left to right in brand violet, the wordmark is revealed, and a soft violet glow settles. The tagline is revealed, then one brand-violet CTA button with a white animated arrow: 'Follow DataEntropy'. Hold the final composition for at least two seconds.",
+      "tts": "Follow Data Entropy for more S Q L explained simply.",
+      "rate": "+0%"
+    }
+  ],
+  "brief": {
+    "task": "Build a 60-second, 9:16 DataEntropy explainer animation that shows beginners why databases are normalized: a fact stored in many rows can end up disagreeing with itself, so each fact is stored once in its own table and other tables point to it with an ID. Carry one example through the whole video: a shop's orders table repeats a customer's city on every order, and the customer moves.",
+    "central_visual": {
+      "description": "TOP: the table 'orders', first wide (order, customer, city, item), later narrow (order, customer_id, item), a white card with a bold 5px deep navy outline. MIDDLE: the table 'customers' (id, name, city) with a bold 5px brand-violet outline. BELOW: the query card.",
+      "interaction_effect": "Repeated facts are marked with lavender bands. The names and cities travel down into the customers table, where copies of the same customer land on one row; the orders table closes up around a customer_id column.",
+      "camera": "One continuous space: close on the wide table, out to both tables, then down to include the query card."
+    },
+    "rules": [
+      "Normalization is design practice, not a SQL command; no statement on screen normalizes anything.",
+      "Do not name the numbered normal forms. The single idea is: store each fact once and point to it.",
+      "Say that splitting has a cost and is done as far as it helps; do not say more normalization is always better.",
+      "The join shown is the same shape as in the JOIN video: FROM orders JOIN customers ON customer_id = customers.id."
+    ],
+    "components": [
+      "OrdersTable",
+      "FactMarks",
+      "CustomersTable",
+      "CityCell",
+      "QueryCard"
+    ],
+    "controls": [
+      "Order rows",
+      "Who moves and to which cities"
+    ],
+    "quality": "Confirm that after the split every customer_id points to the right customer and that the customers table holds each customer exactly once.",
+    "sources": [
+      "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/access/database-normalization-description",
+      "https://dev.mysql.com/doc/refman/8.4/en/glossary.html",
+      "https://www.postgresql.org/docs/current/ddl-constraints.html"
+    ]
+  }
+}
